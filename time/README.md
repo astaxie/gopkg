@@ -2,5 +2,6 @@
 
 函数列表
 
-- xxx1
-- xxx2
+- func After(d Duration) <-chan time
+- func Sleep(d Duration)
+- func Tick(d Duration) <-chan time
