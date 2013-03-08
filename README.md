@@ -11,6 +11,8 @@ strings目录下Contains.md表示strings.Contains这个函数的例子，代码�
 
 样例请看：[strings](https://github.com/astaxie/gopkg/tree/master/strings)
 
+代码必须在本机或者`http://play.golang.org`测试通过并且格式化
+
 # 如何参与
 如果你想参与这个项目，那么首先fork这个项目，然后修改[todo.md](https://github.com/astaxie/gopkg/blob/master/todo.md)文件，把你需要翻译的目录包填写在这个上面，然后pull给我，这样我们大家相互之间就不会做同一件事情了，不会导致两个人做了同一个包，这里面的包我每个目录已经建好了，但是需要注意：
 
@@ -20,6 +22,5 @@ strings目录下Contains.md表示strings.Contains这个函数的例子，代码�
 
 # 贡献者
 
-- astaxie
-- [na-lan](https://github.com/na-lan)
+都在todo里面，谢谢这么多人的参与
 
