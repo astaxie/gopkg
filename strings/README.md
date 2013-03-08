@@ -1,10 +1,10 @@
 # strings包函数列表
 
-- [func Contains(s, substr string) bool](strings/Contains.md) 
-- [func ContainsAny(s, chars string) bool](strings/ContainsAny.md) 
-- [func ContainsRune(s string, r rune) bool](strings/ContainsRune.md) 
-- [func Count(s, sep string) int](strings/Count.md) 
-- [func EqualFold(s, t string) bool](strings/EqualFold.md) 
+- [func Contains(s, substr string) bool](Contains.md) 
+- [func ContainsAny(s, chars string) bool](ContainsAny.md) 
+- [func ContainsRune(s string, r rune) bool](ContainsRune.md) 
+- [func Count(s, sep string) int](Count.md) 
+- [func EqualFold(s, t string) bool](EqualFold.md) 
 - [func Fields(s string) []string](strings/Fields.md) 
 - func FieldsFunc(s string, f func(rune) bool) []string 
 - func HasPrefix(s, prefix string) bool 
