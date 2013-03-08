@@ -1,9 +1,9 @@
 # net包
  
-# 概述
+## 概述
 net 包是处理网络I/O的包
 
-# 常量
+## 常量
 
 P地址长度
 
@@ -12,7 +12,7 @@ P地址长度
 	    IPv6len = 16
 	)
 
-# 变量
+## 变量
 
 知名IPv4地址
 
@@ -40,13 +40,17 @@ P地址长度
 	var ErrWriteToConnected = errors.New("use of WriteTo with pre-connected UDP")
 	
 
-# 函数
+## 函数
 
 - [InterfaceAddrs](InterfaceAddrs.md)
 - [Interfaces](Interfaces.md)
 - [JoinHostPort](JoinHostPort.md)
 - [LookupAddr](LookupAddr.md)
+- [LookupCNAME](LookupCNAME.md)
+- [LookupHost](LookupHost.md)
+- [LookupIP](LookupIP.md)
 
-# 结构
+
+## 结构
 
 - [Addr](Addr.md)
