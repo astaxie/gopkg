@@ -17,3 +17,4 @@
 - path novakr
 - strconv chenzhekl
 - text/scanner cdxahz
+- text/template bluesalt
