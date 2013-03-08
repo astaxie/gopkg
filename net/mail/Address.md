@@ -15,7 +15,9 @@ RFC 5322，源代码中还包含一个 RFC 2047 的编码函数，
 
 - func (a *Address) String() string
 
-```golang
+邮件地址转换
+
+```go
 package main
 
 import (
@@ -33,7 +35,9 @@ func main() {
 }
 ```
 
-```golang
+RFC 2047 编码函数
+
+```go
 // import net/mail, strings
 func EncodeRFC2047(String string) string{
     // use mail's rfc2047 to encode any string
