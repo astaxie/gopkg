@@ -1,6 +1,10 @@
-# 包名
+# 包名 fmt
+
+编写：晨笛
 
 函数列表
 
-- xxx1
+- Sprint
+- Fprintf
+- ...
 - xxx2
