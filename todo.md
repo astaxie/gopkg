@@ -10,5 +10,3 @@
 - encoding/csv metadao
 - sort Hubery 
 - reflect 456Vv
-- archive/tar unknown
-- archive/zip unknown
