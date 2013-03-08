@@ -18,3 +18,4 @@
 - strconv chenzhekl
 - text/scanner cdxahz
 - html RaymondChou
+- html/template RaymondChou
