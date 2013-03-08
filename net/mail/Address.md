@@ -1,6 +1,6 @@
 ## type Address
 
-```golang
+```go
 type Address struct {
     Name    string // 专有名称；可以为空。
     Address string // user@domain
