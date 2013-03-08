@@ -12,5 +12,6 @@
 - reflect 456Vv
 - bufio stevewang
 - bytes stevewang
-- archive unknown
+- archive/tar unknown
+- archive/zip unknown
 - path novakr
