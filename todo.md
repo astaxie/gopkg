@@ -19,7 +19,7 @@
 - text/scanner cdxahz
 - text/template bluesalt
 - regexp andelf
-- regexp andelf
+- regexp/syntax andelf
 - net/mail andelf
 - net/smtp andelf
 - net/http qinglong1983
