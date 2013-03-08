@@ -10,5 +10,5 @@
 - encoding/csv metadao
 - sort Hubery 
 - reflect 456Vv
-- bufiio stevewang
+- bufio stevewang
 - bytes stevewang
