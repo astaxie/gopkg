@@ -15,3 +15,4 @@
 - archive unknown
 - path novakr
 - strconv chenzhekl
+- text/scanner cdxahz
