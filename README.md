@@ -16,7 +16,10 @@ strings目录下Contains.md表示strings.Contains这个函数的例子，代码�
 
 >如果你填写了net包，那么不需要做下面的http这些子包的工作，这些也需要分包出去，每个人只做自己的包，不包括子包
 
+欢迎你加群：259316004 和我们一起交流学习进步
+
 # 贡献者
 
 - astaxie
+- [na-lan](https://github.com/na-lan)
 
