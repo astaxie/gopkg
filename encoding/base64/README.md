@@ -15,7 +15,7 @@
 
 ### CorruptInputError 类型
 
-- func (e CorruptInputError) Error() string
+- [func (e CorruptInputError) Error() string](CorruptInputError.md)
 
 ### Encoding 类型
 
