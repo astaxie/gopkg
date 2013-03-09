@@ -1,6 +1,6 @@
 ## func NewEncoder(enc *Encoding, w io.Writer) io.WriteCloser
 
-参数列表
+参数列表：
 
 - enc Encoding 结构指针
 - w io.Writer 接口

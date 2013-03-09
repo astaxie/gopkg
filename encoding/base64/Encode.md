@@ -1,6 +1,6 @@
 ## func (enc *Encoding) Encode(dst, src []byte)
 
-参数列表
+参数列表：
 
 - dst 编码缓冲区
 - src 要编码的字符串切片

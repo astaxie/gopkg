@@ -1,6 +1,6 @@
 ## func NewDecoder(enc *Encoding, r io.Reader) io.Reader
 
-参数列表
+参数列表：
 
 - enc Encoding 结构指针
 - w io.Reader 接口
