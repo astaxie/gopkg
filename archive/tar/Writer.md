@@ -18,14 +18,14 @@
 	func main() {
 		fw, err := os.Create("demo.tar")	// 创建tar包文件，返回*io.Writer
 		handleError(err)	// handleError为错误处理函数，下同
-		defer fr.Close()
+		defer fw.Close()
 		
 		// 实例化新的tar.Writer
 		tw := tar.NewWriter(fw)
 		defer tw.Close()
 		
 		// 获取要打包的文件的内容
-		fr, err = os.Open(demo.txt)
+		fr, err = os.Open("demo.txt")
 		handleError(err)
 		defer fr.Close()
 		
