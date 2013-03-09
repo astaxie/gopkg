@@ -1,6 +1,6 @@
 ## func (enc *Encoding) EncodeToString(src []byte) string
 
-参数列表
+参数列表：
 
 - src 要进行 base64 编码的字符串切片
 
@@ -21,7 +21,9 @@
         "encoding/base64"
     )
 
-    func main() {
+    func Example1() {
+
+        fmt.Println("---=== Example1 ===---")
 
         src := []byte("this is a test string.")
         dst := base64.StdEncoding.EncodeToString(src)
@@ -34,4 +36,10 @@
         fmt.Println(base64.StdEncoding.EncodeToString([]byte("foob")) == "Zm9vYg==") // true
         fmt.Println(base64.StdEncoding.EncodeToString([]byte("fooba")) == "Zm9vYmE=") // true
         fmt.Println(base64.StdEncoding.EncodeToString([]byte("foobar")) == "Zm9vYmFy") // true
+    }
+
+    func main() {
+
+        Example1()
+
     }

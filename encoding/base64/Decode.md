@@ -1,6 +1,6 @@
 ## func (enc *Encoding) Decode(dst, src []byte) (n int, err error)
 
-参数列表
+参数列表：
 
 - dst 解码缓冲区
 - src 要解码的字符串切片

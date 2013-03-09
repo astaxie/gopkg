@@ -1,6 +1,6 @@
 ## func NewEncoding(encoder string) *Encoding
 
-参数列表
+参数列表：
 
 - encoder 64字节长的字符串，用做转换表
 
