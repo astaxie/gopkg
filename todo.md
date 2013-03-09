@@ -81,7 +81,7 @@
 		- jpeg        : ###
 		- png         : ###
 	index             : starchou
-		- suffixarray : ###
+		- suffixarray : starchou
 	io                : ###
 		- ioutil      : ###
 	log               : ###
