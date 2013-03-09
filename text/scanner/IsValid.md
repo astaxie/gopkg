@@ -14,25 +14,25 @@
 
 代码实例：
 
-package main
+	package main
 
-import(
-	"fmt"
-	"strings"
-	"text/scanner"
-)
+	import(
+		"fmt"
+		"strings"
+		"text/scanner"
+	)
 
-func main(){
+	func main(){
 
-	src := strings.NewReader("int num = 1;")
-	var s scanner.Scanner
+		src := strings.NewReader("int num = 1;")
+		var s scanner.Scanner
 
-	s.Init(src)
+		s.Init(src)
 
-	s.Next()
+		s.Next()
 
-	pos := s.Pos()
-	fmt.Println(pos.IsValid())
+		pos := s.Pos()
+		fmt.Println(pos.IsValid())
 
-}
+	}
 

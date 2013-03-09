@@ -14,24 +14,24 @@
 
 代码实例：
 
-package main
+	package main
 
-import (
-	"fmt"
-	"strings"
-	"text/scanner"
-)
+	import (
+		"fmt"
+		"strings"
+		"text/scanner"
+	)
 
-func main() {
+	func main() {
 
-	src := strings.NewReader("int num = 1;")
+		src := strings.NewReader("int num = 1;")
 
-	var s scanner.Scanner
+		var s scanner.Scanner
 
-	s.Init(src)
+		s.Init(src)
 
-	//this will print "i" to stdout
-	fmt.Println(scanner.TokenString(s.Next()))
+		//this will print "i" to stdout
+		fmt.Println(scanner.TokenString(s.Next()))
 
-}
+	}
 

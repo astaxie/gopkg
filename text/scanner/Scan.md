@@ -14,23 +14,23 @@ Scan方法读取源中下一个token或字符，并返回。如果读到源的�
 
 代码实例：
 
-package main
+	package main
 
-import(
-	"fmt"
-	"strings"
-	"text/scanner"
-)
+	import(
+		"fmt"
+		"strings"
+		"text/scanner"
+	)
 
-func main(){
+	func main(){
 	
-	src := strings.NewReader("int num = 1;")
-	var s scanner.Scanner
+		src := strings.NewReader("int num = 1;")
+		var s scanner.Scanner
 
-	s.Init(src)
+		s.Init(src)
 
-	s.Scan()
-	//this will print the next token "int "to stdout
-	fmt.Println(s.TokenText())
-}
+		s.Scan()
+		//this will print the next token "int "to stdout
+		fmt.Println(s.TokenText())
+	}
 

@@ -14,18 +14,18 @@
 
 代码实例：
 
-package main
+	package main
 
-import(
-	"fmt"
-	"text/scanner"
-)
-func main(){
+	import(
+		"fmt"
+		"text/scanner"
+	)
+	func main(){
 
-	toks := []rune("abcdef")
+		toks := []rune("abcdef")
 
-	for _, tok := range toks{
-		fmt.Print(scanner.TokenString(tok))
+		for _, tok := range toks{
+			fmt.Print(scanner.TokenString(tok))
+		}
 	}
-}
 
