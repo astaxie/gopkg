@@ -10,19 +10,25 @@
 这个函数用来实现指定时间的延时，返回一个单向的读取chan
 
 代码实例：
-
+    
     package main
 
     import (
-    	"fmt"
-    	"time"
+        "fmt"
+        "time"
     )
-
-    const dur = 3
-
-    func main() {
-    	fmt.Println("Start.")
-    	<-time.After(dur * time.Second)
-    	fmt.Println(dur, "seconds later")
-    }
     
+    func main() {
+    	result := make(chan int)
+    	go func(ch chan int) {
+    		time.Sleep(3 * time.Second)	
+    		ch <- 4
+    	}(result)
+    
+    	select {
+    	case <-time.After(2 * time.Second):
+    		fmt.Println("Time out")
+    	case <-result:
+    		fmt.Println(result)
+    	}
+    }
