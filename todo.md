@@ -114,7 +114,7 @@
 		- pprof       : ###
 	sort              : Hubery
 	strconv           : chenzhekl
-	strings           : astaxie
+	strings           : astaxie     2013/3/8
 	sync              : ###
 		- atomic      : ###
 	syscall           : ###
