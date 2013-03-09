@@ -1,6 +1,6 @@
 ## func (enc *Encoding) DecodeString(s string) ([]byte, error)
 
-参数列表
+参数列表：
 
 - s 要进行 base64 解码的字符串
 
@@ -22,7 +22,9 @@
         "encoding/base64"
     )
 
-    func main() {
+    func Example1() {
+
+        fmt.Println("---=== Example1 ===---")
 
         src := "dGhpcyBpcyBhIHRlc3Qgc3RyaW5nLg=="
         dst, _ := base64.StdEncoding.DecodeString(src)
@@ -45,4 +47,10 @@
 
         dst, _ = base64.StdEncoding.DecodeString("Zm9vYmFy")
         fmt.Println(string(dst) == "foobar") // true
+    }
+
+    func main() {
+
+        Example1()
+
     }

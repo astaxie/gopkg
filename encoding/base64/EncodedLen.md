@@ -1,6 +1,6 @@
 ## func (enc *Encoding) EncodedLen(n int) int
 
-参数列表
+参数列表：
 
 - n 要进行 base64 编码的字节数
 
@@ -21,7 +21,9 @@
         "encoding/base64"
     )
 
-    func main() {
+    func Example1() {
+
+        fmt.Println("---=== Example1 ===---")
 
         src := []byte("this is a test string.")
 
@@ -30,5 +32,11 @@
 
         dst := base64.StdEncoding.EncodeToString(src)
         fmt.Println(len(dst) == l) // true
+
+    }
+
+    func main() {
+
+        Example1()
 
     }
