@@ -21,16 +21,8 @@
     const dur = 3
 
     func main() {
-    	fmt.Println("Hello, playground")
+    	fmt.Println("Start.")
     	<-time.After(dur * time.Second)
     	fmt.Println(dur, "seconds later")
     }
-
-
-```C
-#include <stdio.h>
-
-int main() {
-    printf("Hello World");
-}
-```
+    
