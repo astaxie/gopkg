@@ -33,9 +33,8 @@
 
         dst := ""
 
-        // 输出到标准输出
         decoder := base64.NewDecoder(base64.StdEncoding, reader)
-        // 使用一个很小的buffer
+        // 使用一个很小的输出buffer，测试流式解码
         buf := make([]byte, 2)
         for {
             n, err := decoder.Read(buf)

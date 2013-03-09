@@ -51,7 +51,6 @@
 
         buf := &StringWriter{}
 
-        // 输出到标准输出
         encoder := base64.NewEncoder(base64.StdEncoding, buf)
         encoder.Write([]byte("this is a test string."))
         encoder.Close()
