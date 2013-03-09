@@ -1,10 +1,23 @@
-# encoding/base64 包函数列表
+# encoding/base64 包
 
-- Variables
+## 变量
+
+    var StdEncoding = NewEncoding(encodeStd)
+    RFC 4648 里定义的标准 base64 编码方法
+
+    var URLEncoding = NewEncoding(encodeURL)
+    修改过的 base64 编码，一般用于URL和文件名
+
+## 函数
+
 - [func NewDecoder(enc *Encoding, r io.Reader) io.Reader](NewDecoder.md)
 - [func NewEncoder(enc *Encoding, w io.Writer) io.WriteCloser](NewEncoder.md)
+
+## CorruptInputError 结构
 - type CorruptInputError
 -     func (e CorruptInputError) Error() string
+
+## Encoding 结构
 - type Encoding
 -     [func NewEncoding(encoder string) *Encoding](NewEncoding.md)
 -     [func (enc *Encoding) Decode(dst, src []byte) (n int, err error)](Decode.md)
