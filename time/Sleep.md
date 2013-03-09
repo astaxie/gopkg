@@ -14,12 +14,12 @@
 
 代码实例：
 
-  package main
+    package main
   
-  import (
-    "time"
-  )
+    import (
+      "time"
+    )
   
-  func main() {
-  	time.Sleep(100 * time.Millisecond)
-  }
+    func main() {
+      time.Sleep(100 * time.Millisecond)
+    }
