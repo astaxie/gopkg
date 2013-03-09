@@ -46,8 +46,8 @@
     encoding          : ###
         - ascii85     : ###
         - asn1        : ###
-        - base32      : ###
-        - base64      : boilingbit
+        - base32      : boilingbit (from 2013-03-10)
+        - base64      : boilingbit (finished, from 2013-03-08)
         - binary      : ###
         - csv         : metadao
         - gob         : ###
