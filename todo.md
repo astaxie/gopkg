@@ -23,5 +23,5 @@
 - net/mail andelf
 - net/smtp andelf
 - net/http qinglong1983
-- html RaymondChou
-- html/template RaymondChou
+- html RaymondChou     2013/3/8
+- html/template RaymondChou     2013/3/8
