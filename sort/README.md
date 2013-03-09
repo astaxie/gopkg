@@ -1,34 +1,6 @@
-# sort包函数列表
+# 包名
 
-- func Float64s(a []float64)
-- func Float64sAreSorted(a []float64) bool
-- func Ints(a []int)
-- func IntsAreSorted(a []int) bool
-- func IsSorted(data Interface) bool
-- func Search(n int, f func(int) bool) int
-- func SearchFloat64s(a []float64, x float64) int
-- func SearchInts(a []int, x int) int
-- func SearchStrings(a []string, x string) int
-- func Sort(data Interface)
-- func Strings(a []string)
-- func StringsAreSorted(a []string) bool
-- type Float64Slice
--     func (p Float64Slice) Len() int
--     func (p Float64Slice) Less(i, j int) bool
--     func (p Float64Slice) Search(x float64) int
--     func (p Float64Slice) Sort()
--     func (p Float64Slice) Swap(i, j int)
-- type IntSlice
--     func (p IntSlice) Len() int
--     func (p IntSlice) Less(i, j int) bool
--     func (p IntSlice) Search(x int) int
--     func (p IntSlice) Sort()
--     func (p IntSlice) Swap(i, j int)
-- type Interface
--     func Reverse(data Interface) Interface
-- type StringSlice
--     func (p StringSlice) Len() int
--     func (p StringSlice) Less(i, j int) bool
--     func (p StringSlice) Search(x string) int
--     func (p StringSlice) Sort()
--     func (p StringSlice) Swap(i, j int)
+函数列表
+
+- xxx1
+- xxx2
