@@ -72,8 +72,8 @@
 		- crc32       : ###
 		- crc64       : ###
 		- fnv         : ###
-	html              : RaymondChou
-		- template    : RaymondChou
+	html              : RaymondChou     2013/3/8
+		- template    : RaymondChou     2013/3/8
 	image             : ###
 		- color       : ###
 		- draw        : ###
@@ -81,7 +81,7 @@
 		- jpeg        : ###
 		- png         : ###
 	index             : starchou
-		- suffixarray : ###
+		- suffixarray : starchou
 	io                : ###
 		- ioutil      : ###
 	log               : ###
@@ -93,7 +93,7 @@
 	mime              : ###
 		- multipart   : ###
 	net               : nalan
-		- http        : qinglong1983
+		- http        : qinglong1983 2013/3/8
 		- mail        : andelf
 		- rpc         : ###
 		- smtp        : andelf
@@ -114,7 +114,7 @@
 		- pprof       : ###
 	sort              : Hubery
 	strconv           : chenzhekl
-	strings           : astaxie
+	strings           : astaxie     2013/3/8
 	sync              : ###
 		- atomic      : ###
 	syscall           : ###

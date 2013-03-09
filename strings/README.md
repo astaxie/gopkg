@@ -5,18 +5,18 @@
 - [func ContainsRune(s string, r rune) bool](ContainsRune.md) 
 - [func Count(s, sep string) int](Count.md) 
 - [func EqualFold(s, t string) bool](EqualFold.md) 
-- [func Fields(s string) []string](strings/Fields.md) 
-- func FieldsFunc(s string, f func(rune) bool) []string 
-- func HasPrefix(s, prefix string) bool 
-- func HasSuffix(s, suffix string) bool 
-- func Index(s, sep string) int 
-- func IndexAny(s, chars string) int 
-- func IndexFunc(s string, f func(rune) bool) int 
-- func IndexRune(s string, r rune) int 
-- func Join(a []string, sep string) string 
-- func LastIndex(s, sep string) int 
-- func LastIndexAny(s, chars string) int 
-- func LastIndexFunc(s string, f func(rune) bool) int 
+- [func Fields(s string) []string](Fields.md) 
+- [func FieldsFunc(s string, f func(rune) bool) []string ](FieldsFunc.md)
+- [func HasPrefix(s, prefix string) bool](HasPrefix.md) 
+- [func HasSuffix(s, suffix string) bool](HasSuffix.md) 
+- [func Index(s, sep string) int](Index.md) 
+- [func IndexAny(s, chars string) int](IndexAny.md) 
+- [func IndexFunc(s string, f func(rune) bool) int](IndexFunc.md) 
+- [func IndexRune(s string, r rune) int](IndexRune.md) 
+- [func Join(a []string, sep string) string](Join.md) 
+- [func LastIndex(s, sep string) int](LastIndex.md) 
+- [func LastIndexAny(s, chars string) int](LastIndexAny.md) 
+- [func LastIndexFunc(s string, f func(rune) bool) int](LastIndexFunc.md) 
 - func Map(mapping func(rune) rune, s string) string 
 - func Repeat(s string, count int) string 
 - func Replace(s, old, new string, n int) string 
