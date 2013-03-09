@@ -1,6 +1,6 @@
 ## func NewEncoder(enc *Encoding, w io.Writer) io.WriteCloser
 
-参数列表
+参数列表：
 
 - enc Encoding 结构指针
 - w io.Writer 接口
@@ -51,7 +51,6 @@
 
         buf := &StringWriter{}
 
-        // 输出到标准输出
         encoder := base64.NewEncoder(base64.StdEncoding, buf)
         encoder.Write([]byte("this is a test string."))
         encoder.Close()

@@ -1,6 +1,6 @@
 ## func (enc *Encoding) DecodedLen(n int) int
 
-参数列表
+参数列表：
 
 - n 要进行 base64 解码的字节数
 
@@ -21,7 +21,9 @@
         "encoding/base64"
     )
 
-    func main() {
+    func Example1() {
+
+        fmt.Println("---=== Example1 ===---")
 
         src := "dGhpcyBpcyBhIHRlc3Qgc3RyaW5nLg=="
 
@@ -33,3 +35,8 @@
 
     }
 
+    func main() {
+
+        Example1()
+
+    }
