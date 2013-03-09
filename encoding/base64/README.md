@@ -13,21 +13,11 @@
 - [func NewDecoder(enc *Encoding, r io.Reader) io.Reader](NewDecoder.md)
 - [func NewEncoder(enc *Encoding, w io.Writer) io.WriteCloser](NewEncoder.md)
 
-### CorruptInputError 结构
-
-    type CorruptInputError int64
-
-##### 方法
+### CorruptInputError 类型
 
 - func (e CorruptInputError) Error() string
 
-### Encoding 结构
-
-    type Encoding struct {
-        // contains filtered or unexported fields
-    }
-
-##### 方法
+### Encoding 类型
 
 - [func NewEncoding(encoder string) *Encoding](NewEncoding.md)
 - [func (enc *Encoding) Decode(dst, src []byte) (n int, err error)](Decode.md)
