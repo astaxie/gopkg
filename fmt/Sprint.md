@@ -1,8 +1,7 @@
-# func Sprintf(format string, a ...interface{}) string
+# func Sprint(a ...interface{}) string
 
 参数列表
 
-- format 打印的格式说明 
 - a... 值变量列表
 
 返回值：
@@ -20,5 +19,5 @@
 	import 	"fmt"
 		
 	func main() {
-		fmt.Sprintf("Format:%s\n","格式打印出字符串!")
+		fmt.Sprintf("格式打印出字符串!")
 	}
