@@ -39,24 +39,24 @@ func ExampleEncode2() {
 
     // Output:
     // 0 true
-    // 4 true
-    // 4 true
-    // 4 true
     // 8 true
     // 8 true
     // 8 true
-    // 12 true
-    // 12 true
-    // 12 true
+    // 8 true
+    // 8 true
     // 16 true
     // 16 true
     // 16 true
-    // 20 true
-    // 20 true
-    // 20 true
+    // 16 true
+    // 16 true
     // 24 true
     // 24 true
     // 24 true
-    // 28 true
+    // 24 true
+    // 24 true
+    // 32 true
+    // 32 true
+    // 32 true
+    // 32 true
 
 }
