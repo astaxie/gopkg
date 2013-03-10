@@ -1,5 +1,7 @@
 # encoding/base64 包
 
+实现了 RFC 4648 定义的 base64 编码
+
 ### 变量
 
     var StdEncoding = NewEncoding(encodeStd)

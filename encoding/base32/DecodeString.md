@@ -2,16 +2,16 @@
 
 参数列表：
 
-- s 要进行 base64 解码的字符串
+- s 要进行 base32 解码的字符串
 
 返回值：
 
-- 经过 base64 解码后的字符串切片
+- 经过 base32 解码后的字符串切片
 - 可能的错误
 
 功能说明：
 
-对传入的字符串进行 base64 解码
+对传入的字符串进行 base323 解码
 
 代码实例：
 
@@ -19,36 +19,36 @@
 
     import (
         "fmt"
-        "encoding/base64"
+        "encoding/base32"
     )
 
     func Example1() {
 
         fmt.Println("---=== Example1 ===---")
 
-        src := "dGhpcyBpcyBhIHRlc3Qgc3RyaW5nLg=="
-        dst, _ := base64.StdEncoding.DecodeString(src)
+        src := "ORUGS4ZANFZSAYJAORSXG5BAON2HE2LOM4XA===="
+        dst, _ := base32.StdEncoding.DecodeString(src)
         fmt.Println(string(dst) == "this is a test string.") // true
 
-        dst, _ = base64.StdEncoding.DecodeString("")
+        dst, _ = base32.StdEncoding.DecodeString("")
         fmt.Println(string(dst) == "") // true
 
-        dst, _ = base64.StdEncoding.DecodeString("Zg==")
+        dst, _ = base32.StdEncoding.DecodeString("MY======")
         fmt.Println(string(dst) == "f") // true
 
-        dst, _ = base64.StdEncoding.DecodeString("Zm8=")
+        dst, _ = base32.StdEncoding.DecodeString("MZXQ====")
         fmt.Println(string(dst) == "fo") // true
 
-        dst, _ = base64.StdEncoding.DecodeString("Zm9v")
+        dst, _ = base32.StdEncoding.DecodeString("MZXW6===")
         fmt.Println(string(dst) == "foo") // true
 
-        dst, _ = base64.StdEncoding.DecodeString("Zm9vYg==")
+        dst, _ = base32.StdEncoding.DecodeString("MZXW6YQ=")
         fmt.Println(string(dst) == "foob") // true
 
-        dst, _ = base64.StdEncoding.DecodeString("Zm9vYmE=")
+        dst, _ = base32.StdEncoding.DecodeString("MZXW6YTB")
         fmt.Println(string(dst) == "fooba") // true
 
-        dst, _ = base64.StdEncoding.DecodeString("Zm9vYmFy")
+        dst, _ = base32.StdEncoding.DecodeString("MZXW6YTBOI======")
         fmt.Println(string(dst) == "foobar") // true
     }
 
