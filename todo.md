@@ -84,7 +84,7 @@
         - suffixarray : starchou
     io                : ###
         - ioutil      : ###
-    log               : ###
+    log               : cdxahz		2012/3/10
         - syslog      : ###
     math              : ###
         - big         : ###
@@ -122,7 +122,7 @@
         - iotest      : ###
         - quick       : ###
     text              : ###
-        - scanner     : cdxahz
+        - scanner     : cdxahz		2013/3/8	finished
         - tabwriter   : ###
         - template    : bluesalt
     time              : xuyuanp
