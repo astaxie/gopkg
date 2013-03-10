@@ -10,7 +10,7 @@
     compress          : ###				-
         - bzip2       : ###				-
         - flate       : ###				-
-        - gzip        : Unknown			-
+        - gzip        : Unknown			2013-03-11
         - lzw         : ###				-
         - zlib        : ###				-
     container         : ###				-
