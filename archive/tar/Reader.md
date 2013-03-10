@@ -5,7 +5,7 @@
 该结构主要用于读取tar包时获取所有文件的slice，并调用Next方法逐个读取其中的文件。
 
 代码实例（本示例不包含目录递归及目录判断功能，[完整实例](https://github.com/Unknwon/go-compresser/blob/master/go-tar.gz.go)）：
-'''go
+
 	package main
 	
 	import (
@@ -38,4 +38,3 @@
 			handleError(err)
 		}
 	}
-'''
