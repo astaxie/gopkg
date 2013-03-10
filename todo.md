@@ -2,15 +2,15 @@
 ### (###表示该包未被领养)
 
     archive
-        - tar         : unknown			2013-03-08
-        - zip         : unknown			2013-03-10
+        - tar         : Unknown			2013-03-08
+        - zip         : Unknown			2013-03-10
     bufio             : stevewang		-
     builtin           : ###				-
     bytes             : stevewang		-
     compress          : ###				-
         - bzip2       : ###				-
         - flate       : ###				-
-        - gzip        : ###				-
+        - gzip        : Unknown			-
         - lzw         : ###				-
         - zlib        : ###				-
     container         : ###				-
@@ -72,8 +72,8 @@
         - crc32       : ###				-
         - crc64       : ###				-
         - fnv         : ###				-
-    html              : RaymondChou	2013-03-08
-        - template    : RaymondChou	2013-03-08
+    html              : RaymondChou		2013-03-08
+        - template    : RaymondChou		2013-03-08
     image             : ###				-
         - color       : ###				-
         - draw        : ###				-
