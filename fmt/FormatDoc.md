@@ -243,21 +243,23 @@ Go 语言中的fmt包含有格式化输入输出的函数，类似于C语言的p
 
 ***
 
-输出格式：
+## 字符串和byte切片类型说明：
 
-
-	字符串和byte切片类型：
 	%s 直接输出字符串或者[]byte
 	%q 双引号括起来的字符串
 	%x 每个字节用两字符十六进制数表示（使用小写a-f）
 	%X 每个字节用两字符十六进制数表示（使用大写A-F）
-	指针：
+	
+## 指针类型说明：
+
 	%p 0x开头的十六进制数表示
 	木有'u'标志。如果是无类型整数，自然会打印无类型格式。类似的，没有必要去区分操作数的大小(int8, int64)。
 	宽度和精度格式化控制是指的Unicode编码字符的数量（不同于C的printf，它的这两个因子指的是字节的数量。）两者均可以使用'*'号取代（任一个或两个都），此时它们的值将被紧接着的参数控制，这个操作数必须是整型。
 	对于数字，宽度设置总长度，精度设置小数部分长度。例如，格式%6.2f 输出123.45。
 	对于字符串，宽度是输出字符数目的最低数量，如果不足会用空格填充。精度是输出字符数目的最大数量，超过则会截断。
-	其它符号：
+	
+## 其他符号说明：	
+
 	+ 总是输出数值的正负号；对%q(%+q)将保证纯ASCII码输出
 	- 用空格在右侧填充空缺而不是默认的左侧。
 	# 切换格式：在八进制前加0(%#o)，十六进制前加0x(%#x)或0X(%#X)；废除指针的0x(%#p)；
@@ -266,6 +268,9 @@ Go 语言中的fmt包含有格式化输入输出的函数，类似于C语言的p
 	' ' 对数字(% d)空格会留一个空格在数字前并忽略数字的正负号；
 	对切片和字符串(% x, % X)会以16进制输出。
 	0 用前置0代替空格填补空缺。
+
+## 补充说明：
+
 	每一个类似Printf的函数，都会有一个同样的Print函数，此函数不需要format字符串，等价于对每一个参数设置为%v。另一个变体Println会在参数之间加上空格并在输出结束后换行。
 	如果参数是一个接口值，将使用内在的具体实现的值，而不是接口本身，%v参数不会被使用。如下：
 	var i interface{} = 23
@@ -306,34 +311,11 @@ Go 语言中的fmt包含有格式化输入输出的函数，类似于C语言的p
 	所有的scan系列函数，如果参数包含Scan方法（或者说实现了Scanner接口），该参数将使用该方法读取文本。另外，如果被填写的参数的数量少于提供的参数的数量，将返回一个错误。
 	所有要被输入的参数都应该是基础类型或者实现了Scanner接口的数据类型的指针。
 	注意：Fscan等函数可以从输入略过一些字符读取需要的字符并返回，这就意味着一个循环的读取程序可能会跳过输入的部分数据。当数据间没有空白时就会导致出现问题。如果读取这提供给Fscan系列函数ReadRune 方法，这个方法可以用来读取字符。如果读取者还提供了UnreadRune 方法，该方法将被用来保存字符以使成功的调用不会丢失数据。为了给一个没有这些功能的读取者添加这俩方法，使用bufio.NewReader。
-	目录
-	func Errorf(format string, a ...interface{}) error
-	func Fprint(w io.Writer, a ...interface{}) (n int, err error)
-	func Fprintf(w io.Writer, format string, a ...interface{}) (n int, err error)
-	func Fprintln(w io.Writer, a ...interface{}) (n int, err error)
-	func Fscan(r io.Reader, a ...interface{}) (n int, err error)
-	func Fscanf(r io.Reader, format string, a ...interface{}) (n int, err error)
-	func Fscanln(r io.Reader, a ...interface{}) (n int, err error)
-	func Print(a ...interface{}) (n int, err error)
-	func Printf(format string, a ...interface{}) (n int, err error)
-	func Println(a ...interface{}) (n int, err error)
-	func Scan(a ...interface{}) (n int, err error)
-	func Scanf(format string, a ...interface{}) (n int, err error)
-	func Scanln(a ...interface{}) (n int, err error)
-	func Sprint(a ...interface{}) string
-	func Sprintf(format string, a ...interface{}) string
-	func Sprintln(a ...interface{}) string
-	func Sscan(str string, a ...interface{}) (n int, err error)
-	func Sscanf(str string, format string, a ...interface{}) (n int, err error)
-	func Sscanln(str string, a ...interface{}) (n int, err error)
-	type Formatter
-	type GoStringer
-	type ScanState
-	type Scanner
-	type State
-	type Stringer
-	Package files
-	doc.go format.go print.go scan.go
+
+# 函数及相关类型的简介
+
+## 函数说明
+
 	func Errorf
 	func Errorf(format string, a ...interface{}) error
 	Errorf根据格式字符串和参数表生成一个字符串，该字符串满足error接口。
@@ -391,6 +373,9 @@ Go 语言中的fmt包含有格式化输入输出的函数，类似于C语言的p
 	func Sscanln
 	func Sscanln(str string, a ...interface{}) (n int, err error)
 	Sscanln类似Sscan，但会在换行符中止，并且存入最后一条后时读取位置必须有换行或者结束符。
+
+## 类型说明
+	
 	type Formatter
 	type Formatter interface {
 	Format(f State, c rune)
