@@ -19,5 +19,5 @@
 	import 	"fmt"
 		
 	func main() {
-		fmt.Sprintln("Format:%s","格式打印出字符串并带换行!")
+		fmt.Sprintln("格式打印出字符串并带换行!")
 	}
