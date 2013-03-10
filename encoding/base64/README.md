@@ -4,13 +4,13 @@
 
 ### 变量
 
-    RFC 4648 里定义的标准 base64 编码方法
+RFC 4648 里定义的标准 base64 编码方法
 ```go
 var StdEncoding = NewEncoding(encodeStd)
 ```
-    修改过的 base64 编码，一般用于URL和文件名
+修改过的 base64 编码，一般用于URL和文件名
 ```go
-    var URLEncoding = NewEncoding(encodeURL)
+var URLEncoding = NewEncoding(encodeURL)
 ```
 
 ### 函数
