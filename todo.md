@@ -58,7 +58,7 @@
     errors            : ###				-
     expvar            : ###				-
     flag              : wankai			-
-    fmt               : ###				-
+    fmt               : liudch			2013-03-08   finished
     go                : ###				-
         - ast         : ###				-
         - build       : ###				-
