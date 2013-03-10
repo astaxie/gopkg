@@ -1,30 +1,25 @@
-# func ContainsAny(s, chars string) bool
+# func Printf(format string, a ...interface{}) (n int, err error)
 
 参数列表
 
-- s 表示需要判断的主串 
-- chars 表示保存的unicode字符串
+- format 打印的格式说明 
+- a... 值变量列表
 
 返回值：
 
-- 返回bool
+- 返回打印字符数 n
+- 返回error
 
 功能说明：
 
-这个函数主要是用来判断s中是否包含chars中的字符中的任意字符，如果包含返回true，否者返回false
+这个函数主要是用来根据说明格式字符串和参数表生成一个打印字符串
 
 代码实例：
 
-  package main
+ 	package main
 	
-	import (
-		"fmt"
-		"strings"
-	)
-	
+	import 	"fmt"
+		
 	func main() {
-		fmt.Println(strings.ContainsAny("team", "i"))       //false
-		fmt.Println(strings.ContainsAny("failure", "wwwi")) //true
-		fmt.Println(strings.ContainsAny("foo", ""))         //false
-		fmt.Println(strings.ContainsAny("", ""))            //false
+		fmt.Printf("Format:%s\n","格式打印!")
 	}
