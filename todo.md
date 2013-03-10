@@ -25,11 +25,11 @@
         - ecdsa       : ###				-
         - elliptic    : ###				-
         - hmac        : ###				-
-        - md5         : ###				-
+        - md5         : wendal			2013-03-10
         - rand        : ###				-
         - rc4         : ###				-
         - rsa         : ###				-
-        - sha1        : ###				-
+        - sha1        : wendal			2013-03-10
         - sha256      : ###				-
         - sha512      : ###				-
         - subtle      : ###				-
@@ -110,7 +110,7 @@
         - syntax      : andelf			2013-03-08
     runtime           : ###				-
         - cgo         : ###				-
-        - debug       : ###				-
+        - debug       : wendal			2013-03-10
         - pprof       : ###				-
     sort              : Hubery			-
     strconv           : chenzhekl		-
