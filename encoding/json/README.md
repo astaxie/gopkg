@@ -5,9 +5,36 @@
 
 函数列表:
 
-- [Compact](Compact.md)
-- [HTMLEscape](HTMLEscape.md)
-- Indent
-- Marshal
-- MarshalIndent
-- Unmarshal
+- [func Compact(dst *bytes.Buffer, src []byte) error](Compact.md)
+- [func HTMLEscape(dst *bytes.Buffer, src []byte)](HTMLEscape.md)
+- func Indent(dst *bytes.Buffer, src []byte, prefix, indent string) error
+- func Marshal(v interface{}) ([]byte, error)
+- func MarshalIndent(v interface{}, prefix, indent string) ([]byte, error)
+- func Unmarshal(data []byte, v interface{}) error
+- type Decoder
+ - func NewDecoder(r io.Reader) *Decoder
+ - func (dec *Decoder) Decode(v interface{}) error
+- type Encoder
+ - func NewEncoder(w io.Writer) *Encoder
+ - func (enc *Encoder) Encode(v interface{}) error
+- type InvalidUTF8Error
+ - func (e *InvalidUTF8Error) Error() string
+- type InvalidUnmarshalError
+ - func (e *InvalidUnmarshalError) Error() string
+- type Marshaler
+- type MarshalerError
+ - func (e *MarshalerError) Error() string
+- type RawMessage
+ - func (m *RawMessage) MarshalJSON() ([]byte, error)
+ - func (m *RawMessage) UnmarshalJSON(data []byte) error
+- type SyntaxError
+ - func (e *SyntaxError) Error() string
+- type UnmarshalFieldError
+ - func (e *UnmarshalFieldError) Error() string
+- type UnmarshalTypeError
+ - func (e *UnmarshalTypeError) Error() string
+- type Unmarshaler
+- type UnsupportedTypeError
+ - func (e *UnsupportedTypeError) Error() string
+- type UnsupportedValueError
+ - func (e *UnsupportedValueError) Error() string
