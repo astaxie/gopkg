@@ -1,38 +1,20 @@
-## func NewDecoder(enc *Encoding, r io.Reader) io.Reader
-
-参数列表：
-
-- enc Encoding 结构指针
-- w io.Reader 接口
-
-返回值：
-
-- io.Reader 接口
-
-功能说明：
-
-返回一个 io.Reader 接口，用于流式解码
-
-代码实例：
-
-```go
 package examples
 
 import (
     "fmt"
     "strings"
-    "encoding/base32"
+    "encoding/base64"
 )
 
 // 从 string 取得输入
 func ExampleNewDecoder1() {
 
-    src := "ORUGS4ZANFZSAYJAORSXG5BAON2HE2LOM4XA===="
+    src := "dGhpcyBpcyBhIHRlc3Qgc3RyaW5nLg=="
     reader := strings.NewReader(src)
 
     dst := ""
 
-    decoder := base32.NewDecoder(base32.StdEncoding, reader)
+    decoder := base64.NewDecoder(base64.StdEncoding, reader)
     // 使用一个很小的输出buffer，测试流式解码
     buf := make([]byte, 2)
     for {
@@ -51,4 +33,3 @@ func ExampleNewDecoder1() {
     // this is a test string.
 
 }
-```

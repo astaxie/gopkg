@@ -1,20 +1,3 @@
-## func NewEncoding(encoder string) *Encoding
-
-参数列表：
-
-- encoder 32字节长的字符串，用做转换表
-
-返回值：
-
-- Encoding 结构指针
-
-功能说明：
-
-计算 base32 解码输出需要的最大字节数
-
-代码实例：
-
-```go
 package examples
 
 import (
@@ -41,4 +24,3 @@ func ExampleNewEncoding1() {
     // true
 
 }
-```

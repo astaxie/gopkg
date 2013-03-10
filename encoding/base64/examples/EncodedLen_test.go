@@ -1,20 +1,3 @@
-## func (enc *Encoding) EncodedLen(n int) int
-
-参数列表：
-
-- n 要进行 base64 编码的字节数
-
-返回值：
-
-- 经过 base64 编码后的字节数
-
-功能说明：
-
-计算编码输出的字节数
-
-代码实例：
-
-```go
 package examples
 
 import (
@@ -36,4 +19,3 @@ func ExampleEncodedLen1() {
     // true
 
 }
-```

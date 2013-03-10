@@ -1,20 +1,3 @@
-## func (e CorruptInputError) Error() string
-
-参数列表：
-
-无
-
-返回值：
-
-- 错误描述
-
-功能说明：
-
-返回错误描述
-
-代码实例：
-
-```go
 package examples
 
 import (
@@ -37,4 +20,3 @@ func ExampleCorruptInputError1() {
     // illegal base32 data at input byte 10
 
 }
-```

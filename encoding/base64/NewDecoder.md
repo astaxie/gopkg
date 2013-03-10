@@ -15,43 +15,40 @@
 
 代码实例：
 
-    package main
+```go
+package examples
 
-    import (
-        "fmt"
-        "strings"
-        "encoding/base64"
-    )
+import (
+    "fmt"
+    "strings"
+    "encoding/base64"
+)
 
-    // 从 string 取得输入
-    func Example1() {
+// 从 string 取得输入
+func ExampleNewDecoder1() {
 
-        fmt.Println("---=== Example1 ===---")
+    src := "dGhpcyBpcyBhIHRlc3Qgc3RyaW5nLg=="
+    reader := strings.NewReader(src)
 
-        src := "dGhpcyBpcyBhIHRlc3Qgc3RyaW5nLg=="
-        reader := strings.NewReader(src)
+    dst := ""
 
-        dst := ""
-
-        decoder := base64.NewDecoder(base64.StdEncoding, reader)
-        // 使用一个很小的输出buffer，测试流式解码
-        buf := make([]byte, 2)
-        for {
-            n, err := decoder.Read(buf)
-            if err != nil {
-                break
-            }
-            if n == 0 {
-                break
-            }
-            dst += string(buf[0:n])
+    decoder := base64.NewDecoder(base64.StdEncoding, reader)
+    // 使用一个很小的输出buffer，测试流式解码
+    buf := make([]byte, 2)
+    for {
+        n, err := decoder.Read(buf)
+        if err != nil {
+            break
         }
-        fmt.Print(dst) // this is a test string.
-        fmt.Print("\n")
+        if n == 0 {
+            break
+        }
+        dst += string(buf[0:n])
     }
+    fmt.Print(dst)
 
-    func main() {
+    // Output:
+    // this is a test string.
 
-        Example1()
-
-    }
+}
+```
