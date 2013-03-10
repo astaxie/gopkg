@@ -12,7 +12,7 @@
 	import (
 		"os"
 		"io"
-		"archive/tar"
+		"archive/zip"
 	)
 	
 	func main() {
