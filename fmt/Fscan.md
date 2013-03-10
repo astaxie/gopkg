@@ -1,30 +1,36 @@
-# func ContainsAny(s, chars string) bool
+# func Fscan(r io.Reader, a ...interface{}) (n int, err error)
 
 参数列表
 
-- s 表示需要判断的主串 
-- chars 表示保存的unicode字符串
+- r 输入文件指针
+- a... 值变量列表
 
 返回值：
 
-- 返回bool
+- 返回成功读取的参数的数量 n
+- 返回error
 
 功能说明：
 
-这个函数主要是用来判断s中是否包含chars中的字符中的任意字符，如果包含返回true，否者返回false
+>这个函数主要是从指定文件读取文本，将空白分割的连续数据顺序存入参数里。
+>
+>换行视同空白。它返回成功读取的参数的数量。
+>
+>如果少于提供的参数的数量，返回值err将报告原因。
+>
 
 代码实例：
 
-  package main
-	
-	import (
-		"fmt"
-		"strings"
-	)
-	
-	func main() {
-		fmt.Println(strings.ContainsAny("team", "i"))       //false
-		fmt.Println(strings.ContainsAny("failure", "wwwi")) //true
-		fmt.Println(strings.ContainsAny("foo", ""))         //false
-		fmt.Println(strings.ContainsAny("", ""))            //false
-	}
+        package main
+
+        import  "fmt"
+        import  "io"
+
+        func main(){
+                str := "34  343  245"
+                var a,b,c int
+                fmt.Fscan(io.Stdin,&a,&b,&c)
+                fmt.Println(a,b,c)
+        }
+
+
