@@ -52,7 +52,7 @@
         - csv         : metadao
         - gob         : ###
         - hex         : ###
-        - json        : xiocode (from 2013-03-10)
+        - json        : xiocode 2013-03-10
         - pem         : ###
         - xml         : ###
     errors            : ###
