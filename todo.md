@@ -52,7 +52,7 @@
         - csv         : metadao			-
         - gob         : ###				-
         - hex         : ###				-
-        - json        : xiocode			-
+        - json        : xiocode			2013-03-10  
         - pem         : ###				-
         - xml         : ###				-
     errors            : ###				-
@@ -84,7 +84,7 @@
         - suffixarray : starchou		-
     io                : ###				-
         - ioutil      : ###				-
-    log               : cdxahz		2012/3/10	finished
+    log               : cdxahz		    2012/3/10	finished
         - syslog      : ###				-
     math              : ###				-
         - big         : ###				-
@@ -93,7 +93,7 @@
     mime              : ###				-
         - multipart   : ###				-
     net               : nalan			-
-        - http        : qinglong1983	2013-03-08
+        - http        : qinglong1983	    2013-03-08
         - mail        : andelf			2013-03-08
         - rpc         : ###				-
         - smtp        : andelf			2013-03-09
