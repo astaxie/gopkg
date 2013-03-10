@@ -1,0 +1,20 @@
+## func (enc *Encoding) DecodeString(s string) ([]byte, error)
+
+参数列表：
+
+- s 要进行 base32 解码的字符串
+
+返回值：
+
+- 经过 base32 解码后的字符串切片
+- 可能的错误
+
+功能说明：
+
+对传入的字符串进行 base323 解码
+
+代码实例：
+
+```go
+!INCLUDE "DecodeString_test.go"
+```

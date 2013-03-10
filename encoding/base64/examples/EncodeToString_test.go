@@ -1,20 +1,3 @@
-## func (enc *Encoding) EncodeToString(src []byte) string
-
-参数列表：
-
-- src 要进行 base64 编码的字符串切片
-
-返回值：
-
-- 经过 base64 编码后的字符串
-
-功能说明：
-
-对传入的字符串切片进行 base64 编码
-
-代码实例：
-
-```go
 package examples
 
 import (
@@ -47,4 +30,3 @@ func ExampleEncodeToString1() {
     // true
 
 }
-```

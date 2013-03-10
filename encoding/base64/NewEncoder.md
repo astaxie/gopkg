@@ -15,54 +15,49 @@
 
 代码实例：
 
-    package main
+```go
+package examples
 
-    import (
-        "fmt"
-        "os"
-        "encoding/base64"
-    )
+import (
+    "fmt"
+    "os"
+    "encoding/base64"
+)
 
-    func Example1() {
+func Example1() {
 
-        fmt.Println("---=== Example1 ===---")
+    // 输出到标准输出
+    encoder := base64.NewEncoder(base64.StdEncoding, os.Stdout)
+    encoder.Write([]byte("this is a test string."))
+    // 必须调用Close，刷新输出
+    encoder.Close()
 
-        // 输出到标准输出
-        encoder := base64.NewEncoder(base64.StdEncoding, os.Stdout)
-        encoder.Write([]byte("this is a test string."))
-        // 必须调用Close，刷新输出
-        encoder.Close() // dGhpcyBpcyBhIHRlc3Qgc3RyaW5nLg==
+    // Output:
+    // dGhpcyBpcyBhIHRlc3Qgc3RyaW5nLg==
 
-        fmt.Print("\n")
-    }
+}
 
-    type StringWriter struct {
-        S string
-    }
-    func (this *StringWriter) Write(p []byte) (n int, err error) {
-        this.S += string(p);
-        return len(p), nil
-    }
+type StringWriter struct {
+    S string
+}
+func (this *StringWriter) Write(p []byte) (n int, err error) {
+    this.S += string(p);
+    return len(p), nil
+}
 
-    // 输出到自定义 Writer
-    func Example2() {
+// 输出到自定义 Writer
+func ExampleNewEncoder2() {
 
-        fmt.Println("---=== Example2 ===---")
+    buf := &StringWriter{}
 
-        buf := &StringWriter{}
+    encoder := base64.NewEncoder(base64.StdEncoding, buf)
+    encoder.Write([]byte("this is a test string."))
+    encoder.Close()
 
-        encoder := base64.NewEncoder(base64.StdEncoding, buf)
-        encoder.Write([]byte("this is a test string."))
-        encoder.Close()
+    fmt.Print(buf.S == "dGhpcyBpcyBhIHRlc3Qgc3RyaW5nLg==")
 
-        fmt.Print(buf.S == "dGhpcyBpcyBhIHRlc3Qgc3RyaW5nLg==") // true
-        fmt.Print("\n")
-    }
+    // Output:
+    // true
 
-    func main() {
-
-        Example1()
-        Example2()
-
-    }
-
+}
+```
