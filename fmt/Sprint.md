@@ -19,5 +19,5 @@
 	import 	"fmt"
 		
 	func main() {
-		fmt.Sprintf("格式打印出字符串!")
+		fmt.Sprint("格式打印出字符串!")
 	}
