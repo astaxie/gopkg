@@ -84,7 +84,7 @@
         - suffixarray : starchou		-
     io                : ###				-
         - ioutil      : ###				-
-    log               : cdxahz			2012-03-10
+    log               : cdxahz		2012/3/10	finished
         - syslog      : ###				-
     math              : ###				-
         - big         : ###				-
