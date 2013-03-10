@@ -5,8 +5,8 @@
 
 函数列表:
 
-- func Compact(dst *bytes.Buffer, src []byte) error
-- func HTMLEscape(dst *bytes.Buffer, src []byte)
+- [func Compact(dst *bytes.Buffer, src []byte) error](Compact.md)
+- [func HTMLEscape(dst *bytes.Buffer, src []byte)](HTMLEscape.md)
 - func Indent(dst *bytes.Buffer, src []byte, prefix, indent string) error
 - func Marshal(v interface{}) ([]byte, error)
 - func MarshalIndent(v interface{}, prefix, indent string) ([]byte, error)
