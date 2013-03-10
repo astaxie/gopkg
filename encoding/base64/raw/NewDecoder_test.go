@@ -1,21 +1,3 @@
-## func NewDecoder(enc *Encoding, r io.Reader) io.Reader
-
-参数列表：
-
-- enc Encoding 结构指针
-- w io.Reader 接口
-
-返回值：
-
-- io.Reader 接口
-
-功能说明：
-
-返回一个 io.Reader 接口，用于流式解码
-
-代码实例：
-
-```go
 package examples
 
 import (
@@ -51,4 +33,3 @@ func ExampleNewDecoder1() {
     // this is a test string.
 
 }
-```

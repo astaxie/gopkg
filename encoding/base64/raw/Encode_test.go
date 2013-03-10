@@ -1,21 +1,3 @@
-## func (enc *Encoding) Encode(dst, src []byte)
-
-参数列表：
-
-- dst 编码缓冲区
-- src 要编码的字符串切片
-
-返回值：
-
-无
-
-功能说明：
-
-对输入的字符串进行 base64 编码
-
-代码实例：
-
-```go
 package examples
 
 import (
@@ -77,4 +59,3 @@ func ExampleEncode2() {
     // 24 true
     // 28 true
 }
-```

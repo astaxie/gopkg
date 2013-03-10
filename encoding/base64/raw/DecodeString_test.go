@@ -1,21 +1,3 @@
-## func (enc *Encoding) DecodeString(s string) ([]byte, error)
-
-参数列表：
-
-- s 要进行 base64 解码的字符串
-
-返回值：
-
-- 经过 base64 解码后的字符串切片
-- 可能的错误
-
-功能说明：
-
-对传入的字符串进行 base64 解码
-
-代码实例：
-
-```go
 package examples
 
 import (
@@ -61,4 +43,3 @@ func ExampleDecodeString1() {
     // true
 
 }
-```

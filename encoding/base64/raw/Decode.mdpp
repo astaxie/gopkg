@@ -1,0 +1,21 @@
+## func (enc *Encoding) Decode(dst, src []byte) (n int, err error)
+
+参数列表：
+
+- dst 解码缓冲区
+- src 要解码的字符串切片
+
+返回值：
+
+- n 解码到缓冲区的字节数
+- err 可能的错误
+
+功能说明：
+
+对输入的字符串进行 base64 解码
+
+代码实例：
+
+```go
+!INCLUDE "Decode_test.go"
+```
