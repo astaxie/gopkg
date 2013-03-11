@@ -40,7 +40,7 @@
 	- func (t Time) Format(layout string) string
 	- func (t Time) GobDecode(buf []byte) error
 	- func (t Time) GobEncode() ([]byte, error)
-	- func (t Time) Hour() int
+	- func (t Time) Hour() int	
 	- func (t Time) ISOWeek() (year, week int)
 	- func (t Time) In(loc *Location) Time
 	- func (t Time) IsZero() bool

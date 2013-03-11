@@ -1,0 +1,2 @@
+# func type Time struct {}
+
