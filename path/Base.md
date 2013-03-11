@@ -1,5 +1,5 @@
 ## func Base(path string) string
-
+~~~
 参数列表
 
 - path 表示需要取路径的字符串 
@@ -27,3 +27,4 @@ func main() {
 	fmt.Println(path.Base(""))	// .	
 	fmt.Println(path.Base("////"))	// /
 }
+~~~
