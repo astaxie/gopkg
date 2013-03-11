@@ -1,6 +1,34 @@
-# 包名
+# sort包函数列表
 
-函数列表
-
-- xxx1
-- xxx2
+- [func Float64s(a []float64)](Float64s.md)
+- [func Float64sAreSorted(a []float64) bool](Float64sAreSorted.md)
+- [func Ints(a []int)](Ints.md)
+- [func IntsAreSorted(a []int) bool](IntsAreSorted.md)
+- [func IsSorted(data Interface) bool](IsSorted.md)
+- [func Search(n int, f func(int) bool) int](Search.md)
+- [func SearchFloat64s(a []float64, x float64) int](SearchFloat64s.md)
+- [func SearchInts(a []int, x int) int](SearchInts.md)
+- [func SearchStrings(a []string, x string) int](SearchStrings.md)
+- [func Sort(data Interface)](Sort.md)
+- [func Strings(a []string)](Strings.md)
+- [func StringsAreSorted(a []string) bool](StringsAreSorted.md)
+- type Float64Slice
+-     func (p Float64Slice) Len() int
+-     func (p Float64Slice) Less(i, j int) bool
+-     func (p Float64Slice) Search(x float64) int
+-     func (p Float64Slice) Sort()
+-     func (p Float64Slice) Swap(i, j int)
+- type IntSlice
+-     func (p IntSlice) Len() int
+-     func (p IntSlice) Less(i, j int) bool
+-     func (p IntSlice) Search(x int) int
+-     func (p IntSlice) Sort()
+-     func (p IntSlice) Swap(i, j int)
+- type Interface
+-     func Reverse(data Interface) Interface
+- type StringSlice
+-     func (p StringSlice) Len() int
+-     func (p StringSlice) Less(i, j int) bool
+-     func (p StringSlice) Search(x string) int
+-     func (p StringSlice) Sort()
+-     func (p StringSlice) Swap(i, j int)
