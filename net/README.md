@@ -49,8 +49,56 @@ P地址长度
 - [LookupCNAME](LookupCNAME.md)
 - [LookupHost](LookupHost.md)
 - [LookupIP](LookupIP.md)
-
+- [LookupPort](LookupPort.md)
+- [LookupSRV](LookupSRV.md)
+- [LookupTXT](LookupTXT.md)
+- [SplitHostPort](SplitHostPort.md)
+- [Dial](Dial.md)
+- [DialTimeout](DialTimeout.md)
+- [Pipe](Pipe.md)
+- [ParseMAC](ParseMAC.md)
+- [IPv4](IPv4.md)
+- [ParseCIDR](ParseCIDR.md)
+- [ParseIP](ParseIP.md)
 
 ## 结构
 
 - [Addr](Addr.md)
+
+- [AddrError](AddrError.md)
+ - [Error](AddrError.md)
+ - [Temporary](AddrError.md)
+ - [Timeout](AddrError.md)
+
+- [Conn](Conn.md)
+ - [Read](Conn.md)
+ - [Write](Conn.md)
+ - [Close](Conn.md)
+ - [LocalAddr](Conn.md)
+ - [RemoteAddr](Conn.md)
+ - [SetDeadline](Conn.md)
+ - [SetReadDeadline](Conn.md)
+ - [SetWriteDeadline](Conn.md)
+
+- [DNSConfigError](DNSConfigError.md)
+ - [Error](DNSConfigError.md)
+ - [Temporary](DNSConfigError.md)
+ - [Timeout](DNSConfigError.md)
+
+- [DNSError](DNSError.md)
+ - [Error](DNSError.md)
+ - [Temporary](DNSError.md)
+ - [Timeout](DNSError.md)
+
+- [Error](Error.md)
+
+- [Flags](Flags.md)
+ - [String](Flags.md)
+
+- [HardwareAddr](HardwareAddr.md)
+ - [String](HardwareAddr.md)
+
+- [IP](IP.md)
+
+
+	
