@@ -30,3 +30,20 @@
     	d, _ = time.ParseDuration("0")
     	fmt.Println(d)
     }
+
+#func (m Month) String() string
+
+返回月份的英文形式
+
+示例代码：
+
+	package main
+	
+	import (
+		"fmt"
+		"time"
+	)
+	
+	func main() {
+		fmt.Println(time.Month(1))
+	}

@@ -17,13 +17,13 @@
 	- func FixedZone(name string, offset int) *Location
 	- func LoadLocation(name string) (*Location, error)
 	- func (l *Location) String() string
-- Month
-	- func (m Month) String() string
-- ParseError
-	- func (e *ParseError) Error() string
-- Ticker
-	- func NewTicker(d Duration) *Ticker
-	- func (t *Ticker) Stop()
+- [Month](Month.md)
+	- [func (m Month) String() string](String.md)
+- [ParseError](ParseError.md)
+	- [func (e *ParseError) Error() string](Error.md)
+- [Ticker](Ticker.md)
+	- [func NewTicker(d Duration) *Ticker](NewTicker.md)
+	- [func (t *Ticker) Stop()](Stop.md)
 - Time
 	- func Date(year int, month Month, day, hour, min, sec, nsec int, loc *Location) Time
 	- func Now() Time
