@@ -31,5 +31,7 @@ Replacer方法列表
 		replacer := strings.NewReplacer(patterns...)
 		format := replacer.Replace("abc is abc is abc")
 		fmt.Println(format)
+		//efg is efg is efg
 		replacer.WriteString(os.Stdout,"abc is abc is abc")
+		//efg is efg is efg
 	}
