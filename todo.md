@@ -35,8 +35,9 @@
         - subtle      : ###				-
         - tls         : ###				-
         - x509        : ###				-
-    database          : ###				-
-        - sql         : ###				-
+    database          : astaxie			2013-03-11
+        - sql         : astaxie			2013-03-11
+			-driver   : astaxie         2013-03-11 
     debug             : ###				-
         - dwarf       : ###				-
         - elf         : ###				-
@@ -93,7 +94,7 @@
     mime              : ###				-
         - multipart   : ###				-
     net               : nalan			-
-        - http        : qinglong1983	    2013-03-08
+        - http        : qinglong1983	2013-03-08
         - mail        : andelf			2013-03-08
         - rpc         : ###				-
         - smtp        : andelf			2013-03-09
@@ -114,7 +115,7 @@
         - pprof       : ###				-
     sort              : Hubery			2013-03-09
     strconv           : chenzhekl		-
-    strings           : astaxie			2013-03-08
+    strings           : astaxie			2013-03-08     finished
     sync              : ###				-
         - atomic      : ###				-
     syscall           : ###				-
