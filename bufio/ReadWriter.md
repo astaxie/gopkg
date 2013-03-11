@@ -36,7 +36,9 @@
 			fmt.Println(string(rbuf[:n]))
 		}
 		// use rw to write
-		rw.Write([]byte("a string to be written"))
+		if _, err := rw.Write([]byte("a string to be written")); err != nil {
+			return
+		}
 		rw.Flush()
 		fmt.Println(string(wb.Bytes()))
 	}
