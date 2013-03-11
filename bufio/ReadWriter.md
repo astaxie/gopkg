@@ -18,8 +18,29 @@
 
 	import (
 		"bufio"
+		"bytes"
+		"fmt"
 	)
 
 	func main() {
+		rb := bytes.NewBuffer([]byte("a string to be read"))
+		wb := bytes.NewBuffer(nil)
+		r := bufio.NewReader(rb)
+		w := bytes.NewBuffer(wb)
+		rw := bufio.NewReadWriter(r, w)
+		// use rw to read
+		var rbuf [128]byte
+		if n, err := rw.Read(rbuf[:]); err != nil {
+			return
+		} else {
+			fmt.Println(string(rbuf[:n]))
+		}
+		// use rw to write
+		rw.Write([]byte("a string to be written"))
+		rw.Flush()
+		fmt.Println(string(wb.Bytes()))
 	}
 
+代码输出：
+	a string to be read
+	a string to be written
