@@ -11,7 +11,7 @@
 
 功能说明
 
-- ReadBytes读取数据直到delim第一次出现，返回读取的字节序列（包括delim）。如果ReadBytes在读到第一个delim之前出错，它返回已读取的数据和那个错误（通常是io.EOF）。只有当返回的数据不以delim结尾时，返回的err才不会空值。
+- ReadBytes读取数据直到delim第一次出现，返回读取的字节序列（包括delim）。如果ReadBytes在读到第一个delim之前出错，它返回已读取的数据和那个错误（通常是io.EOF）。只有当返回的数据不以delim结尾时，返回的err才不为空值。
 
 代码示例
 
