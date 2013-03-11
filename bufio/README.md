@@ -5,4 +5,4 @@
 - [func NewReaderSize(rd io.Reader, size int) *Reader](NewReaderSize.md)
 - [func NewWriter(wr io.Writer) *Writer](NewWriter.md)
 - [func NewWriterSize(wr io.Writer, size int) *Writer](NewWriterSize.md)
--
+- xx
