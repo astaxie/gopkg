@@ -2,7 +2,6 @@
 # 概术:
   Package url parses URLs and implements query escaping. 
 # 函数列表
-
 - func QueryEscape(s string) string
 - func QueryUnescape(s string) (string, error)
 - func Parse(rawurl string) (url *URL, err error)
