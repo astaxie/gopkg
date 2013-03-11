@@ -101,7 +101,7 @@
         - url         : peeped			2013-03-11
     os                : ###				-
         - exec        : ###				-
-        - signal      : ###				-
+        - signal      : mikespook				-
         - user        : ###				-
     path              : novakr			-
         - filepath    : ###				-
