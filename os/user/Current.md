@@ -1,4 +1,4 @@
-## func Contains(s, substr string) bool
+## func Current() (*User, error)
 
 参数列表
 
