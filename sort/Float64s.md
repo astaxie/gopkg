@@ -2,11 +2,11 @@
 
 参数列表
 
-- a 表示未排序的float64切片
+- a 表示要排序的 float64 切片
 
 功能说明：
 
-Float64s 以升序排列float64切片
+Float64s 以升序排列 float64 切片
 
 代码实例：
 
@@ -23,6 +23,8 @@ Float64s 以升序排列float64切片
 		fmt.Println(a)
 		// Output: [1.1 2.2 3.3 4.4 5.5 6.6]
 	}
+	
+
 
 
 
