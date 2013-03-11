@@ -112,7 +112,7 @@
         - cgo         : ###				-
         - debug       : wendal			2013-03-10
         - pprof       : ###				-
-    sort              : Hubery			-
+    sort              : Hubery			2013-03-09
     strconv           : chenzhekl		-
     strings           : astaxie			2013-03-08
     sync              : ###				-
