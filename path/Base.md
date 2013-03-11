@@ -11,9 +11,7 @@
 
 功能说明：
 
-这个函数主要是用来返回最后一个元素的路径,
-		1.如果路径为空返回.
-	  2.如果路径由斜线组成,返回/
+这个函数主要是用来返回最后一个元素的路径,如果路径为空返回.如果路径由斜线组成,返回/
 
 代码实例：
 
@@ -25,7 +23,7 @@ import (
 )
 
 func main() {
-	fmt.Println(path.Base("/a/b"))
-	fmt.Println(path.Base(""))
-	fmt.Println(path.Base("////"))
+	fmt.Println(path.Base("/a/b"))  // b
+	fmt.Println(path.Base(""))		  // .	
+	fmt.Println(path.Base("////"))	// /
 }
