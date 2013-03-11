@@ -1,15 +1,19 @@
 ## func NewReader(rd io.Reader) *Reader
 
 参数列表
+
 - rd io.Reader接口，创建的Reader对象会从此接口读取数据
 
 返回值：
+
 - 返回创建的支持缓存读取的Reader对象
 
 功能说明：
+
 - 创建的支持缓存读取的具有缺省长度缓冲区的Reader对象，Reader对象会从底层的io.Reader接口读取尽量多的数据进行缓存。
 
 代码示例：
+
 	package main
 
 	import (
