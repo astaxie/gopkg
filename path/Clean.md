@@ -1,5 +1,5 @@
 ﻿## func Clean(path string) string
-
+~~~
 参数列表
 
 - path 表示需要清理的路径字符串 
@@ -36,3 +36,4 @@ func main() {
 	fmt.Println(path.Clean("111/../a/c"))// 清除内部..以及前面的元素111; a/c
 	fmt.Println(path.Clean("/../a/b/../././/c"))// 清除/..开头,..以及前面的元素b; /a/c
 }
+~~~
