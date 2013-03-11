@@ -1,10 +1,10 @@
 #  bufio包函数列表
 
-## type ReadWriter
+### type ReadWriter
 
 - [func NewReadWriter(r *Reader, w *Writer) *ReadWriter](ReadWriter.md)
 
-## type Reader
+### type Reader
 
 - [func NewReader(rd io.Reader) *Reader](NewReader.md)
 - [func NewReaderSize(rd io.Reader, size int) *Reader](NewReaderSize.md)
@@ -20,7 +20,7 @@
 - [func (b *Reader) UnreadByte() error]
 - [func (b *Reader) UnreadRune() error]
 
-## type Writer
+### type Writer
 
 - [func NewWriter(wr io.Writer) *Writer](NewWriter.md)
 - [func NewWriterSize(wr io.Writer, size int) *Writer](NewWriterSize.md)
