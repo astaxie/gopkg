@@ -16,7 +16,7 @@
 代码示例
 
 	package main
-	
+
 	import (
 		"bytes"
 		"bufio"
@@ -24,8 +24,17 @@
 	)
 
 	func main() {
+		rb := bytes.NewBuffer([]byte("12345678"))
+		r := bufio.NewReader(rb)
+		var buf [128]byte
+		n, err := r.Read(buf[:])
+		fmt.Printf("%d, %v\n", n, err)
+		fmt.Println(string(buf[:n]))
 	}
 
 代码输出
+	
+	8, <nil>
+	12345678
 
 	
