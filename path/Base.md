@@ -24,6 +24,6 @@ import (
 
 func main() {
 	fmt.Println(path.Base("/a/b"))  // b
-	fmt.Println(path.Base(""))		  // .	
+	fmt.Println(path.Base(""))	// .	
 	fmt.Println(path.Base("////"))	// /
 }
