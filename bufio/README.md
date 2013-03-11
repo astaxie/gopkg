@@ -6,3 +6,4 @@
 - [func NewWriter(wr io.Writer) *Writer](NewWriter.md)
 - [func NewWriterSize(wr io.Reader, size int) *Writer](NewWriterSize.md)
 - 
+- 
