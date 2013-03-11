@@ -60,9 +60,9 @@
 	- func (t Time) Weekday() Weekday
 	- func (t Time) Year() int
 	- func (t Time) Zone() (name string, offset int)
-- Timer
-	- func AfterFunc(d Duration, f func()) *Timer
-	- func NewTimer(d Duration) *Timer
-	- func (t *Timer) Stop() (ok bool)
-- Weekday
-	- func (d Weekday) String() string
+- [Timer](Timer.md)
+	- [func AfterFunc(d Duration, f func()) *Timer](AfterFunc.md)
+	- [func NewTimer(d Duration) *Timer](NewTimer.md)
+	- [func (t *Timer) Stop() (ok bool)](Stop.md)
+- [Weekday](Weekday.md)
+	- [func (d Weekday) String() string](String.md)

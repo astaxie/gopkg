@@ -45,5 +45,27 @@
 	)
 	
 	func main() {
-		fmt.Println(time.Month(1))
+		for i := 1; i <= 12; i++ {
+			fmt.Println(time.Month(i))
+		}
+	}
+
+
+# func (d Weekday) String() string
+
+返回星期的英文形式
+
+代码实例：
+
+	package main
+	
+	import (
+		"fmt"
+		"time"
+	)
+	
+	func main() {
+		for i := 0; i < 7; i++ {
+			fmt.Println(time.Weekday(i))
+		}
 	}
