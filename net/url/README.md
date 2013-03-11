@@ -1,5 +1,6 @@
-# 包名net/url
-
+# 包名:net/url
+# 概术:
+  Package url parses URLs and implements query escaping. 
 # 函数列表
 
 - func QueryEscape(s string) string
