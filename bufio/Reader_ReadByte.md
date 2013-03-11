@@ -1,9 +1,5 @@
 ## func (b *Reader) ReadByte() (c byte, err error)
 
-参数列表：
-
--
-
 返回值
 
 - c 读取的字节
