@@ -1,0 +1,23 @@
+## func ParseIP(s string) IP
+
+参数列表:
+
+- s ip地址字符串
+
+返回列表:
+
+- IP IP结构
+
+解析IP地址,返回IP结构
+
+代码实例:
+
+	package main
+	
+	import "fmt"
+	import "net"
+	
+	func main() {
+		ip := net.ParseIP("74.125.19.99")
+		fmt.Printf("IP:%#v",ip) //返回 IP:[]byte{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0xff, 0xff, 0x4a, 0x7d, 0x13, 0x63}
+	}
