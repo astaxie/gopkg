@@ -3,22 +3,26 @@
 ### Variables
 
 	var (
-	    ErrInvalidUnreadByte = errors.New("bufio: invalid use of UnreadByte")
-	    ErrInvalidUnreadRune = errors.New("bufio: invalid use of UnreadRune")
-    	ErrBufferFull        = errors.New("bufio: buffer full")
-    	ErrNegativeCount     = errors.New("bufio: negative count")
+		ErrInvalidUnreadByte = errors.New("bufio: invalid use of UnreadByte")
+		ErrInvalidUnreadRune = errors.New("bufio: invalid use of UnreadRune")
+		ErrBufferFull        = errors.New("bufio: buffer full")
+		ErrNegativeCount     = errors.New("bufio: negative count")
 	)
 
 ### type ReadWriter
 
 	type ReadWriter struct {
-    	*Reader
-    	*Writer
+		*Reader
+		*Writer
 	}
 	
 - [func NewReadWriter(r *Reader, w *Writer) *ReadWriter](ReadWriter.md)
 
 ### type Reader
+	
+	type Reader struct {
+		// contains filtered or unexported fields
+	}
 
 - [func NewReader(rd io.Reader) *Reader](NewReader.md)
 - [func NewReaderSize(rd io.Reader, size int) *Reader](NewReaderSize.md)
@@ -35,6 +39,10 @@
 - [func (b *Reader) UnreadRune() error](Reader_UnreadRune.md)
 
 ### type Writer
+
+	type Writer struct {
+		// contains filtered or unexported fields
+	}
 
 - [func NewWriter(wr io.Writer) *Writer](NewWriter.md)
 - [func NewWriterSize(wr io.Writer, size int) *Writer](NewWriterSize.md)
