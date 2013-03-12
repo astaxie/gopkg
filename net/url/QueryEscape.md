@@ -23,8 +23,8 @@ escapes the string so it can be safely placed inside a URL query.
 	)
 	
 	func main() {
-		var sUrl = url.QueryEscape("http://www.163.com")
-		fmt.Printf(sUrl)
+		sUrl := url.QueryEscape("http://www.163.com")
+		fmt.Println(sUrl)
 	}
-	//输出结果：http%A(MISSING)%F(MISSING)%F(MISSING)www.163.com
+	//输出结果：http%3A%2F%2Fwww.163.com
 
