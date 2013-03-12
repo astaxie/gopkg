@@ -6,11 +6,11 @@
 
 返回值:
 
-- 返回一个可读写的ReadWriter对象
+- *ReadWriter ReadWriter对象
 
 功能说明：
 
-- 这个函数根据指定的Reader和Writer创建并返回ReadWriter
+- 这个函数根据指定的Reader和Writer创建一个ReadWriter对象
 
 代码示例：
 
