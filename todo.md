@@ -2,8 +2,8 @@
 ### (###表示该包未被领养)
 
     archive
-        - tar         : Unknown			2013-03-08
-        - zip         : Unknown			2013-03-10
+        - tar         : Unknown			2013-03-08	finished
+        - zip         : Unknown			2013-03-10	finished
     bufio             : stevewang		-
     builtin           : ###				-
     bytes             : stevewang		-
@@ -59,7 +59,7 @@
     errors            : ###				-
     expvar            : ###				-
     flag              : wankai			-
-    fmt               : liudch			2013-03-08   finished
+    fmt               : liudch			2013-03-08	finished
     go                : ###				-
         - ast         : ###				-
         - build       : ###				-
@@ -85,12 +85,12 @@
         - suffixarray : starchou		-
     io                : ###				-
         - ioutil      : ###				-
-    log               : cdxahz		    2012/3/10	finished
+    log               : cdxahz		    2012-03-10	finished
         - syslog      : ###				-
     math              : ###				-
         - big         : ###				-
         - cmplx       : ###				-
-        - rand        : athom			-		2013-03-11
+        - rand        : athom			2013-03-11	finished
     mime              : ###				-
         - multipart   : ###				-
     net               : nalan			-
@@ -103,7 +103,7 @@
     os                : ###				-
         - exec        : ###				-
         - signal      : mikespook				-
-        - user        : LostSkyDev		2013-03-1	finished
+        - user        : LostSkyDev		2013-03-10	finished
     path              : novakr			-
         - filepath    : ###				-
     reflect           : 456Vv			-
@@ -115,7 +115,7 @@
         - pprof       : ###				-
     sort              : Hubery			2013-03-09
     strconv           : chenzhekl		-
-    strings           : astaxie			2013-03-08     finished
+    strings           : astaxie			2013-03-08	finished
     sync              : ###				-
         - atomic      : ###				-
     syscall           : ###				-
