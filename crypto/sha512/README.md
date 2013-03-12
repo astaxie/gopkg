@@ -1,6 +1,4 @@
-# 包名
+# crypto/sha512包函数列表
 
-函数列表
-
-- xxx1
-- xxx2
+- [func New() hash.Hash](New.md) 
+- [func New384() hash.Hash](New384.md) 
