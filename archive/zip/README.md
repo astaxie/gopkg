@@ -3,8 +3,8 @@
 ###常量列表
 	// 压缩的方法
 	const (
-    	Store   uint16 = 0
-    	Deflate uint16 = 8
+    	Store   uint16 = 0	// 储存
+    	Deflate uint16 = 8	// 缩小
 	)
 ###变量列表：
 	var (
