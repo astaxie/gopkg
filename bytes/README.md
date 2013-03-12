@@ -55,7 +55,40 @@
 		// contains filtered or unexported fields
     }
 
-函数列表
+- [func NewBuffer(buf []byte) *Buffer]
+- [func NewBufferString(s string) *Buffer]
+- [func (b *Buffer) Bytes() []byte]
+- [func (b *Buffer) Len() int]
+- [func (b *Buffer) Next(n int) []byte]
+- [func (b *Buffer) Read(p []byte) (n int, err error)]
+- [func (b *Buffer) ReadByte() (c byte, err error)]
+- [func (b *Buffer) ReadBytes(delim byte) (line []byte, err error)]
+- [func (b *Buffer) ReadFrom(r io.Reader) (n int64, err error)]
+- [func (b *Buffer) ReadRune() (r rune, size int, err error)]
+- [func (b *Buffer) ReadString(delim byte) (line string, err error)]
+- [func (b *Buffer) Reset()]
+- [func (b *Buffer) String() string]
+- [func (b *Buffer) Truncate(n int)]
+- [func (b *Buffer) UnreadByte() error]
+- [func (b *Buffer) UnreadRune() error]
+- [func (b *Buffer) Write(p []byte) (n int, err error)]
+- [func (b *Buffer) WriteByte(c byte) error]
+- [func (b *Buffer) WriteRune(r rune) (n int, err error)]
+- [func (b *Buffer) WriteString(s string) (n int, err error)]
+- [func (b *Buffer) WriteTo(w io.Writer) (n int64, err error)]
 
-- xxx1
-- xxx2
+### type Reader
+
+	type Reader struct {
+		// contains filtered or unexported fields
+	}
+	
+- [func NewReader(b []byte) *Reader]
+- [func (r *Reader) Len() int]
+- [func (r *Reader) Read(b []byte) (n int, err error)]
+- [func (r *Reader) ReadAt(b []byte, off int64) (n int, err error)]
+- [func (r *Reader) ReadByte() (b byte, err error)]
+- [func (r *Reader) ReadRune() (ch rune, size int, err error)]
+- [func (r *Reader) Seek(offset int64, whence int) (int64, error)]
+- [func (r *Reader) UnreadByte() error]
+- [func (r *Reader) UnreadRune() error]
