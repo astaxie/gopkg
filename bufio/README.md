@@ -27,7 +27,7 @@
 - [func NewReader(rd io.Reader) *Reader](NewReader.md)
 - [func NewReaderSize(rd io.Reader, size int) *Reader](NewReaderSize.md)
 - [func (b *Reader) Buffered() int](Reader_Buffered.md)
-- [func (b *Reader) Peek(n int)](Reader_Peek.md)
+- [func (b *Reader) Peek(n int) ([]byte, error)](Reader_Peek.md)
 - [func (b *Reader) Read(p []byte) (n int, err error)](Reader_Read.md)
 - [func (b *Reader) ReadByte() (c byte, err error)](Reader_ReadByte.md)
 - [func (b *Reader) ReadBytes(delim byte) (line []byte, err error)](Reader_ReadBytes.md)
