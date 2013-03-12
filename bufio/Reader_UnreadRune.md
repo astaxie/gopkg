@@ -6,7 +6,7 @@
 
 功能说明
 
-- UnreadRune取消读取最后一次读取的Unicod字符。如果最后一次读取操作不是ReadRune，UnreadRune会返回一个错误（在这方面它比UnreadByte更严格，因为UnreadByte会取消上次上次任意读操作的最后一个字节）。
+- UnreadRune取消读取最后一次读取的Unicod字符。如果最后一次读取操作不是ReadRune，UnreadRune会返回一个错误（在这方面它比UnreadByte更严格，因为UnreadByte会取消上次任意读操作的最后一个字节）。
 
 代码示例
 
