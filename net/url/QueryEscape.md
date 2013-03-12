@@ -12,6 +12,16 @@
 
 代码实例：
 
+package main
 
+import (
+  "fmt"
+	"net/url"
+)
+
+func main() {
+	var sUrl = url.QueryEscape("http://www.163.com")
+	fmt.Printf(sUrl)
+}
 
 
