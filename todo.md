@@ -81,8 +81,8 @@
         - gif         : ###				-
         - jpeg        : ###				-
         - png         : ###				-
-    index             : starchou		-
-        - suffixarray : starchou		-
+    index             : starchou		2013-03-11
+        - suffixarray : starchou		2013-03-11
     io                : ###				-
         - ioutil      : ###				-
     log               : cdxahz		    2012/3/10	finished
