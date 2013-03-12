@@ -1,5 +1,9 @@
 ## func (b *Writer) WriteByte(c byte) error
 
+参数说明
+
+- c 要写入的字节
+
 返回值
 
 - 错误
