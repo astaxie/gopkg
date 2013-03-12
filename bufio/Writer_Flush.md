@@ -6,7 +6,7 @@
 
 功能说明
 
-- Flush把已经写入缓冲区的数据写入底层的io.Writer
+- Flush把缓冲区中的数据写入底层的io.Writer
 
 代码示例
 
