@@ -10,7 +10,7 @@
 功能说明：
 这个函数主要是用来将s中包裝的網址转义成可进可查询的字符串
 
-代码实例：
+<code>代码实例：</code>
 
 package main
 
@@ -23,5 +23,5 @@ func main() {
 	var sUrl = url.QueryEscape("http://www.163.com")
 	fmt.Printf(sUrl)
 }
-
+输出结果：
 
