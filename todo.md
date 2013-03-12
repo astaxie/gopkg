@@ -2,15 +2,15 @@
 ### (###表示该包未被领养)
 
     archive
-        - tar         : Unknown			2013-03-08
-        - zip         : Unknown			2013-03-10
+        - tar         : Unknown			2013-03-08	finished
+        - zip         : Unknown			2013-03-10	finished
     bufio             : stevewang		-
-    builtin           : ###				-
+    builtin           : nalan			2013-03-12
     bytes             : stevewang		-
     compress          : ###				-
         - bzip2       : ###				-
         - flate       : ###				-
-        - gzip        : Unknown			-
+        - gzip        : Unknown			2013-03-11
         - lzw         : ###				-
         - zlib        : ###				-
     container         : weager			2013-03-10
@@ -35,8 +35,9 @@
         - subtle      : ###				-
         - tls         : ###				-
         - x509        : ###				-
-    database          : ###				-
-        - sql         : ###				-
+    database          : astaxie			2013-03-11
+        - sql         : astaxie			2013-03-11
+			-driver   : astaxie         2013-03-11 
     debug             : ###				-
         - dwarf       : ###				-
         - elf         : ###				-
@@ -58,7 +59,7 @@
     errors            : ###				-
     expvar            : ###				-
     flag              : wankai			-
-    fmt               : liudch			2013-03-08   finished
+    fmt               : liudch			2013-03-08	finished
     go                : ###				-
         - ast         : ###				-
         - build       : ###				-
@@ -84,16 +85,16 @@
         - suffixarray : starchou		-
     io                : ###				-
         - ioutil      : ###				-
-    log               : cdxahz		    2012/3/10	finished
+    log               : cdxahz		    2012-03-10	finished
         - syslog      : ###				-
     math              : ###				-
         - big         : ###				-
         - cmplx       : ###				-
-        - rand        : ###				-
+        - rand        : athom			2013-03-11	finished
     mime              : ###				-
         - multipart   : ###				-
     net               : nalan			-
-        - http        : qinglong1983	    2013-03-08
+        - http        : qinglong1983	2013-03-08
         - mail        : andelf			2013-03-08
         - rpc         : ###				-
         - smtp        : andelf			2013-03-09
@@ -101,8 +102,8 @@
         - url         : peeped			2013-03-11
     os                : ###				-
         - exec        : ###				-
-        - signal      : ###				-
-        - user        : ###				-
+        - signal      : mikespook				-
+        - user        : LostSkyDev		2013-03-10	finished
     path              : novakr			-
         - filepath    : ###				-
     reflect           : 456Vv			-
@@ -114,7 +115,7 @@
         - pprof       : ###				-
     sort              : Hubery			2013-03-09
     strconv           : chenzhekl		-
-    strings           : astaxie			2013-03-08
+    strings           : astaxie			2013-03-08	finished
     sync              : ###				-
         - atomic      : ###				-
     syscall           : ###				-

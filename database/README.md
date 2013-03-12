@@ -1,6 +1,5 @@
-# 包名
+# database 包名
 
-函数列表
+database包主要是数据库的接口定义，下面有子包sql
 
-- xxx1
-- xxx2
+- [sql](sql/README.md)
