@@ -13,7 +13,7 @@
 
 [代码实例]：
 
-  package main	
+  	package main	
 	import (
 		"fmt"
 		"net/url"
@@ -25,7 +25,7 @@
 			fmt.Printf(uUrl)
 		}else{
 			fmt.Println(err)
-	}
+		}
 	}
 	//输出结果：http://www.golang.org
 
