@@ -8,7 +8,8 @@
 -返回值为：转义字符串
 
 功能说明：
-这个函数主要是用来将s中包裝的網址转义成可进可查询的字符串
+escapes the string so it can be safely placed inside a URL query.
+逃避查询，因此它可以被安全的放置在URL查询字符串。请参阅RFC 3986。
 
 代码实例：
 
