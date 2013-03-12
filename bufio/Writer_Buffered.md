@@ -24,11 +24,15 @@
 		fmt.Println(w.Buffered())
 		w.WriteByte('1')
 		fmt.Println(w.Buffered())
+		w.Flush()
+		fmt.Println(w.Buffered())
 	}
 
 代码输出
 
 	0
 	1
+	0
+
 
 	
