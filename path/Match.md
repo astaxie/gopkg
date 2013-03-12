@@ -28,11 +28,7 @@ character-range:
 	c           matches character c (c != '\\', '-', ']')
 	'\\' c      matches character c
 	lo '-' hi   matches character c for lo <= c <= hi
-~~~
 
-
-代码实例：
-~~~
 package main
 
 import (
