@@ -30,8 +30,8 @@
         - rc4         : ###				-
         - rsa         : ###				-
         - sha1        : wendal			2013-03-10
-        - sha256      : ###				-
-        - sha512      : ###				-
+        - sha256      : zhanming		2013-03-12  finished
+        - sha512      : zhanming		2013-03-12  finished
         - subtle      : ###				-
         - tls         : ###				-
         - x509        : ###				-

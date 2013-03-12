@@ -1,6 +1,4 @@
-# 包名
+# crypto/sha256包函数列表
 
-函数列表
-
-- xxx1
-- xxx2
+- [func New() hash.Hash](New.md) 
+- [func New224() hash.Hash](New224.md) 
