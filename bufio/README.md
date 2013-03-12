@@ -1,7 +1,21 @@
 #  bufio包函数列表
 
+### Variables
+
+	var (
+	    ErrInvalidUnreadByte = errors.New("bufio: invalid use of UnreadByte")
+	    ErrInvalidUnreadRune = errors.New("bufio: invalid use of UnreadRune")
+    	ErrBufferFull        = errors.New("bufio: buffer full")
+    	ErrNegativeCount     = errors.New("bufio: negative count")
+	)
+
 ### type ReadWriter
 
+	type ReadWriter struct {
+    	*Reader
+    	*Writer
+	}
+	
 - [func NewReadWriter(r *Reader, w *Writer) *ReadWriter](ReadWriter.md)
 
 ### type Reader
