@@ -28,7 +28,7 @@ import (
 )
 
 func main() {
-	fmt.Println(path.Ext("/a/b/c/bar.css"))
-	fmt.Println(path.Ext("/a/b/c/bar"))
+	fmt.Println(path.Ext("/a/b/c/bar.css")) // .css
+	fmt.Println(path.Ext("/a/b/c/bar"))	// ""
 }
 ~~~
