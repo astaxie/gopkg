@@ -6,7 +6,7 @@
 
 返回值:
 
-- *ReadWriter ReadWriter对象
+- *ReadWriter
 
 功能说明：
 
