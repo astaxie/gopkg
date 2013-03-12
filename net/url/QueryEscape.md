@@ -11,16 +11,17 @@
 这个函数主要是用来将s中包裝的網址转义成可进可查询的字符串
 
 代码实例：
+<code>
 
-<code>package main
-<code>import (
-  <code>"fmt"
-	"net/url"
-)
-
-func main() {
-	var sUrl = url.QueryEscape("http://www.163.com")
-	fmt.Printf(sUrl)
-}
-//输出结果：http%A(MISSING)%F(MISSING)%F(MISSING)www.163.com
+	package main	
+	import (
+		"fmt"
+		"net/url"
+	)
+	
+	func main() {
+		var sUrl = url.QueryEscape("http://www.163.com")
+		fmt.Printf(sUrl)
+	}
+	//输出结果：http%A(MISSING)%F(MISSING)%F(MISSING)www.163.com
 </code>
