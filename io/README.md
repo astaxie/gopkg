@@ -1,6 +1,26 @@
-# 包名
+# 包名  io
 
 函数列表
 
-- xxx1
-- xxx2
+- [func Copy(dst Writer, src Reader) (written int64, err error)](Copy)
+- [func CopyN(dst Writer, src Reader, n int64) (written int64, err error)]()
+- [func LimitReader(r Reader, n int64) Reader]()
+- [func (l *LimitedReader) Read(p []byte) (n int, err error)]()
+- [func MultiReader(readers ...Reader) Reader]()
+- [func MultiWriter(writers ...Writer) Writer]()
+- [func NewSectionReader(r ReaderAt, off int64, n int64) *SectionReader]()
+- [func Pipe() (*PipeReader, *PipeWriter)]()
+- [func ReadAtLeast(r Reader, buf []byte, min int) (n int, err error)]()
+- [func ReadFull(r Reader, buf []byte) (n int, err error)]()
+- [func (r *PipeReader) Close() error]()
+- [func (r *PipeReader) CloseWithError(err error) error]()
+- [func (r *PipeReader) Read(data []byte) (n int, err error)]()
+- [func (s *SectionReader) ReadAt(p []byte, off int64) (n int, err error)]()
+- [func (s *SectionReader) Read(p []byte) (n int, err error)]()
+- [func (s *SectionReader) Seek(offset int64, whence int) (ret int64, err error)]()
+- [func (s *SectionReader) Size() int64]()
+- [func TeeReader(r Reader, w Writer) Reader]()
+- [func (w *PipeWriter) Close() error]()
+- [func (w *PipeWriter) CloseWithError(err error) error]()
+- [func (w *PipeWriter) Write(data []byte) (n int, err error)]()
+- [func WriteString(w Writer, s string) (n int, err error)]()
