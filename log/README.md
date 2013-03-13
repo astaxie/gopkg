@@ -3,6 +3,7 @@
 函数列表
 
 Constants
+
 - [func Fatal(v ...interface{})](Fatal.md)
 - [func Fatalf(format string, v ...interface{})](Fatalf.md)
 - [func Fatalln(v ...interface{})](Fatalln.md)
@@ -17,6 +18,7 @@ Constants
 - [func SetFlags(flag int)](SetFlags.md)
 - [func SetOutput(w io.Writer)](SetOutput.md)
 - [func SetPrefix(prefix string)](SetPrefix.md)
+
 type Logger
 	- [func New(out io.Writer, prefix string, flag int) *Logger](New.md)
     - [func (l *Logger) Fatal(v ...interface{})](lFatal.md)
