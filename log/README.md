@@ -20,6 +20,7 @@ Constants
 - [func SetPrefix(prefix string)](SetPrefix.md)
 
 type Logger
+
 	- [func New(out io.Writer, prefix string, flag int) *Logger](New.md)
     - [func (l *Logger) Fatal(v ...interface{})](lFatal.md)
     - [func (l *Logger) Fatalf(format string, v ...interface{})](lFatalf.md)
