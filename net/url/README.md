@@ -8,5 +8,5 @@
 - func ParseRequestURI(rawurl string) (url *URL, err error)
 - func User(username string) *Userinfo
 - func UserPassword(username, password string) *Userinfo
-- type Values
-  - func ParseQuery(query string) (m Values, err error)
+- [type Values](Values.md)
+  - [func ParseQuery(query string) (m Values, err error)](QueryUnescape.md)
