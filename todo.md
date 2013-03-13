@@ -123,7 +123,7 @@
         - iotest      : ###				-
         - quick       : ###				-
     text              : ###				-
-        - scanner     : cdxahz			2013-03-08
+        - scanner     : cdxahz			2013-03-08  finished
         - tabwriter   : ###				-
         - template    : bluesalt		-
     time              : xuyuanp			-
