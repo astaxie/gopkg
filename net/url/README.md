@@ -8,4 +8,5 @@
 - func ParseRequestURI(rawurl string) (url *URL, err error)
 - func User(username string) *Userinfo
 - func UserPassword(username, password string) *Userinfo
-- func ParseQuery(query string) (m Values, err error)
+- type Values
+  - func ParseQuery(query string) (m Values, err error)
