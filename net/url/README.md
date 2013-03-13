@@ -10,3 +10,8 @@
 - func UserPassword(username, password string) *Userinfo
 - [type Values](Values.md)
   - [func ParseQuery(query string) (m Values, err error)](QueryUnescape.md)
+  - [func (Values) Add](Add.md)
+  - [func (v Values) Del(key string)](Del.md)
+  - [func (v Values) Encode() string](Encode.md)
+  - [func (v Values) Get(key string) string](Get.md)
+  - [func (v Values) Set(key, value string)](Set.md)
