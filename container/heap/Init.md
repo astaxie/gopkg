@@ -19,7 +19,8 @@
 	
 	type myHeap []int  // 定义一个堆，存储结构为数组
 	
-	// 实现了heap.Interface中组合的sort.Interface接口的Less方法
+	// 实现了heap.Interface中组合的sort.Interface接口的Less方法，
+	// 此处的实现是元素i小于元素j，所以此堆是最小堆（任意子树的根元素是子树中最小的）。
 	func (h *myHeap) Less(i, j int) bool {
 		return (*h)[i] < (*h)[j]
 	}
