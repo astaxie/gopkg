@@ -18,7 +18,7 @@
         - list        : weager			2013-03-10
         - ring        : weager			2013-03-10
     crypto            : ###				-
-        - aes         : ###				-
+        - aes         : zhanming		2013-03-14 finished
         - cipher      : ###				-
         - des         : ###				-
         - dsa         : ###				-
