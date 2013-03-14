@@ -16,7 +16,7 @@
 
 - sort.Interface 
 
-	参见[sort.Interface](sort/README.md)接口。
+	参见[sort.Interface](../../sort/README.md)接口。
 	
 	其中的Less(i, j int)方法的实现决定了堆是最大堆还是最小堆，如果该方法的实现是指元素i是否小于元素j，则是最小堆，反之为最大堆，代码实例：
 	
