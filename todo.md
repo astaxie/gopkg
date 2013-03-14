@@ -55,7 +55,7 @@
         - hex         : ###				-
         - json        : xiocode			2013-03-10  
         - pem         : ###				-
-        - xml         : ###				-
+        - xml         : 0x55aa			2013-03-15
     errors            : ###				-
     expvar            : ###				-
     flag              : wankai			-
