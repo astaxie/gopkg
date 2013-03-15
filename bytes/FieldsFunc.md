@@ -11,7 +11,7 @@
 
 功能说明
 
-- FieldsFunc把s解释为UTF-8编码的字符序列，对于每个Unicode字符c，如果f(c)返回false就把c作为分隔字符对s进行拆分。如果没有字符满足f(c)为true，则返回空的切片。
+- FieldsFunc把s解释为UTF-8编码的字符序列，对于每个Unicode字符c，如果f(c)返回true就把c作为分隔字符对s进行拆分。如果所有都字符满足f(c)为true，则返回空的切片。
 
 代码示例
 
