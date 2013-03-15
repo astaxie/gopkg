@@ -24,15 +24,15 @@
 	func main() {
 		s := []byte("a b\tc\rd\ne   f")
 		for i, f := range bytes.Fields(s) {
-			fmt.Printf("[%d]%s(%d)\n", i, string(f), len(f))
+			fmt.Printf("[%d]%s, %d\n", i, string(f), len(f))
 		}
 	}
 
 代码输出
 
-	[0]a(1)
-	[1]b(1)
-	[2]c(1)
-	[3]d(1)
-	[4]e(1)
-	[5]f(1)
+	[0]a, 1
+	[1]b, 1
+	[2]c, 1
+	[3]d, 1
+	[4]e, 1
+	[5]f, 1
