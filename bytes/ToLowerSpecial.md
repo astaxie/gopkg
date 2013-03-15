@@ -11,7 +11,7 @@
 
 功能说明
 
-- ToLowerSpecial返回s的一个副本，并把其中的所有Unicode字母都根据_case指定的规则转换成小写。
+- ToLowerSpecial返回s的一个副本，并把其中的所有Unicode字符都根据_case指定的规则转换成小写。
 
 代码示例
 
