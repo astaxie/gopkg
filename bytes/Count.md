@@ -15,22 +15,23 @@
 
 代码示例
 
-  package main
-  
-  import (
-    "bytes"
-    "fmt"
-  )
-  
-  func main() {
-    s := []byte("1234567777777")
-    fmt.Println(bytes.Count(s, []byte("123")))
-    fmt.Println(bytes.Count(s, []byte("77")))
-    fmt.Println(bytes.Count(s, []byte("777")))
-  }
+	package main
 
+	import (
+		"bytes"
+		"fmt"
+	)
+
+	func main() {
+		s := []byte("1234567777777")
+		fmt.Println(bytes.Count(s, []byte("123")))
+		fmt.Println(bytes.Count(s, []byte("77")))
+		fmt.Println(bytes.Count(s, []byte("777")))
+	}
+
+	
 代码输出
 
-  1  
-  3
-  2
+	1
+	3
+	2
