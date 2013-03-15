@@ -25,17 +25,17 @@
 	func main() {
 		s := []byte("你,好")
 		for i, c := range bytes.Split(s, []byte{','}) {
-			fmt.Printf("%d: %s\n", i, string(c))
+			fmt.Printf("%d: %s(%d)\n", i, string(c), len(c))
 		}
 		for i, c := range bytes.Split(s, nil) {
-			fmt.Printf("%d: %s\n", i, string(c))
+			fmt.Printf("%d: %s(%d)\n", i, string(c), len(c))
 		}
 	}
 
 代码输出
 
-	0: 你
-	1: 好
-	0: 你
-	1: ,
-	2: 好
+	0: 你(3)
+	1: 好(3)
+	0: 你(3)
+	1: ,(1)
+	2: 好(3)
