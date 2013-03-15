@@ -12,24 +12,24 @@
 - [func Int63n(n int64) int64](Int63n.md)
 - [func Intn(n int) int](Intn.md)
 - [func NormFloat64() float64](NormFloat64.md)
-- func Perm(n int) []int]
-- func Seed(seed int64)
-- func Uint32() uint32
+- [func Perm(n int) []int](Perm.md)
+- [func Seed(seed int64)](Seed.md)
+- [func Uint32() uint32](Uint32.md)
 - type Rand
--    func New(src Source) *Rand
--    func (r *Rand) ExpFloat64() float64
--    func (r *Rand) Float32() float32
--    func (r *Rand) Float64() float64
--    func (r *Rand) Int() int
--    func (r *Rand) Int31() int32
--    func (r *Rand) Int31n(n int32) int32
--    func (r *Rand) Int63() int64
--    func (r *Rand) Int63n(n int64) int64
--    func (r *Rand) Intn(n int) int
--    func (r *Rand) NormFloat64() float64
--    func (r *Rand) Perm(n int) []int
--    func (r *Rand) Seed(seed int64)
--    func (r *Rand) Uint32() uint32
+-    [func New(src Source) *Rand](New.md)
+-    [func (r *Rand) ExpFloat64() float64](Rand-ExpFloat64.md)
+-    [func (r *Rand) Float32() float32](Rand-Float32.md)
+-    [func (r *Rand) Float64() float64](Rand-Float64.md)
+-    [func (r *Rand) Int() int](Rand-Int.md)
+-    [func (r *Rand) Int31() int32](Rand-Int31.md)
+-    [func (r *Rand) Int31n(n int32) int32](Rand-Int31n.md)
+-    [func (r *Rand) Int63() int64](Rand-Int63.md)
+-    [func (r *Rand) Int63n(n int64) int64](Rand-Int63n.md)
+-    [func (r *Rand) Intn(n int) int](Rand-Intn.md)
+-    [func (r *Rand) NormFloat64() float64](Rand-NormFloat64.md)
+-    [func (r *Rand) Perm(n int) []int](Rand-Perm.md)
+-    [func (r *Rand) Seed(seed int64)](Rand-Seed.md)
+-    [func (r *Rand) Uint32() uint32](Rand-Uint32.md)
 - type Source
 -    func NewSource(seed int64) Source
 - type Zipf
