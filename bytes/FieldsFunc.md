@@ -23,7 +23,7 @@
 	)
 	
 	func main() {
-		fields1 := bytes.FieldsFunc([]byte("ab,cd,e"), func(c rune) bool {
+		fields1 := bytes.FieldsFunc([]byte("ab,cd,,,e"), func(c rune) bool {
 			return c == ','
 		})
 		fields2 := bytes.FieldsFunc([]byte("你好啊世界"), func(c rune) bool {
