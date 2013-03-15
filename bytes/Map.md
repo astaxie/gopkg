@@ -34,13 +34,17 @@
 		m2 := func(r rune) rune {
 			return r + 1
 		}
+		fmt.Println(string(s1))
 		fmt.Println(string(bytes.Map(m1, s1)))
+		fmt.Println(string(s2))
 		fmt.Println(string(bytes.Map(m2, s2)))
 	}
 
 代码输出
 
+	大家上午好
 	大家下午好
+	12345678
 	23456789
 
 	
