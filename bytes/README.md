@@ -10,46 +10,46 @@ bytes包实现了用于管理字节切片的函数，类似于strings包。
 
 	var ErrTooLarge = errors.New("bytes.Buffer: too large")
 
-- [func Compare(a, b []byte) int]
-- [func Contains(b, subslice []byte) bool]
-- [func Count(s, sep []byte) int]
-- [func Equal(a, b []byte) bool]
-- [func EqualFold(s, t []byte) bool]
-- [func Fields(s []byte) [][]byte]
-- [func FieldsFunc(s []byte, f func(rune) bool) [][]byte]
-- [func HasPrefix(s, prefix []byte) bool]
-- [func HasSuffix(s, suffix []byte) bool]
-- [func Index(s, sep []byte) int]
-- [func IndexAny(s []byte, chars string) int]
-- [func IndexByte(s []byte, c byte) int]
-- [func IndexFunc(s []byte, f func(r rune) bool) int]
-- [func IndexRune(s []byte, r rune) int]
-- [func Join(a [][]byte, sep []byte) []byte]
-- [func LastIndex(s, sep []byte) int]
-- [func LastIndexAny(s []byte, chars string) int]
-- [func LastIndexFunc(s []byte, f func(r rune) bool) int]
-- [func Map(mapping func(r rune) rune, s []byte) []byte]
-- [func Repeat(b []byte, count int) []byte]
-- [func Replace(s, old, new []byte, n int) []byte]
-- [func Runes(s []byte) []rune]
-- [func Split(s, sep []byte) [][]byte]
-- [func SplitAfter(s, sep []byte) [][]byte]
-- [func SplitAfterN(s, sep []byte, n int) [][]byte]
-- [func SplitN(s, sep []byte, n int) [][]byte]
-- [func Title(s []byte) []byte]
-- [func ToLower(s []byte) []byte]
-- [func ToLowerSpecial(_case unicode.SpecialCase, s []byte) []byte]
-- [func ToTitle(s []byte) []byte]
-- [func ToTitleSpecial(_case unicode.SpecialCase, s []byte) []byte]
-- [func ToUpper(s []byte) []byte]
-- [func ToUpperSpecial(_case unicode.SpecialCase, s []byte) []byte]
-- [func Trim(s []byte, cutset string) []byte]
-- [func TrimFunc(s []byte, f func(r rune) bool) []byte]
-- [func TrimLeft(s []byte, cutset string) []byte]
-- [func TrimLeftFunc(s []byte, f func(r rune) bool) []byte]
-- [func TrimRight(s []byte, cutset string) []byte]
-- [func TrimRightFunc(s []byte, f func(r rune) bool) []byte]
-- [func TrimSpace(s []byte) []byte]
+- [func Compare(a, b []byte) int](Compare.md)
+- [func Contains(b, subslice []byte) bool](Contains.md)
+- [func Count(s, sep []byte) int](Count.md)
+- [func Equal(a, b []byte) bool](Equal.md)
+- [func EqualFold(s, t []byte) bool](EqualFold.md)
+- [func Fields(s []byte) [][]byte](Fields.md)
+- [func FieldsFunc(s []byte, f func(rune) bool) [][]byte](FieldsFunc.md)
+- [func HasPrefix(s, prefix []byte) bool](HasPrefix.md)
+- [func HasSuffix(s, suffix []byte) bool](HasSuffix.md)
+- [func Index(s, sep []byte) int](Index.md)
+- [func IndexAny(s []byte, chars string) int](IndexAny.md)
+- [func IndexByte(s []byte, c byte) int](IndexByte.md)
+- [func IndexFunc(s []byte, f func(r rune) bool) int](IndexFunc.md)
+- [func IndexRune(s []byte, r rune) int](IndexRune.md)
+- [func Join(a [][]byte, sep []byte) []byte](Join.md)
+- [func LastIndex(s, sep []byte) int](LastIndex.md)
+- [func LastIndexAny(s []byte, chars string) int](LastIndexAny.md)
+- [func LastIndexFunc(s []byte, f func(r rune) bool) int](LastIndexFunc.md)
+- [func Map(mapping func(r rune) rune, s []byte) []byte](Map.md)
+- [func Repeat(b []byte, count int) []byte](Repeat.md)
+- [func Replace(s, old, new []byte, n int) []byte](Replace.md)
+- [func Runes(s []byte) []rune](Runes.md)
+- [func Split(s, sep []byte) [][]byte](Split.md)
+- [func SplitAfter(s, sep []byte) [][]byte](SplitAfter.md)
+- [func SplitAfterN(s, sep []byte, n int) [][]byte](SplitAfterN.md)
+- [func SplitN(s, sep []byte, n int) [][]byte](SplitN.md)
+- [func Title(s []byte) []byte](Title.md)
+- [func ToLower(s []byte) []byte](ToLower.md)
+- [func ToLowerSpecial(_case unicode.SpecialCase, s []byte) []byte](ToLowerSpecial.md)
+- [func ToTitle(s []byte) []byte](ToTitle.md)
+- [func ToTitleSpecial(_case unicode.SpecialCase, s []byte) []byte](ToTitleSpecial.md)
+- [func ToUpper(s []byte) []byte](ToUpper.md)
+- [func ToUpperSpecial(_case unicode.SpecialCase, s []byte) []byte](ToUpperSpecial.md)
+- [func Trim(s []byte, cutset string) []byte](Trim.md)
+- [func TrimFunc(s []byte, f func(r rune) bool) []byte](TrimFunc.md)
+- [func TrimLeft(s []byte, cutset string) []byte](TrimLeft.md)
+- [func TrimLeftFunc(s []byte, f func(r rune) bool) []byte](TrimLeftFunc.md)
+- [func TrimRight(s []byte, cutset string) []byte](TrimRight.md)
+- [func TrimRightFunc(s []byte, f func(r rune) bool) []byte](TrimRightFunc.md)
+- [func TrimSpace(s []byte) []byte](TrimSpace.md)
 
 ### type Buffer
 
