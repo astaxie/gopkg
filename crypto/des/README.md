@@ -1,6 +1,7 @@
-# 包名
+# crypto/des包函数列表
 
-函数列表
-
-- xxx1
-- xxx2
+- [Constants](Constants.md) 
+- [func NewCipher(key []byte) (cipher.Block, error)](NewCipher.md) 
+- [func NewTripleDESCipher(key []byte) (cipher.Block, error)](NewTripleDESCipher.md) 
+- [type KeySizeError](KeySizeError.md)
+	- [func (k KeySizeError) Error() string](KeySizeError.Error.md)
