@@ -22,7 +22,7 @@
 	)
 
 	func main() {
-		s := []byte("Hello, world!")
+		s := []byte("Hello, World!")
 		fmt.Println(string(bytes.ToLower(s)))
 		fmt.Println(string(s))
 	}
@@ -30,5 +30,5 @@
 代码输出
 
 	hello, world!
-	Hello, world!
+	Hello, World!
 
