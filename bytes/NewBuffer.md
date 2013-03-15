@@ -10,7 +10,7 @@
 
 功能说明
 
-- NewBuffer创建一个新的Buffer，并使用buf进行初始化。这个buf用来作为准备要读的数据；也可以用来指定写缓冲区的大小，这是buf应该是cap(buf)为指定大小，但是len(buf)为0。
+- NewBuffer创建一个新的Buffer，并使用buf进行初始化。这个buf用来作为准备要读的数据；也可以用来指定写缓冲区的大小，这时buf应该是cap(buf)为指定大小，但是len(buf)为0。
 
 代码示例
 
