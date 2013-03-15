@@ -1,5 +1,7 @@
 # bytes
 
+bytes包实现了用于管理字节切片的函数，类似于strings包。
+
 ### Constants
 
 	const MinRead = 512
