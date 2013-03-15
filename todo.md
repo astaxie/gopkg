@@ -20,7 +20,7 @@
     crypto            : ###				-
         - aes         : zhanming		2013-03-14 finished
         - cipher      : ###				-
-        - des         : ###				-
+        - des         : zhanming		2013-03-15 finished
         - dsa         : ###				-
         - ecdsa       : ###				-
         - elliptic    : ###				-
