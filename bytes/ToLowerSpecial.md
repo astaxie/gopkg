@@ -20,12 +20,17 @@
 	import (
 		"bytes"
 		"fmt"
+		"unicode"
 	)
 
 	func main() {
-		
+		s := []byte("Hello, world!")
+		fmt.Println(string(bytes.ToLowerSpecial(unicode.AzeriCase, s)))
+		fmt.Println(string(s))
 	}
 
 代码输出
 
-	
+	hello, world!
+	Hello, world!
+
