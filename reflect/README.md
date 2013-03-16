@@ -1,9 +1,9 @@
-# strings包函数列表
+# reflect包函数列表
 
 - [func Copy(dst, src Value) int](Copy.md)&nbsp;&nbsp;&nbsp;&nbsp;// 复制Slice或Array
 - [func DeepEqual(a1, a2 interface{}) bool](DeepEqual.md)&nbsp;&nbsp;&nbsp;&nbsp;// 平等比较
 - [type ChanDir](ChanDir.md)&nbsp;&nbsp;&nbsp;&nbsp;// 代表信道类型方向
-  - [func (d ChanDir) String() string](ChanDir.String.md)&nbsp;&nbsp;&nbsp;&nbsp;// 以字符形式打印出来
+	- [func (d ChanDir) String() string](ChanDir.String.md)&nbsp;&nbsp;&nbsp;&nbsp;// 以字符形式打印出来
     - const RecvDir ChanDir             = 1 << iota // <-chan&nbsp;&nbsp;&nbsp;&nbsp;// 信道读取
     - const SendDir                                 // chan<-&nbsp;&nbsp;&nbsp;&nbsp;// 信道写入
     - const BothDir = RecvDir | SendDir             // chan&nbsp;&nbsp;&nbsp;&nbsp;// 信道读取与写入
