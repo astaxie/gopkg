@@ -3,12 +3,12 @@
 - [func Copy(dst, src Value) int](Copy.md)&nbsp;&nbsp;&nbsp;&nbsp;// 复制Slice或Array
 - [func DeepEqual(a1, a2 interface{}) bool](DeepEqual.md)&nbsp;&nbsp;&nbsp;&nbsp;// 平等比较
 - [type ChanDir](ChanDir.md)&nbsp;&nbsp;&nbsp;&nbsp;// 代表信道类型方向
-	- [func (d ChanDir) String() string](ChanDir.String.md)&nbsp;&nbsp;&nbsp;&nbsp;// 以字符形式打印出来
+    - func (d ChanDir) String() string&nbsp;&nbsp;&nbsp;&nbsp;// 以字符形式打印出来
     - const RecvDir ChanDir             = 1 << iota // <-chan&nbsp;&nbsp;&nbsp;&nbsp;// 信道读取
     - const SendDir                                 // chan<-&nbsp;&nbsp;&nbsp;&nbsp;// 信道写入
     - const BothDir = RecvDir | SendDir             // chan&nbsp;&nbsp;&nbsp;&nbsp;// 信道读取与写入
 - [type Kind](Kind.md)&nbsp;&nbsp;&nbsp;&nbsp;// 一种数据类型
-    - [func (k Kind) String() string](Kind.String.md)&nbsp;&nbsp;&nbsp;&nbsp;// 以字符形式打印出来
+    - func (k Kind) String() string&nbsp;&nbsp;&nbsp;&nbsp;// 以字符形式打印出来
     - const Invalid Kind = iota&nbsp;&nbsp;&nbsp;&nbsp;// 无效
     - const Bool&nbsp;&nbsp;&nbsp;&nbsp;// 布尔
     - const Int&nbsp;&nbsp;&nbsp;&nbsp;// 整数（有符号）
