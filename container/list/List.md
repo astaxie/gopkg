@@ -13,9 +13,9 @@
 
 ## 结构体字段：
 
-- front *Element：链表中的第一个节点的指针
-- back *Element：链表中最后一个节点的指针
-- len int：链表中节点的个数
+- `front *Element`：链表中的第一个节点的指针
+- `back *Element`：链表中最后一个节点的指针
+- `len int`：链表中节点的个数
 
 ## 函数链表：
 
