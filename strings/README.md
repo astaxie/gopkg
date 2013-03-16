@@ -1,6 +1,6 @@
 # strings包函数列表
 
-- [func Contains(s, substr string) bool](Contains.md) 
+- [   func Contains(s, substr string) bool](Contains.md) 
 - [func ContainsAny(s, chars string) bool](ContainsAny.md) 
 - [func ContainsRune(s string, r rune) bool](ContainsRune.md) 
 - [func Count(s, sep string) int](Count.md) 
