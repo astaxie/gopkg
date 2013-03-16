@@ -10,7 +10,7 @@
 
 功能说明：
 
-Copy 复制src的内容复制到dst，直到dst已被填补满，或src已经耗尽。它返回复制的元素的数量。每个 dst 和 src 的 Kind（样）都必须切片(Slice)“或”数组(Array)，dst和src必须具有相同的元素类型。
+- Copy 复制src的内容复制到dst，直到dst已被填补满，或src已经耗尽。它返回复制的元素的数量。每个 dst 和 src 的 Kind（样）都必须切片(Slice)“或”数组(Array)，dst和src必须具有相同的元素类型。
 
 代码实例：
 
