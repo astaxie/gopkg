@@ -11,7 +11,7 @@
 
 功能说明
 
-- Write把p写入Buffer，返回的n满足n == len(p)，err总是为nil。如果数据太大则Write会panic并产生ErrTooLarge错误。
+- Write把p写入Buffer，返回的n满足n == len(p)，err总是为nil。如果数据太大则Write会panic并产生ErrTooLarge异常。
 
 代码示例
 
