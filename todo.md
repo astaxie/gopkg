@@ -37,7 +37,7 @@
         - x509        : ###				-
     database          : astaxie			2013-03-11
         - sql         : astaxie			2013-03-11
-			-driver   : astaxie         2013-03-11 
+            -driver   : astaxie         2013-03-11
     debug             : ###				-
         - dwarf       : ###				-
         - elf         : ###				-
@@ -53,7 +53,7 @@
         - csv         : metadao			-
         - gob         : ###				-
         - hex         : ###				-
-        - json        : xiocode			2013-03-10  
+        - json        : xiocode			2013-03-10
         - pem         : ###				-
         - xml         : 0x55aa			2013-03-15
     errors            : ###				-
@@ -85,7 +85,7 @@
         - suffixarray : starchou		-
     io                : ###				-
         - ioutil      : ###				-
-    log               : cdxahz		    2012-03-10	finished
+    log               : cdxahz          2012-03-10	finished
         - syslog      : ###				-
     math              : ###				-
         - big         : ###				-
@@ -95,9 +95,9 @@
         - multipart   : ###				-
     net               : nalan			-
         - http        : qinglong1983	2013-03-08
-        - mail        : andelf			2013-03-08
+        - mail        : andelf			2013-03-08 finished
         - rpc         : ###				-
-        - smtp        : andelf			2013-03-09
+        - smtp        : andelf			2013-03-09 finished
         - textproto   : ###				-
         - url         : peeped			2013-03-11
     os                : ###				-
