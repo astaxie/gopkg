@@ -57,27 +57,27 @@ bytes包实现了用于管理字节切片的函数，类似于strings包。
 		// contains filtered or unexported fields
     }
 
-- [func NewBuffer(buf []byte) *Buffer]
-- [func NewBufferString(s string) *Buffer]
-- [func (b *Buffer) Bytes() []byte]
-- [func (b *Buffer) Len() int]
-- [func (b *Buffer) Next(n int) []byte]
-- [func (b *Buffer) Read(p []byte) (n int, err error)]
-- [func (b *Buffer) ReadByte() (c byte, err error)]
-- [func (b *Buffer) ReadBytes(delim byte) (line []byte, err error)]
-- [func (b *Buffer) ReadFrom(r io.Reader) (n int64, err error)]
-- [func (b *Buffer) ReadRune() (r rune, size int, err error)]
-- [func (b *Buffer) ReadString(delim byte) (line string, err error)]
-- [func (b *Buffer) Reset()]
-- [func (b *Buffer) String() string]
-- [func (b *Buffer) Truncate(n int)]
-- [func (b *Buffer) UnreadByte() error]
-- [func (b *Buffer) UnreadRune() error]
-- [func (b *Buffer) Write(p []byte) (n int, err error)]
-- [func (b *Buffer) WriteByte(c byte) error]
-- [func (b *Buffer) WriteRune(r rune) (n int, err error)]
-- [func (b *Buffer) WriteString(s string) (n int, err error)]
-- [func (b *Buffer) WriteTo(w io.Writer) (n int64, err error)]
+- [func NewBuffer(buf []byte) *Buffer](NewBuffer.md)
+- [func NewBufferString(s string) *Buffer](NewBufferString.md)
+- [func (b *Buffer) Bytes() []byte](Buffer_Bytes.md)
+- [func (b *Buffer) Len() int](Buffer_Len.md)
+- [func (b *Buffer) Next(n int) []byte](Buffer_Next.md)
+- [func (b *Buffer) Read(p []byte) (n int, err error)](Buffer_Read.md)
+- [func (b *Buffer) ReadByte() (c byte, err error)](Buffer_ReadByte.md)
+- [func (b *Buffer) ReadBytes(delim byte) (line []byte, err error)](Buffer_ReadBytes.md)
+- [func (b *Buffer) ReadFrom(r io.Reader) (n int64, err error)](Buffer_ReadFrom.md)
+- [func (b *Buffer) ReadRune() (r rune, size int, err error)](Buffer_ReadRune.md)
+- [func (b *Buffer) ReadString(delim byte) (line string, err error)](Buffer_ReadString.md)
+- [func (b *Buffer) Reset()](Buffer_Reset.md)
+- [func (b *Buffer) String() string](Buffer_String.md)
+- [func (b *Buffer) Truncate(n int)](Buffer_Truncate.md)
+- [func (b *Buffer) UnreadByte() error](Buffer_UnreadByte.md)
+- [func (b *Buffer) UnreadRune() error](Buffer_UnreadRune.md)
+- [func (b *Buffer) Write(p []byte) (n int, err error)](Buffer_Write.md)
+- [func (b *Buffer) WriteByte(c byte) error](Buffer_WriteByte.md)
+- [func (b *Buffer) WriteRune(r rune) (n int, err error)](Buffer_WriteRune.md)
+- [func (b *Buffer) WriteString(s string) (n int, err error)](Buffer_WriteString.md)
+- [func (b *Buffer) WriteTo(w io.Writer) (n int64, err error)](Buffer_WriteTo.md)
 
 ### type Reader
 
