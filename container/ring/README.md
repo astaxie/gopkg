@@ -4,7 +4,7 @@
 
 ring包实现了环形双向链表的功能。
 
-函数列表：
+## 函数列表：
 
 - [type Ring](Ring.md)
   - [func New(n int) *Ring](New.md)
