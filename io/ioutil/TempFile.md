@@ -16,24 +16,24 @@
 
 代码实例：
 
-   package main
+	package main
 
-   import "fmt"
-   import "io/ioutil"
+	import "fmt"
+	import "io/ioutil"
 
-   func main() {
-    	f, e := ioutil.TempFile("d:/goTest", "temp")
-    	defer f.Close()
-    	fmt.Println(f.Name())
-    	if e != nil {
-    	 	fmt.Println("create tempFile error")
-    	 	return
-    	}
-    	f.WriteString("hello world!")
-    	b, e1 := ioutil.ReadFile(f.Name())
-    	if e1 != nil {
-    	 	fmt.Println("read error")
-    	 	return
-    	}
-    	fmt.Println(string(b))
-    }
+	func main() {
+		f, e := ioutil.TempFile("d:/goTest", "temp")
+		defer f.Close()
+		fmt.Println(f.Name())
+		if e != nil {
+			fmt.Println("create tempFile error")
+			return
+		}
+		f.WriteString("hello world!")
+		b, e1 := ioutil.ReadFile(f.Name())
+		if e1 != nil {
+			fmt.Println("read error")
+			return
+		}
+		fmt.Println(string(b))
+	}
