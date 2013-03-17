@@ -25,7 +25,7 @@
 		    "fmt"
 		    "reflect"
 		)
-
+		
 		type A struct {
 			A0 int "这是A0"
 			A1 B "嵌套B结构"
@@ -35,6 +35,7 @@
 			B0 string
 			B1 int
 		}
+		
 		func main(){
 			var a A
 			var typeof reflect.Type = reflect.TypeOf(a)
