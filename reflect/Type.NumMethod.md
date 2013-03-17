@@ -13,17 +13,23 @@
 - reflect.TypeOf(x).NumMethod() 返回struct结构绑定的方法集。
 
 代码实例：
-  	
-		type A struct {
-			A0 int
-		}
-		func (f A) test(){}
-		func (f A) test1(){}
-		func (f A) test2(){}
-		
-		func main(){
-			var a A
-			var typeof reflect.Type = reflect.TypeOf(a)
-			fmt.Println(typeof.NumMethod())
-			//>>3
-		}
+	
+	package main
+	import (
+	    "fmt"
+	    "reflect"
+	)
+	
+	type A struct {
+		A0 int
+	}
+	func (f A) test(){}
+	func (f A) test1(){}
+	func (f A) test2(){}
+	
+	func main(){
+		var a A
+		var typeof reflect.Type = reflect.TypeOf(a)
+		fmt.Println(typeof.NumMethod())
+		//>>3
+	}
