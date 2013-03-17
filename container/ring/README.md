@@ -4,9 +4,9 @@
 
 ring包实现了环形双向链表的功能。
 
-## 结构体：
+函数列表：
 
-- type Ring(Ring.md)
+- [type Ring](Ring.md)
   - [func New(n int) *Ring](New.md)
   - [func (r *Ring) Do(f func(interface{}))](Do.md)
   - [func (r *Ring) Len() int](Len.md)
