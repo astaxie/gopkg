@@ -16,16 +16,16 @@
 
 代码实例：
 
-   package main
+	package main
 
-   import "fmt"
-   import "io/ioutil"
+	import "fmt"
+	import "io/ioutil"
 
-   func main() {
-    	f, e := ioutil.TempDir("d:/goTest", "temp")
-    	if e != nil {
-    	 	fmt.Println("create tempDir error")
-    	 	return
-    	}
-    	fmt.Println(f)
-   }
+	func main() {
+		f, e := ioutil.TempDir("d:/goTest", "temp")
+		if e != nil {
+			fmt.Println("create tempDir error")
+			return
+		}
+		fmt.Println(f)
+	}
