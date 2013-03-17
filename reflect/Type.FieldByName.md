@@ -29,7 +29,6 @@
 	}
 	
 	func main(){
-		os.Chdir("G:\\学习\\go\\test")
 		var a A
 		var typeof reflect.Type = reflect.TypeOf(a)
 		
