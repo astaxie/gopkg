@@ -15,18 +15,18 @@
 
 代码实例：
 
-   package main
+	package main
 
-   import "fmt"
-   import "io/ioutil"
+	import "fmt"
+	import "io/ioutil"
 
-   func main() {
-    	dir_list, e := ioutil.ReadDir("d:/goTest")
-    	if e != nil {
-    	 	fmt.Println("read dir error")
-    	 	return
-    	}
-    	for i, v := range dir_list {
-    	 	fmt.Println(i, "=", v.Name())
-    	}
-   }
+	func main() {
+		dir_list, e := ioutil.ReadDir("d:/goTest")
+		if e != nil {
+			fmt.Println("read dir error")
+			return
+		}
+		for i, v := range dir_list {
+			fmt.Println(i, "=", v.Name())
+		}
+	}
