@@ -24,4 +24,5 @@
 		var a int
 		var typeof reflect.Type = reflect.TypeOf(a)
 		fmt.Println(typeof.Name())
+		//>>int
 	}
