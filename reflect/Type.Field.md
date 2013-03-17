@@ -6,7 +6,7 @@
 
 返回值：
 
-- StructField 返回字段的 reflect.StructField 类型
+- .StructField 返回字段的 reflect.StructField 类型
 
 功能说明：
 
