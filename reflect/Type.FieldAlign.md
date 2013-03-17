@@ -13,8 +13,8 @@
 - reflect.TypeOf(interface{}).FieldAlign() 返回字段对齐的值（以字节为单位）
 
 代码实例：
-
-  package main
+	
+	package main
 	import (
 	    "fmt"
 	    "reflect"
