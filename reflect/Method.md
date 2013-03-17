@@ -6,11 +6,11 @@
 
 返回值：
 
-- .Index 返回当前方法的索引号
-- .Name 返回当前方法的名称
-- .PkgPath 返回当前方法包的路径
-- .Type 返回当前方法的 Type 类型
-- .Func 返回当前方法的 Value 类型
+- .Index int 返回当前方法的索引号
+- .PkgPath string 返回当前方法包的路径
+- .Name string 返回当前方法的名称
+- .Type reflect.Type 返回当前方法的 Type 类型
+- .Func reflect.Value 返回当前方法的 Value 类型
 
 功能说明：
 
@@ -31,6 +31,6 @@
 		func main(){
 			var a A
 			var method reflect.Method = reflect.TypeOf(a).Method(0) //0 表示是 a 结构中的第几位函数
-			fmt.Println(method.Index, method.Name, method.PkgPath, method.Type, method.Func)
+			fmt.Println(method.Index, method.PkgPath, method.Name, method.Type, method.Func)
 			//>>0 test main func(main.A) <func(main.A) Value>
 		}
