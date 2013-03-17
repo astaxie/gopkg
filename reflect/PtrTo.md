@@ -13,11 +13,11 @@
 - PtrTo 返回元素 t 的指针类型。例如，t 表示 Foo 类型，则 PtrTo(T) 代表 *Foo 类型。
 
 代码实例：
-
-  package main
+	
+	package main
 	import (
-	    "fmt"
-	    "reflect"
+		"fmt"
+		"reflect"
 	)
 
 	func main(){
