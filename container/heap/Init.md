@@ -2,7 +2,7 @@
 
 参数列表：
 
-- `h` 实现了`heap.Interface`接口的堆对象
+- `h`：实现了`heap.Interface`接口的堆对象
 
 功能说明：
 
