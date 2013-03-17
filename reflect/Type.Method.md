@@ -13,16 +13,21 @@
 - reflect.TypeOf(x).Method(x) 指定索引号返回struct结构绑定的方法
 
 代码实例：
-
-  type A struct {
+	
+	package main
+	import (
+	    "fmt"
+	    "reflect"
+	)
+	
+	type A struct {
 		A0 int
 	}
 	func (f A) test(){}
 	func (f A) test1(){}
 	func (f A) test2(){}
-
+	
 	func main(){
-
 		var a A
 		var typeof reflect.Type = reflect.TypeOf(a)
 		for i:=0; i<typeof.NumMethod(); i++ {
@@ -32,5 +37,4 @@
 			// 2 >>1 main test1 func(main.A) <func(main.A) Value>
 			// 3 >>2 main test2 func(main.A) <func(main.A) Value>
 		}
-
 	}
