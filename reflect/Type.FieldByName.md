@@ -15,10 +15,10 @@
 
 代码实例：
 	
-  package main
+	package main
 	import (
-		"fmt"
-		"reflect"
+	    "fmt"
+	    "reflect"
 	)
 	
 	type A struct {
@@ -29,6 +29,7 @@
 	}
 	
 	func main(){
+		os.Chdir("G:\\学习\\go\\test")
 		var a A
 		var typeof reflect.Type = reflect.TypeOf(a)
 		
