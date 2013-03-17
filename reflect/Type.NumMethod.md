@@ -10,7 +10,7 @@
 
 功能说明：
 
-- NumMethod 返回struct结构绑定的方法集。
+- reflect.TypeOf(x).NumMethod() 返回struct结构绑定的方法集。
 
 代码实例：
   	
