@@ -20,7 +20,7 @@
    import "strings"
 
    func main() {
-    	s := strings.NewReader("hello world!")
-    	r := ioutil.NopCloser(s)
-    	defer r.Close()
+      s := strings.NewReader("hello world!")
+      r := ioutil.NopCloser(s)
+      defer r.Close()
    }
