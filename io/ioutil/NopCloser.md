@@ -14,13 +14,13 @@
 
 代码实例：
 
-   package main
+	package main
 
-   import "io/ioutil"
-   import "strings"
+	import "io/ioutil"
+	import "strings"
 
-   func main() {
-      s := strings.NewReader("hello world!")
-      r := ioutil.NopCloser(s)
-      defer r.Close()
-   }
+	func main() {
+		s := strings.NewReader("hello world!")
+		r := ioutil.NopCloser(s)
+		defer r.Close()
+	}
