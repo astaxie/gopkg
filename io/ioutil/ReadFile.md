@@ -15,16 +15,16 @@
 
 代码实例：
 
-   package main
+	package main
 
-   import "fmt"
-   import "io/ioutil"
+	import "fmt"
+	import "io/ioutil"
 
-   func main() {
-    	b, e := ioutil.ReadFile("d:/goTest/123.txt")
-    	if e != nil {
-    	 	fmt.Println("read file error")
-    	 	return
-    	}
-    	fmt.Println(string(b))
-   }
+	func main() {
+		b, e := ioutil.ReadFile("d:/goTest/123.txt")
+		if e != nil {
+			fmt.Println("read file error")
+			return
+		}
+		fmt.Println(string(b))
+	}
