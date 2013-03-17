@@ -17,17 +17,19 @@
 	import (
 		"fmt"
 		"math/rand"
+		"time"
 	)
 
 	func main() {
 		n := 10
 		i := 0
 		for i < n {
-			x := rand.Perm(5)
-			fmt.Println(x)
+			rand.Seed(time.Now().UnixNano())
+			fmt.Println(rand.Int())
 			i += 1
 		}
 	}
+
 
 
 

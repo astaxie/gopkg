@@ -4,7 +4,7 @@
 
 - r *Rand 随机值产生器结构体指针
 - s float64 Zipf公式的s参数
-- v float64 Zipf公司的v参数
+- v float64 Zipf公式的v参数
 - imax uint64 分布区间的最大值
 
 
