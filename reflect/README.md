@@ -74,7 +74,7 @@
 	- [In(i int) Type](Type.In.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回函数输入参数的第i个类型 Type
 	- [NumOut() int](Type.NumOut.md)&nbsp;&nbsp;&nbsp;&nbsp;// 函数输出参数总数量
 	- [Out(i int) Type](Type.Out.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回函数输出参数的第i个类型 Type
-	- [Align() int](Type.Align.md)&nbsp;&nbsp;&nbsp;&nbsp;// 在分配在内存时候，返回此类型的一个值（以字节为单位）的对齐。
+	- [Align() int](Type.Align.md)&nbsp;&nbsp;&nbsp;&nbsp;// 在分配在内存时的此类型的一个值（以字节为单位）的对齐。
 	- [FieldAlign() int](Type.FieldAlign.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回字段对齐的值（以字节为单位）
 	- [Name() string](Type.Name.md)&nbsp;&nbsp;&nbsp;&nbsp;// 变量名称或字段的名称
 	- [PkgPath() string](Type.PkgPath.md)&nbsp;&nbsp;&nbsp;&nbsp;// 变量的（包）路径名
