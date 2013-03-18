@@ -12,7 +12,7 @@
 
 功能说明
 
-- ReadAt从Reader中偏移为off字节的位置读取len(b)个字节，并返回已读取的字节数；如果遇到错误则返回错误（通常是io.EOF）。已读取的数据不会从Reader中清除。
+- ReadAt从Reader中偏移为off字节的位置读取len(b)个字节，并返回已读取的字节数；如果遇到错误则返回错误（通常是io.EOF）。ReadAt读取的数据不会从Reader中清除。
 
 代码示例
 
