@@ -24,7 +24,7 @@
 		var a func(a1 int, a2 string, a3...interface{})
 		var typeA reflect.Type = reflect.TypeOf(a)
 		fmt.Println(typeA.IsVariadic())
-		//>>chan<- true
+		//>>true
 		
 		var b func(a1 int, a2 string, a3 interface{})
 		var typeB reflect.Type = reflect.TypeOf(b)
