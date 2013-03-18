@@ -57,9 +57,9 @@
 	- Offset    uintptr   &nbsp;&nbsp;&nbsp;&nbsp;// 结构内的偏移量，以字节为单位
 	- Index     []int     &nbsp;&nbsp;&nbsp;&nbsp;// 指数序列，“字段集”中的此字段排在第几。Type.FieldByIndex
 	- Anonymous bool      &nbsp;&nbsp;&nbsp;&nbsp;// 判断是否是匿名的字段。（没有类型）
-- [type StructTag](StructTag.md)&nbsp;&nbsp;&nbsp;&nbsp;// 字符串标记，在结构字段内。
-	- [func (tag StructTag) Get(key string) string](StructTag.Get.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回Key键标记字符串的值
-- [type Type](type.md)&nbsp;&nbsp;&nbsp;&nbsp;// 类型
+- type StructTag&nbsp;&nbsp;&nbsp;&nbsp;// 字符串标记，在结构字段内。
+	- func (tag StructTag) Get(key string) string&nbsp;&nbsp;&nbsp;&nbsp;// 返回Key键标记字符串的值
+- [type Type](Type.md)&nbsp;&nbsp;&nbsp;&nbsp;// 类型
 	- [func PtrTo(t Type) Type](PtrTo.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回元素 t 的指针类型
 	- [func TypeOf(i interface{}) Type](TypeOf.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回反射interface{}接口的类型
 	- [NumMethod() int](Type.NumMethod.md)&nbsp;&nbsp;&nbsp;&nbsp;// 函数总数量，在struct结构中
@@ -89,7 +89,7 @@
 	- [Elem() Type](Type.Elem.md)&nbsp;&nbsp;&nbsp;&nbsp;// 指针指向内存地址
 	- [Key() Type](Type.Key.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回 Map 键Key的类型
 	- [Len() int](Type.Len.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回 Array 的长度
-- [type Value](Type.type.md)&nbsp;&nbsp;&nbsp;&nbsp;// 值
+- [type Value](Value.md)&nbsp;&nbsp;&nbsp;&nbsp;// 值
 	- [func Append(s Value, x ...Value) Value](Append.md)&nbsp;&nbsp;&nbsp;&nbsp;// 追加Slice
 	- [func AppendSlice(s, t Value) Value](AppendSlice.md)&nbsp;&nbsp;&nbsp;&nbsp;// 批量追加Slice
 	- [func Indirect(v Value) Value](Indirect.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回指针源内存地址
