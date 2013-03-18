@@ -10,7 +10,7 @@
 
 功能说明：
 
-- - refelct.Value 是反射Go的接口值。
+- refelct.Value 是反射Go的接口值。
 	- 以下函数返回 reflect.Value 类型
 	- func Append(s Value, x ...Value) Value&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 追加Slice
 	- func AppendSlice(s, t Value) Value&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 批量追加Slice
