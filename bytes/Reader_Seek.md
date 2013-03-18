@@ -34,7 +34,7 @@
 	func seekhead() {
 		fmt.Println("seekhead:")
 		b := bytes.NewReader(data)
-		// 把位置移到0+1==1字节处，对应数据为'2'
+		// 把位置移到起始位置+1字节处，即0+1==1，对应数据为'2'
 		fmt.Println(b.Seek(1, 0))
 		c, _ := b.ReadByte()
 		fmt.Println(string(c))
