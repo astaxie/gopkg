@@ -2,11 +2,11 @@
 
 参数列表：
 
-- `h` 实现了`heap.Interface`的堆对象
+- `h`：实现了`heap.Interface`的堆对象
 
 返回值：
 
-- `interface{}` 堆顶的元素
+- `interface{}`：堆顶的元素
 
 功能说明：
 

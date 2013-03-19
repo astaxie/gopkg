@@ -85,12 +85,12 @@ bytes包实现了用于管理字节切片的函数，类似于strings包。
 		// contains filtered or unexported fields
 	}
 	
-- [func NewReader(b []byte) *Reader]
-- [func (r *Reader) Len() int]
-- [func (r *Reader) Read(b []byte) (n int, err error)]
-- [func (r *Reader) ReadAt(b []byte, off int64) (n int, err error)]
-- [func (r *Reader) ReadByte() (b byte, err error)]
-- [func (r *Reader) ReadRune() (ch rune, size int, err error)]
-- [func (r *Reader) Seek(offset int64, whence int) (int64, error)]
-- [func (r *Reader) UnreadByte() error]
-- [func (r *Reader) UnreadRune() error]
+- [func NewReader(b []byte) *Reader](NewReader.md)
+- [func (r *Reader) Len() int](Reader_Len.md)
+- [func (r *Reader) Read(b []byte) (n int, err error)](Reader_Read.md)
+- [func (r *Reader) ReadAt(b []byte, off int64) (n int, err error)](Reader_ReadAt.md)
+- [func (r *Reader) ReadByte() (b byte, err error)](Reader_ReadByte.md)
+- [func (r *Reader) ReadRune() (ch rune, size int, err error)](Reader_ReadRune.md)
+- [func (r *Reader) Seek(offset int64, whence int) (int64, error)](Reader_Seek.md)
+- [func (r *Reader) UnreadByte() error](Reader_UnreadByte.md)
+- [func (r *Reader) UnreadRune() error](Reader_UnreadRune.md)

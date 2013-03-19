@@ -96,12 +96,12 @@
     net               : nalan			-
         - http        : qinglong1983	2013-03-08
         - mail        : andelf			2013-03-08 finished
-        - rpc         : LostSkyDev	2013-03-19				
+        - rpc         : LostSkyDev	2013-03-19
         - smtp        : andelf			2013-03-09 finished
         - textproto   : ###				-
         - url         : peeped			2013-03-11
-    os                : ###				-
-        - exec        : miraclesu		2013-03-12
+    os                : miraclesu		2013-03-17
+        - exec        : miraclesu		2013-03-12 finished
         - signal      : mikespook				-
         - user        : LostSkyDev		2013-03-10	finished
     path              : novakr			-

@@ -1,95 +1,94 @@
 # net http
-- func CanonicalHeaderKey(s string) string
-- func DetectContentType(data []byte) string
-- func Error(w ResponseWriter, error string, code int)
-- func Handle(pattern string, handler Handler)
-- func HandleFunc(pattern string, handler
-- func(ResponseWriter, *Request))
-- func ListenAndServe(addr string, handler Handler) error
-- func ListenAndServeTLS(addr string, certFile string, keyFile string, handler Handler) error
-- func MaxBytesReader(w ResponseWriter, r io.ReadCloser, n int64) io.ReadCloser
-- func NotFound(w ResponseWriter, r *Request)
-- func ParseHTTPVersion(vers string) (major, minor int, ok bool)
-- func ProxyFromEnvironment(req *Request) (*url.URL, error)
-- func ProxyURL(fixedURL *url.URL) func(*Request) (*url.URL, error)
-- func Redirect(w ResponseWriter, r *Request, urlStr string, code int)
-- func Serve(l net.Listener, handler Handler) error
-- func ServeContent(w ResponseWriter, req *Request, name string, modtime time.Time, content io.ReadSeeker)
-- func ServeFile(w ResponseWriter, r *Request, name string)
-- func SetCookie(w ResponseWriter, cookie *Cookie)
-- func StatusText(code int) string
-- type Client
-    - func (c *Client) Do(req *Request) (resp *Response, err error)
-    - func (c *Client) Get(url string) (resp *Response, err error)
-    - func (c *Client) Head(url string) (resp *Response, err error)
-    - func (c *Client) Post(url string, bodyType string, body io.Reader) (resp *Response, err error)
-    - func (c *Client) PostForm(url string, data url.Values) (resp *Response, err error)
-- type Cookie
-    - func (c *Cookie) String() string
-- type CookieJar
-- type Dir
-    - func (d Dir) Open(name string) (File, error)
-- type File
-- type FileSystem
-- type Flusher
-- type Handler
-    - func FileServer(root FileSystem) Handler
-    - func NotFoundHandler() Handler
-    - func RedirectHandler(url string, code int) Handler
-    - func StripPrefix(prefix string, h Handler) Handler
-    - func TimeoutHandler(h Handler, dt time.Duration, msg string) Handler
-- type HandlerFunc
-    - func (f HandlerFunc) ServeHTTP(w ResponseWriter, r *Request)
-- type Header
-    - func (h Header) Add(key, value string)
-    - func (h Header) Del(key string)
-    - func (h Header) Get(key string) string
-    - func (h Header) Set(key, value string)
-    - func (h Header) Write(w io.Writer) error
-    - func (h Header) WriteSubset(w io.Writer, exclude map[string]bool) error
-- type Hijacker
-- type ProtocolError
-    - func (err *ProtocolError) Error() string
-- type Request
-    - func NewRequest(method, urlStr string, body io.Reader) (*Request, error)
-    - func ReadRequest(b *bufio.Reader) (req *Request, err error)
-    - func (r *Request) AddCookie(c *Cookie)
-    - func (r *Request) Cookie(name string) (*Cookie, error)
-    - func (r *Request) Cookies() []*Cookie
-    - func (r *Request) FormFile(key string) (multipart.File, *multipart.FileHeader, error)
-    - func (r *Request) FormValue(key string) string
-    - func (r *Request) MultipartReader() (*multipart.Reader, error)
-    - func (r *Request) ParseForm() (err error)
-    - func (r *Request) ParseMultipartForm(maxMemory int64) error
-    - func (r *Request) ProtoAtLeast(major, minor int) bool
-    - func (r *Request) Referer() string
-    - func (r *Request) SetBasicAuth(username, password string)
-    - func (r *Request) UserAgent() string
-    - func (r *Request) Write(w io.Writer) error
-    - func (r *Request) WriteProxy(w io.Writer) error
-- type Response
-    - func Get(url string) (resp *Response, err error)
-    - func Head(url string) (resp *Response, err error)
-    - func Post(url string, bodyType string, body io.Reader) (resp *Response, err error)
-    - func PostForm(url string, data url.Values) (resp *Response, err error)
-    - func ReadResponse(r *bufio.Reader, req *Request) (resp *Response, err error)
-    - func (r *Response) Cookies() []*Cookie
-    - func (r *Response) Location() (*url.URL, error)
-    - func (r *Response) ProtoAtLeast(major, minor int) bool
-    - func (r *Response) Write(w io.Writer) error
-- type ResponseWriter
-- type RoundTripper
-    - func NewFileTransport(fs FileSystem) RoundTripper
-- type ServeMux
-    - func NewServeMux() *ServeMux
-    - func (mux *ServeMux) Handle(pattern string, handler Handler)
-    - func (mux *ServeMux) HandleFunc(pattern string, handler func(ResponseWriter, *Request))
-    - func (mux *ServeMux) ServeHTTP(w ResponseWriter, r *Request)
-- type Server
-    - func (srv *Server) ListenAndServe() error
-    - func (srv *Server) ListenAndServeTLS(certFile, keyFile string) error
-    - func (srv *Server) Serve(l net.Listener) error
-- type Transport
-    - func (t *Transport) CloseIdleConnections()
-    - func (t *Transport) RegisterProtocol(scheme string, rt RoundTripper)
-    - func (t *Transport) RoundTrip(req *Request) (resp *Response, err error)
+- [func CanonicalHeaderKey(s string) string](CanonicalHeaderKey.md)
+- [func DetectContentType(data []byte) string](DetectContentType.md)
+- [func Error(w ResponseWriter, error string, code int)](Error.md)
+- [func Handle(pattern string, handler Handler)](Handle.md)
+- [func HandleFunc(pattern string, handler func(ResponseWriter, *Request)) ](Handle.md)
+- [func ListenAndServe(addr string, handler Handler) error](ListenAndServe.md)
+- [func ListenAndServeTLS(addr string, certFile string, keyFile string, handler Handler) error](ListenAndServeTLS.md)
+- [func MaxBytesReader(w ResponseWriter, r io.ReadCloser, n int64) io.ReadCloser](MaxBytesReader.md)
+- [func NotFound(w ResponseWriter, r *Request)](NotFound.md)
+- [func ParseHTTPVersion(vers string) (major, minor int, ok bool)](ParseHTTPVersion.md)
+- [func ProxyFromEnvironment(req *Request) (*url.URL, error)](ProxyFromEnvironment.md)
+- [func ProxyURL(fixedURL *url.URL) func(*Request) (*url.URL, error)](ProxyURL.md)
+- [func Redirect(w ResponseWriter, r *Request, urlStr string, code int)](Redirect.md)
+- [func Serve(l net.Listener, handler Handler) error](Serve.md)
+- [func ServeContent(w ResponseWriter, req *Request, name string, modtime time.Time, content io.ReadSeeker)](ServeContent.md)
+- [func ServeFile(w ResponseWriter, r *Request, name string)](ServeFile.md)
+- [func SetCookie(w ResponseWriter, cookie *Cookie)](SetCookie.md)
+- [func StatusText(code int) string](StatusText.md)
+- [type Client](typeClient.md)
+    - [func (c *Client) Do(req *Request) (resp *Response, err error)](Client_Do.md)
+    - [func (c *Client) Get(url string) (resp *Response, err error)](Client_Get.md)
+    - [func (c *Client) Head(url string) (resp *Response, err error)](Client_Head.md)
+    - [func (c *Client) Post(url string, bodyType string, body io.Reader) (resp *Response, err error)](Client_Post.md)
+    - [func (c *Client) PostForm(url string, data url.Values) (resp *Response, err error)](Client_PostForm.md)
+- [type Cookie](typeCookie.md)
+    - [func (c *Cookie) String() string](Cookie_String.md)
+- [type CookieJar](typeCookieJar.md)
+- [type Dir](typeDir.md)
+    - [func (d Dir) Open(name string) (File, error)](Dir_Open.md)
+- [type File](typeFile.md)
+- [type FileSystem](typeFileSystem.md)
+- [type Flusher](typeFlusher.md)
+- [type Handler](typeHandler.md)
+    - [func FileServer(root FileSystem) Handler](Handler_FileServer.md)
+    - [func NotFoundHandler() Handler](Handler_NotFoundHandler.md)
+    - [func RedirectHandler(url string, code int) Handler](Handler_RedirectHandler.md)
+    - [func StripPrefix(prefix string, h Handler) Handler](Handler_StripPrefix.md)
+    - [func TimeoutHandler(h Handler, dt time.Duration, msg string) Handler](Handler_TimeoutHandler.md)
+- [type HandlerFunc](typeHandlerFunc.md)
+    - [func (f HandlerFunc) ServeHTTP(w ResponseWriter, r *Request)](HandlerFunc_ServeHTTP.md)
+- [type Header](typeHeader.md)
+    - [func (h Header) Add(key, value string)](Header_Add.md)
+    - [func (h Header) Del(key string)](Header_Del.md)
+    - [func (h Header) Get(key string) string](Header_Get.md)
+    - [func (h Header) Set(key, value string)](Header_Set.md)
+    - [func (h Header) Write(w io.Writer) error](Header_Write.md)
+    - [func (h Header) WriteSubset(w io.Writer, exclude map[string]bool) error](Header_WriteSubset.md)
+- [type Hijacker](typeHijacker.md)
+- [type ProtocolError](typeProtocolError.md)
+    - [func (err *ProtocolError) Error() string](ProtocolError_Error.md)
+- [type Request](typeRequest.md)
+    - [func NewRequest(method, urlStr string, body io.Reader) (*Request, error)](Request_NewRequest.md)
+    - [func ReadRequest(b *bufio.Reader) (req *Request, err error)](Request_ReadRequest.md)
+    - [func (r *Request) AddCookie(c *Cookie)](Request_AddCookie.md)
+    - [func (r *Request) Cookie(name string) (*Cookie, error)](Request_Cookie.md)
+    - [func (r *Request) Cookies() []*Cookie](Cookie_Cookies.md)
+    - [func (r *Request) FormFile(key string) (multipart.File, *multipart.FileHeader, error)](Cookies_FormFile.md)
+    - [func (r *Request) FormValue(key string) string](Cookies_FormValue.md)
+    - [func (r *Request) MultipartReader() (*multipart.Reader, error)](Cookies_MultipartReader.md)
+    - [func (r *Request) ParseForm() (err error)](Cookies_ParseForm.md)
+    - [func (r *Request) ParseMultipartForm(maxMemory int64) error](Cookies_ParseMultipartForm.md)
+    - [func (r *Request) ProtoAtLeast(major, minor int) bool](Cookies_ProtoAtLeast.md)
+    - [func (r *Request) Referer() string](Cookies_Referer.md)
+    - [func (r *Request) SetBasicAuth(username, password string)](Cookies_SetBasicAuth.md)
+    - [func (r *Request) UserAgent() string](Cookies_UserAgent.md)
+    - [func (r *Request) Write(w io.Writer) error](Cookies_Write.md)
+    - [func (r *Request) WriteProxy(w io.Writer) error](Cookies_WriteProxy.md)
+- [type Response](typeResponse.md)
+    - [func Get(url string) (resp *Response, err error)](Response_Get.md)
+    - [func Head(url string) (resp *Response, err error)](Response_Head.md)
+    - [func Post(url string, bodyType string, body io.Reader) (resp *Response, err error)](Response_Post.md)
+    - [func PostForm(url string, data url.Values) (resp *Response, err error)](Response_PostForm.md)
+    - [func ReadResponse(r *bufio.Reader, req *Request) (resp *Response, err error)](Response_ReadResponse.md)
+    - [func (r *Response) Cookies() []*Cookie](Response_Cookies.md)
+    - [func (r *Response) Location() (*url.URL, error)](Response_Location.md)
+    - [func (r *Response) ProtoAtLeast(major, minor int) bool](Response_ProtoAtLeast.md)
+    - [func (r *Response) Write(w io.Writer) error](Response_Write.md)
+- [type ResponseWriter](typeResponseWriter.md)
+- [type RoundTripper](typeRoundTripper.md)
+    - [func NewFileTransport(fs FileSystem) RoundTripper](RoundTripper_NewFileTransport.md)
+- [type ServeMux](typeServeMux.md)
+    - [func NewServeMux() *ServeMux](ServeMux_NewServeMux.md)
+    - [func (mux *ServeMux) Handle(pattern string, handler Handler)](ServeMux_Handle.md)
+    - [func (mux *ServeMux) HandleFunc(pattern string, handler func(ResponseWriter, *Request))](ServeMux_HandleFunc.md)
+    - [func (mux *ServeMux) ServeHTTP(w ResponseWriter, r *Request)](ServeMux_ServeHTTP.md)
+- [type Server](typeServer.md)
+    - [func (srv *Server) ListenAndServe() error](Server_ListenAndServe.md)
+    - [func (srv *Server) ListenAndServeTLS(certFile, keyFile string) error](Server_ListenAndServeTLS.md)
+    - [func (srv *Server) Serve(l net.Listener) error](Server_Serve.md)
+- [type Transport](typeTransport.md)
+    - [func (t *Transport) CloseIdleConnections()](Transport_CloseIdleConnections.md)
+    - [func (t *Transport) RegisterProtocol(scheme string, rt RoundTripper)](Transport_RegisterProtocol.md)
+    - [func (t *Transport) RoundTrip(req *Request) (resp *Response, err error)](Transport_RoundTrip.md)
