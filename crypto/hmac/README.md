@@ -1,6 +1,3 @@
-# 包名
+# crypto/hmac包函数列表
 
-函数列表
-
-- xxx1
-- xxx2
+- [func New(h func() hash.Hash, key []byte) hash.Hash](New.md) 
