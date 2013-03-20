@@ -24,7 +24,7 @@
         - dsa         : ###				-
         - ecdsa       : ###				-
         - elliptic    : ###				-
-        - hmac        : ###				-
+        - hmac        : zhanming		2013-03-20 finished
         - md5         : wendal			2013-03-10
         - rand        : ###				-
         - rc4         : ###				-
