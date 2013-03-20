@@ -9,7 +9,7 @@
 - type EscapeError
   - func (e EscapeError) Error() string
 - type URL
-  - func Parse(rawurl string) (url *URL, err error)
+  - [func Parse(rawurl string) (url *URL, err error)](Parse.md)
   - func ParseRequestURI(rawurl string) (url *URL, err error)
   - func (u *URL) IsAbs() bool
   - func (u *URL) Parse(ref string) (*URL, error)
