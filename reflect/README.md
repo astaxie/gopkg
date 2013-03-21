@@ -121,8 +121,8 @@
 	- [func (v Value) InterfaceData() [2]uintptr](Value.InterfaceData.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回一对作为uintptr的接口值
 	- [func (v Value) Slice(beg, end int) Value](Value.Slice.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回指定长度的切片
 	- [func (v Value) CanAddr() bool](Value.CanAddr.md)&nbsp;&nbsp;&nbsp;&nbsp;// 判断是否是可以寻址
-	- [func (v Value) Addr() Value](Value.Addr.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回指针
-	- [func (v Value) UnsafeAddr() uintptr](Value.UnsafeAddr.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回安全指针
+	- [func (v Value) Addr() Value](Value.Addr.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回指针值的地址
+	- [func (v Value) UnsafeAddr() uintptr](Value.UnsafeAddr.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回安全指针指向v的数据
 	- [func (v Value) CanSet() bool](Value.CanSet.md)&nbsp;&nbsp;&nbsp;&nbsp;// 判断是否可以写入值
 	- [func (v Value) Bool() bool](Value.Bool.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回 Bool 类型的值
 	- [func (v Value) SetBool(x bool)](Value.SetBool.md)&nbsp;&nbsp;&nbsp;&nbsp;// 写入 Bool 类型的值
