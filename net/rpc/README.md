@@ -38,11 +38,11 @@
         // contains filtered or unexported fields
     }
 
-- [func Dial(network, address string) (*Client, error)](Client_Dial.md)
-- [func DialHTTP(network, address string) (*Client, error)](Client_DialHTTP.md)
-- [func DialHTTPPath(network, address, path string) (*Client, error)](Client_DialHTTPPath.md)
-- [func NewClient(conn io.ReadWriteCloser) *Client](Client_NewClient.md)
-- [func NewClientWithCodec(codec ClientCodec) *Client](Client_NewClientWithCodec.md)
+- [func Dial(network, address string) (*Client, error)](Dial.md)
+- [func DialHTTP(network, address string) (*Client, error)](DialHTTP.md)
+- [func DialHTTPPath(network, address, path string) (*Client, error)](DialHTTPPath.md)
+- [func NewClient(conn io.ReadWriteCloser) *Client](NewClient.md)
+- [func NewClientWithCodec(codec ClientCodec) *Client](NewClientWithCodec.md)
 - [func (client *Client) Call(serviceMethod string, args interface{}, reply interface{}) error](Client_Call.md)
 - [func (client *Client) Go(serviceMethod string, args interface{}, reply interface{}, done chan *Call) *Call](Client_Go.md)
 
@@ -78,15 +78,14 @@
         // contains filtered or unexported fields
     }
 
-- [func NewServer() *Server](Server_NewServer.md)
+- [func NewServer() *Server](NewServer.md)
 - [func (server *Server) Accept(lis net.Listener)](Server_Accept.md)
 - [func (server *Server) HandleHTTP(rpcPath, debugPath string)](Server_HandleHTTP.md)
 - [func (server *Server) Register(rcvr interface{}) error](Server_Register.md)
 - [func (server *Server) RegisterName(name string, rcvr interface{}) errorr](Server_RegisterName.md)
 - [func (server *Server) ServeCodec(codec ServerCodec)](Server_ServeCodec.md)
-- [func (server *Server) RegisterName(name string, rcvr interface{}) errorr](Server_RegisterName.md)
 - [func (server *Server) ServeConn(conn io.ReadWriteCloser)](Server_ServeConn.md)
-- [func (server *Server) ServeHTTP(w http.ResponseWriter, req *http.Request)](Server_ServeHTTP.md)
+- [func (server *Server) ServeHTTP(w http.ResponseWriter, req *http.Request)]
 - [func (server *Server) ServeRequest(codec ServerCodec) error](Server_ServeRequest.md)
 
 ### type ServerCodec
