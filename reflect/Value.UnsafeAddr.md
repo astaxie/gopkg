@@ -25,4 +25,4 @@
 		var value reflect.Value = reflect.ValueOf(&a)
 		fmt.Println(value.Elem().UnsafeAddr(), uintptr(unsafe.Pointer(&a)))
 		//>>282918960 282918960
-}
+	}
