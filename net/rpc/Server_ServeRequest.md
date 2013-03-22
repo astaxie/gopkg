@@ -12,7 +12,7 @@
 
 代码实例：
 
-   package main
+    package main
 
     import (
         "bufio"
