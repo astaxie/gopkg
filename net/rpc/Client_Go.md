@@ -4,6 +4,7 @@
 -serviceMethod 服务名称
 -args 发送的参数
 -reply 回复
+-done 一个Call类型的channel
 返回值：
 -Call 返回一个Call
 
@@ -13,13 +14,10 @@
 
 代码实例：
 
-     package main
+    package main
 
     import (
-        "bufio"
-        "encoding/gob"
         "errors"
-        "io"
         "log"
         "net"
         "net/rpc"
@@ -67,20 +65,21 @@
         time.Sleep(2 * time.Second)
 
         //使用TCP的方式进行网络请求
-        client := rpc.Dial("tcp", "127.0.0.1:1234")
+        client, _ := rpc.Dial("tcp", "127.0.0.1:1234")
 
         defer client.Close()
 
         args := &Args{7, 8}
         var reply int
-        call := client.Go("Arith.Multiply", args, &reply)
-        call = call.Done
+        call := client.Go("Arith.Multiply", args, &reply, make(chan *rpc.Call, 1))
+        call = <-call.Done
         if call.Error != nil {
             log.Println("error:", call.Error)
         }
         log.Println(reply)
 
     }
+
 
 
 
