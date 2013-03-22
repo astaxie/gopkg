@@ -123,7 +123,7 @@
 
         args := &Args{7, 8}
         var reply int
-        err = client.Call("Arith.Multiply", args, &reply)
+        err = client.Call("Serve.Multiply", args, &reply)
         if err != nil {
             log.Fatal("arith error:", err)
         }
