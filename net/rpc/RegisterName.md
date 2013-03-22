@@ -17,7 +17,6 @@
     package main
 
     import (
-        "errors"
         "log"
         "net"
         "net/rpc"
@@ -34,14 +33,6 @@
 
     func (t *Arith) Multiply(args *Args, reply *int) error {
         *reply = args.A * args.B
-        return nil
-    }
-    func (t *Arith) Divide(args *Args, quo *Quotient) error {
-        if args.B == 0 {
-            return errors.New("divide by zero")
-        }
-        quo.Quo = args.A / args.B
-        quo.Rem = args.A % args.B
         return nil
     }
 
@@ -64,27 +55,20 @@
         time.Sleep(2 * time.Second)
 
         //设置客户端
-        address, err := net.ResolveTCPAddr("tcp", "127.0.0.1:1234")
-        if err != nil {
-            panic(err)
-        }
-        //使用TCP的方式进行网络请求
-        conn, _ := net.DialTCP("tcp", nil, address)
-        defer conn.Close()
-        //创建一个客户端
-        client := rpc.NewClient(conn)
+        client, _ := rpc.Dial("tcp", "127.0.0.1:1234")
         defer client.Close()
 
         args := &Args{7, 8}
         var reply int
         //呼叫请求
-        err = client.Call("Server.Multiply", args, &reply)
+        err := client.Call("Server.Multiply", args, &reply)
         if err != nil {
             log.Fatal("arith error:", err)
         }
         log.Println(reply)
 
     }
+
 
 
 
