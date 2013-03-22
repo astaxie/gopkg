@@ -37,14 +37,6 @@
         *reply = args.A * args.B
         return nil
     }
-    func (t *Arith) Divide(args *Args, quo *Quotient) error {
-        if args.B == 0 {
-            return errors.New("divide by zero")
-        }
-        quo.Quo = args.A / args.B
-        quo.Rem = args.A % args.B
-        return nil
-    }
 
     type myClientCodec struct {
         rwc    io.ReadWriteCloser
@@ -53,18 +45,18 @@
         encBuf *bufio.Writer
     }
 
-    func (c *myClientCodec) ReadRequestHeader(r *rpc.Request) error {
-        log.Println("调用:ReadRequestHeader")
+    func (c *myClientCodec) ReadResponseHeader(r *rpc.Response) error {
+        log.Println("调用:ReadResponseHeader")
         return c.dec.Decode(r)
     }
 
-    func (c *myClientCodec) ReadRequestBody(body interface{}) error {
-        log.Println("调用:ReadRequestBody")
+    func (c *myClientCodec) ReadResponseBody(body interface{}) error {
+        log.Println("调用:ReadResponseBody")
         return c.dec.Decode(body)
     }
 
-    func (c *myClientCodec) WriteResponse(r *rpc.Response, body interface{}) (err error) {
-        log.Println("调用:WriteResponse")
+    func (c *myClientCodec) WriteRequest(r *rpc.Request, body interface{}) (err error) {
+        log.Println("调用:WriteRequest")
         if err = c.enc.Encode(r); err != nil {
             return
         }
@@ -108,7 +100,7 @@
         defer conn.Close()
         //创建一个客户端
         buf := bufio.NewWriter(conn)
-        codec := &myServerCodec{conn, gob.NewDecoder(conn), gob.NewEncoder(buf), buf}
+        codec := &myClientCodec{conn, gob.NewDecoder(conn), gob.NewEncoder(buf), buf}
         client := rpc.NewClientWithCodec(codec)
         defer client.Close()
 
@@ -125,5 +117,12 @@
 
 
 
-结果:2013/03/21 20:29:45 56
+
+结果:
+    2013/03/22 20:56:35 调用:WriteRequest
+    2013/03/22 20:56:35 调用:ReadResponseHeader
+    2013/03/22 20:56:35 调用:ReadResponseBody
+    2013/03/22 20:56:35 调用:ReadResponseHeader
+    2013/03/22 20:56:35 56
+    2013/03/22 20:56:35 调用:Close
 
