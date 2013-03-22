@@ -14,10 +14,9 @@
 
 代码实例：
 
-      package main
+    package main
 
     import (
-        "errors"
         "log"
         "net"
         "net/rpc"
@@ -36,28 +35,19 @@
         *reply = args.A * args.B
         return nil
     }
-    func (t *Arith) Divide(args *Args, quo *Quotient) error {
-        if args.B == 0 {
-            return errors.New("divide by zero")
-        }
-        quo.Quo = args.A / args.B
-        quo.Rem = args.A % args.B
-        return nil
-    }
 
     func main() {
         //设置服务端
         arith := new(Arith)
         //注册服务
-        server := rpc.NewServer()
-        server.Register(arith)
+        rpc.Register(arith)
         //创建连接监听
         l, e := net.Listen("tcp", ":1234")
         if e != nil {
             log.Fatal("listen error:", e)
         }
         //设置连接监听
-        go server.Accept(l)
+        go rpc.Accept(l)
 
         //暂停2秒，让服务器有足够的时间开启
         time.Sleep(2 * time.Second)
