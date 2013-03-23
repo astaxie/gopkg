@@ -19,8 +19,8 @@
  	package main
 	
 	import 	"fmt"
-	import  "io"
+	import  "os"
 		
 	func main() {
-		fmt.Fprintln(io.Stdout,"默认格式加换行打印!")
+		fmt.Fprintln(os.Stdout,"默认格式加换行打印!")
 	}
