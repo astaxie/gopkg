@@ -20,8 +20,8 @@
  	package main
 	
 	import 	"fmt"
-	import  "io"
+	import  "os"
 		
 	func main() {
-		fmt.Fprintf(io.Stdout,"Format:%s\n","格式打印!")
+		fmt.Fprintf(os.Stdout,"Format:%s\n","格式打印!")
 	}
