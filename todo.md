@@ -116,8 +116,8 @@
     sort              : Hubery			2013-03-09
     strconv           : chenzhekl		-
     strings           : astaxie			2013-03-08	finished
-    sync              : ###				-
-        - atomic      : ###				-
+    sync              : SnowWee			2013-03-23
+        - atomic      : SnowWee			2013-03-23
     syscall           : ###				-
     testing           : ###				-
         - iotest      : ###				-
