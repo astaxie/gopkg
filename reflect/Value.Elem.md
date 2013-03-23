@@ -14,10 +14,10 @@
 
 代码实例：
 	
-  package main
+	package main
 	import (
-	    "fmt"
-	    "reflect"
+		"fmt"
+		"reflect"
 	)
 	
 	func main(){
