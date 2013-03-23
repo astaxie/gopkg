@@ -19,8 +19,8 @@
  	package main
 	
 	import 	"fmt"
-	import  "io"
+	import  "os"
 		
 	func main() {
-		fmt.Fprint(io.Stdout,"默认格式打印!")
+		fmt.Fprint(os.Stdout,"默认格式打印!")
 	}
