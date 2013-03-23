@@ -21,11 +21,11 @@
         package main
 
         import  "fmt"
-        import  "io"
+        import  "os"
 
         func main(){
                	var a,b,c int
-                fmt.Fscanf(io.Stdin,"%d,%d,%d",&a,&b,&c)
+                fmt.Fscanf(os.Stdin,"%d,%d,%d",&a,&b,&c)
                 fmt.Println(a,b,c)
         }
 
