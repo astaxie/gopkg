@@ -23,14 +23,19 @@
 
         package main
 
-        import  "fmt"
-        import  "io"
+        import "fmt"
+        import "os"
 
-        func main(){
-                str := "34  343  245"
-                var a,b,c int
-                fmt.Fscan(io.Stdin,&a,&b,&c)
-                fmt.Println(a,b,c)
+        var (
+            n, a, b, c int
+	    err        error
+        )
+
+        func main() {
+
+	    n, err = fmt.Fscan(os.Stdin, &a, &b, &c)
+   	    fmt.Println(a, b, c)
+	    fmt.Printf("输入正确参数%v个，错误参数原因:%v", n, err)
         }
 
 
