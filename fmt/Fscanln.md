@@ -24,11 +24,14 @@
 
         package main
 
-        import  "fmt"
+        import  (
+        "fmt"
+        "os"
+        )
 
         func main(){
                 var a,b,c int
-                fmt.Fcanln(io.Stdin,&a,&b,&c)
+                fmt.Fcanln(os.Stdin,&a,&b,&c)
                 fmt.Println(a,b,c)
         }
 
