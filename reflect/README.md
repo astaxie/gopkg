@@ -124,6 +124,7 @@
 	- [func (v Value) Addr() Value](Value.Addr.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回指针值的地址
 	- [func (v Value) UnsafeAddr() uintptr](Value.UnsafeAddr.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回安全指针指向v的数据
 	- [func (v Value) CanSet() bool](Value.CanSet.md)&nbsp;&nbsp;&nbsp;&nbsp;// 判断是否可以写入值
+	- [func (v Value) Set(x Value)](Value.Set.md)&nbsp;&nbsp;&nbsp;&nbsp;// 写入新值，支持所有类型
 	- [func (v Value) Bool() bool](Value.Bool.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回 Bool 类型的值
 	- [func (v Value) SetBool(x bool)](Value.SetBool.md)&nbsp;&nbsp;&nbsp;&nbsp;// 写入 Bool 类型的值
 	- [func (v Value) Bytes() []byte](Value.Bytes.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回 Byte 类型的值
@@ -150,7 +151,6 @@
 	- [func (v Value) Len() int](Value.Len.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回 Array，Array 长度
 	- [func (v Value) Cap() int](Value.Cap.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回 Slice 容量
 	- [func (v Value) SetLen(n int)](Value.SetLen.md)&nbsp;&nbsp;&nbsp;&nbsp;// 改变 Slice 长度
-	- [func (v Value) Set(x Value)](Value.Set.md)&nbsp;&nbsp;&nbsp;&nbsp;// 写入新值，支持所有类型
 	- [func (v Value) Recv() (x Value, ok bool)](Value.Recv.md)&nbsp;&nbsp;&nbsp;&nbsp;// 信道接收
 	- [func (v Value) Send(x Value)](Value.Send.md)&nbsp;&nbsp;&nbsp;&nbsp;// 信道发送
 	- [func (v Value) TryRecv() (x Value, ok bool)](Value.TryRecv.md)&nbsp;&nbsp;&nbsp;&nbsp;// 信道尝式接收
