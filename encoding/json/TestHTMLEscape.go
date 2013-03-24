@@ -1,18 +1,25 @@
 package main
 
 import (
-	"bytes"
 	"encoding/json"
 	"fmt"
+	"os"
 )
 
+type ColorGroup struct {
+	ID     int
+	Name   string
+	Colors []string
+}
+
 func main() {
-	dst := new(bytes.Buffer)
-	src := []byte(`{
-		"Name":"tony.shao",
-		"Age":25,
-		"Job":"Programmer<Escaping>"
-		}`)
-	json.HTMLEscape(dst, src)
-	fmt.Println(dst)
+	group := ColorGroup{
+		ID:     1,
+		Name:   "Reds",
+		Colors: []string{"Crimson", "Red", "Ruby", "Maroon"},
+	}
+	encoder := json.NewEncoder(os.Stdout)
+	if err := encoder.Encode(group); err != nil {
+		fmt.Printf("failed encoding to writer: %s", err)
+	}
 }
