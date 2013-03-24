@@ -7,9 +7,9 @@
 
 - [func Compact(dst *bytes.Buffer, src []byte) error](Compact.md)
 - [func HTMLEscape(dst *bytes.Buffer, src []byte)](HTMLEscape.md)
-- func Indent(dst *bytes.Buffer, src []byte, prefix, indent string) error
-- func Marshal(v interface{}) ([]byte, error)
-- func MarshalIndent(v interface{}, prefix, indent string) ([]byte, error)
+- [func Indent(dst *bytes.Buffer, src []byte, prefix, indent string) error](Indent.md)
+- [func Marshal(v interface{}) ([]byte, error)](Marshal.md)
+- [func MarshalIndent(v interface{}, prefix, indent string) ([]byte, error)](MarshalIndent.md)
 - func Unmarshal(data []byte, v interface{}) error
 - type Decoder
  - func NewDecoder(r io.Reader) *Decoder
