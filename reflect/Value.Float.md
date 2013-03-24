@@ -1,4 +1,4 @@
-# ffunc (v Value) Float() float64
+# func (v Value) Float() float64
 
 参数列表
 
