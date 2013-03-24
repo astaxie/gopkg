@@ -1,17 +1,16 @@
-func Marshal(v interface{}) ([]byte, error)
+func Unmarshal(data []byte, v interface{}) error
 
 参数列表:
 
-- v 序列化对象
+- v 反序列化JSON对象
 
 返回值:
 
-- []byte 序列化的结果
 - error 错误
 
 功能说明:
 
-这个函数主要是用于将对象v序列化为json格式[]byte,
+这个函数主要是用于反序列化JSON编码的data，并将结果存储到指向v的指针
 
 代码实例:
 
@@ -20,30 +19,28 @@ func Marshal(v interface{}) ([]byte, error)
 	import (
 		"encoding/json"
 		"fmt"
-		"os"
 	)
 	
-	type ColorGroup struct {
-		ID     int
-		Name   string
-		Colors []string
-	}
-	
 	func main() {
-		group := ColorGroup{
-			ID:     1,
-			Name:   "Reds",
-			Colors: []string{"Crimson", "Red", "Ruby", "Maroon"},
+		var jsonBlob = []byte(`[
+			{"Name": "Platypus", "Order": "Monotremata"},
+			{"Name": "Quoll",    "Order": "Dasyuromorphia"}
+		]`)
+		type Animal struct {
+			Name  string
+			Order string
 		}
-		b, err := json.Marshal(group)
+		var animals []Animal
+		err := json.Unmarshal(jsonBlob, &animals)
 		if err != nil {
 			fmt.Println("error:", err)
 		}
-		os.Stdout.Write(b)
+		fmt.Printf("%+v", animals)
 	}
+
 
 
 
 显示结果:
 
-	{"ID":1,"Name":"Reds","Colors":["Crimson","Red","Ruby","Maroon"]}
+	[{Name:Platypus Order:Monotremata} {Name:Quoll Order:Dasyuromorphia}]
