@@ -27,27 +27,24 @@
 # 结构
 
 - [type Interface](Interface.md)
-
-- [type Float64Slice](Float64Slice.md)
-
-	- Len() int
-	- Less(i, j int) bool
-	- Search(x float64) int
-	- Sort()
-	- Swap(i, j int)
 	
+- [type Float64Slice](Float64Slice.md)	
+ - Len() int
+ - Less(i, j int) bool
+ - Search(x float64) int
+ - Sort()
+ - Swap(i, j int)
+		
 - [type IntSlice](IntSlice.md)
-
-	- Len() int
-	- Less(i, j int) bool
-	- Search(x int) int
-	- Sort()
-	- Swap(i, j int)
-
+ - Len() int
+ - Less(i, j int) bool
+ - Search(x int) int
+ - Sort()
+ - Swap(i, j int)
+			
 - [type StringSlice](StringSlice.md)
-
-	- Len() int
-	- Less(i, j int) bool
-	- Search(x string) int
-	- Sort()
-	- Swap(i, j int)
+ - Len() int
+ - Less(i, j int) bool
+ - Search(x string) int
+ - Sort()
+ - Swap(i, j int)
