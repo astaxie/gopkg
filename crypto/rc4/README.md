@@ -1,6 +1,9 @@
-# 包名
+# crypto/rc4包函数列表
 
-函数列表
-
-- xxx1
-- xxx2
+- [type Cipher](Cipher.md) 
+	- [func NewCipher(key []byte) (*Cipher, error)](NewCipher.md) 
+	- [func (c *Cipher) Reset()](Reset.md)
+	- [func (c *Cipher) XORKeyStream(dst, src []byte)](XORKeyStream.md)
+- [type KeySizeError](KeySizeError.md)
+	- [func (k KeySizeError) Error() string](KeySizeError.Error.md)
+- [Bugs](Bugs.md)

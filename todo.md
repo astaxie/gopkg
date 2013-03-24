@@ -27,7 +27,7 @@
         - hmac        : zhanming		2013-03-20 finished
         - md5         : wendal			2013-03-10
         - rand        : ###				-
-        - rc4         : ###				-
+        - rc4         : zhanming		2013-03-25 finished
         - rsa         : ###				-
         - sha1        : wendal			2013-03-10
         - sha256      : zhanming		2013-03-12  finished
