@@ -1,9 +1,9 @@
 package main
 
 import (
-	"bytes"
 	"encoding/json"
 	"fmt"
+	"os"
 )
 
 type ColorGroup struct {
@@ -13,9 +13,13 @@ type ColorGroup struct {
 }
 
 func main() {
-	dst := new(bytes.Buffer)
-	src := []byte(`{"ID":1,"Name":"Reds","Colors":["Crimson","Red","Ruby","Maroon"]}`)
-	json.Indent(dst, src, "##", "**")
-	json.Indent(dst, src, "##", "**")
-	fmt.Println(dst)
+	group := ColorGroup{
+		ID:     1,
+		Name:   "Reds",
+		Colors: []string{"Crimson", "Red", "Ruby", "Maroon"},
+	}
+	encoder := json.NewEncoder(os.Stdout)
+	if err := encoder.Encode(group); err != nil {
+		fmt.Printf("failed encoding to writer: %s", err)
+	}
 }
