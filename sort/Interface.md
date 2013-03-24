@@ -16,7 +16,7 @@
 
 		任何实现了 sort.Interface 的类型（一般为集合），均可使用该包中的方法进行排序。这些方法要求集合内列出元素的索引为整数。
 		
-代码案例：
+代码案例（一）：
 	
 	package main
 	
@@ -86,5 +86,28 @@
 		// pancreas (131g)	
 	}
 	
-
-											
+代码案例（二）：
+	
+	package main
+	
+	import (
+		"fmt"
+		"sort"
+	)
+	
+	type Reverse struct {
+		sort.Interface
+	}
+	
+	// Less returns the opposite of the embedded implementation's Less method.
+	
+	func (r Reverse) Less(i, j int) bool {
+		return r.Interface.Less(j, i)
+	}
+	
+	func main() {
+		s := []int{5, 2, 6, 3, 1, 4} // unsorted
+		sort.Sort(Reverse{sort.IntSlice(s)})
+		fmt.Println(s) // [6 5 4 3 2 1]
+	}
+												
