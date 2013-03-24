@@ -7,16 +7,16 @@
 
 - [func Compact(dst *bytes.Buffer, src []byte) error](Compact.md)
 - [func HTMLEscape(dst *bytes.Buffer, src []byte)](HTMLEscape.md)
-- func Indent(dst *bytes.Buffer, src []byte, prefix, indent string) error
-- func Marshal(v interface{}) ([]byte, error)
-- func MarshalIndent(v interface{}, prefix, indent string) ([]byte, error)
-- func Unmarshal(data []byte, v interface{}) error
+- [func Indent(dst *bytes.Buffer, src []byte, prefix, indent string) error](Indent.md)
+- [func Marshal(v interface{}) ([]byte, error)](Marshal.md)
+- [func MarshalIndent(v interface{}, prefix, indent string) ([]byte, error)](MarshalIndent.md)
+- [func Unmarshal(data []byte, v interface{}) error](Unmarshal.md)
 - type Decoder
- - func NewDecoder(r io.Reader) *Decoder
- - func (dec *Decoder) Decode(v interface{}) error
+ - [func NewDecoder(r io.Reader) *Decoder](NewDecoder.md)
+ - [func (dec *Decoder) Decode(v interface{}) error](Decode.md)
 - type Encoder
- - func NewEncoder(w io.Writer) *Encoder
- - func (enc *Encoder) Encode(v interface{}) error
+ - [func NewEncoder(w io.Writer) *Encoder](NewEncoder.md)
+ - [func (enc *Encoder) Encode(v interface{}) error](Encoder.md)
 - type InvalidUTF8Error
  - func (e *InvalidUTF8Error) Error() string
 - type InvalidUnmarshalError
