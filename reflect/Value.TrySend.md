@@ -11,6 +11,7 @@
 功能说明：
 
 - reflect.ValueOf(interface{}).TrySend(reflect.Value) 尝试通道发送 x 给 v，但不会阻止。如果出现恐慌，表示v的Kind不是Chan。如果该值被发送，则返回true，否则返回false。在GO中，x的值必须是分配给该通道的元素类型。
+
 代码实例：
 	
 	package main
