@@ -22,7 +22,7 @@
 	
 	func main(){
 		var a string = "A"
-		var value reflect.Value = reflect.ValueOf(&a).Elem()
+		var value reflect.Value = reflect.ValueOf(&a)
 		
 		//判断指针是否指向内存地址
 		if !value.CanSet() {
