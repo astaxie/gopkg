@@ -148,8 +148,8 @@
 	- [func (v Value) MapKeys() []Value](Value.MapKeys.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回 Map 中的所有 Key 名称
 	- [func (v Value) MapIndex(key Value) Value](Value.MapIndex.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回 Map 中 Key 的值
 	- [func (v Value) SetMapIndex(key, val Value)](Value.SetMapIndex.md)&nbsp;&nbsp;&nbsp;&nbsp;// 设置 Mep 的 值
-	- [func (v Value) Len() int](Value.Len.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回 Array，Array 长度
-	- [func (v Value) Cap() int](Value.Cap.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回 Slice 容量
+	- [func (v Value) Len() int](Value.Len.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回 Slice，Array，Chan，Map，String 长度
+	- [func (v Value) Cap() int](Value.Cap.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回 Slice，Array，Chan 容量
 	- [func (v Value) SetLen(n int)](Value.SetLen.md)&nbsp;&nbsp;&nbsp;&nbsp;// 改变 Slice 长度
 	- [func (v Value) Recv() (x Value, ok bool)](Value.Recv.md)&nbsp;&nbsp;&nbsp;&nbsp;// 信道接收
 	- [func (v Value) Send(x Value)](Value.Send.md)&nbsp;&nbsp;&nbsp;&nbsp;// 信道发送
