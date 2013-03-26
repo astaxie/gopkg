@@ -24,12 +24,12 @@
         - dsa         : ###				-
         - ecdsa       : ###				-
         - elliptic    : ###				-
-        - hmac        : zhanming		2013-03-20 finished
-        - md5         : wendal			2013-03-10
+        - hmac        : zhanming		2013-03-20 	finished
+        - md5         : zhanming		2013-03-26	finished
         - rand        : ###				-
-        - rc4         : zhanming		2013-03-25 finished
+        - rc4         : zhanming		2013-03-25 	finished
         - rsa         : ###				-
-        - sha1        : wendal			2013-03-10
+        - sha1        : zhanming		2013-03-26	finished
         - sha256      : zhanming		2013-03-12  finished
         - sha512      : zhanming		2013-03-12  finished
         - subtle      : ###				-
