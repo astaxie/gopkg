@@ -83,7 +83,7 @@
         - png         : ###				-
     index             : starchou		-
         - suffixarray : starchou		-
-    io                : ###				-
+    io                : lodevil			-
         - ioutil      : ###				-
     log               : cdxahz          2012-03-10	finished
         - syslog      : ###				-
