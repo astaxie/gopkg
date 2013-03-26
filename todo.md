@@ -119,7 +119,7 @@
     sync              : SnowWee			2013-03-23
         - atomic      : SnowWee			2013-03-23
     syscall           : ###				-
-    testing           : ###				-
+    testing           : hyper-carrot	2013-03-26
         - iotest      : ###				-
         - quick       : ###				-
     text              : ###				-
