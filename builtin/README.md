@@ -12,8 +12,8 @@ builtin 包为Go的预声明标识符提供了文档. 此处列出的条目其�
 - [type ComplexType](ComplexType.md)
 	- [func complex(r, i FloatType) ComplexType](complex.md)
 - [type FloatType](FloatType.md)
-	func imag(c ComplexType) FloatType
-	func real(c ComplexType) FloatType
+	- [func imag(c ComplexType) FloatType](imag.md)
+	- [func real(c ComplexType) FloatType](real.md)
 - [type IntegerType](IntegerType.md)
 - [type Type](Type.md)
 	- [func make(Type, size IntegerType) Type](make.md)
