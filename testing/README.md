@@ -1,6 +1,40 @@
-# 包名
+# testing包函数列表
 
-函数列表
+- func Main(matchString func(pat, str string) (bool, error), tests []InternalTest, benchmarks []InternalBenchmark, examples []InternalExample)
+- func RunBenchmarks(matchString func(pat, str string) (bool, error), benchmarks []InternalBenchmark)
+- func RunExamples(matchString func(pat, str string) (bool, error), examples []InternalExample) (ok bool)
+- func RunTests(matchString func(pat, str string) (bool, error), tests []InternalTest) (ok bool)
+- func Short() bool
+- type B
+  - func (c *B) Error(args ...interface{})
+  - func (c *B) Errorf(format string, args ...interface{})
+  - func (c *B) Fail()
+  - func (c *B) FailNow()
+  - func (c *B) Failed() bool
+  - func (c *B) Fatal(args ...interface{})
+  - func (c *B) Fatalf(format string, args ...interface{})
+  - func (c *B) Log(args ...interface{})
+  - func (c *B) Logf(format string, args ...interface{})
+  - func (b *B) ResetTimer()
+  - func (b *B) SetBytes(n int64)
+  - func (b *B) StartTimer()
+  - func (b *B) StopTimer()
+- type BenchmarkResult
+  - func Benchmark(f func(b *B)) BenchmarkResult
+  - func (r BenchmarkResult) NsPerOp() int64
+  - func (r BenchmarkResult) String() string
+- type InternalBenchmark
+- type InternalExample
+- type InternalTest
+- type T
+  - func (c *T) Error(args ...interface{})
+  - func (c *T) Errorf(format string, args ...interface{})
+  - func (c *T) Fail()
+  - func (c *T) FailNow()
+  - func (c *T) Failed() bool
+  - func (c *T) Fatal(args ...interface{})
+  - func (c *T) Fatalf(format string, args ...interface{})
+  - func (c *T) Log(args ...interface{})
+  - func (c *T) Logf(format string, args ...interface{})
+  - func (t *T) Parallel()
 
-- xxx1
-- xxx2
