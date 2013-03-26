@@ -3,7 +3,7 @@
 参数列表
 
 - s Value 原切片数据，类型是 reflect.Value
-- x Value 新切片数据，将此切片追加到s切片中，类型是 reflect.Value
+- t Value 新切片数据，将此切片追加到s切片中，类型是 reflect.Value
 
 返回值：
 
