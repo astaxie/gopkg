@@ -15,61 +15,42 @@ recover 内建函数使程序可以管理恐慌中的 goroutine 。 recover 在�
 代码实例：
 
 ```go
+// Go Try catch 版 Hello World
 package main
 
 import (
 	"fmt"
 )
 
-func f() {
+func Try(fun func(), catch func(interface{})) {
 	defer func() {
-		fmt.Println("f() defer")
-	}()
-	fmt.Println("f() before panic")
-	panic(0)
-	// 此后的代码不会被执行
-	fmt.Println("after panic")
-	defer func() {
-		fmt.Println("f() defer agin")
-	}()
-}
-
-func g(label int) {
-	// 模拟 try catch 并继续执行
-	catch := func() {
-		if e := recover(); e != nil {
-			fmt.Println("panicing has ", e)
-			defer g(1)
-		} else {
-			fmt.Println("no panicing")
+		if err := recover(); err != nil {
+			catch(err)
 		}
-		return
-	}
-	defer catch()
-	if label == 1 {
-		goto CATCH
-	}
-	f()
-	if label == 0 {
-		goto NEXT
-	}
-CATCH:
-	fmt.Println("catch call f()")
-NEXT:
-	fmt.Println("end")
+	}()
+	fun()
+}
+func say(s string) {
+	fmt.Println(s)
 }
 func main() {
-	g(0)
+	say("Hello")
+	Try(
+		func() {
+			panic("World")
+		},
+		func(e interface{}) {
+			fmt.Println("catch", e)
+		})
+	say("end")
 }
+
 ```
 
 输出:
 
 ~~~
-f() before panic
-f() defer
-panicing has  0
-catch call f()
+Hello
+catch World
 end
-no panicing
 ~~~
