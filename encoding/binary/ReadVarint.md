@@ -28,12 +28,12 @@ ReadVarint从r中解析并返回一个int64类型的数据及出现的错误。
     	var buf []byte = []byte{144, 192, 192, 129, 132, 136, 140, 144, 16, 0, 1, 1}
     	var bbuf []byte = []byte{144, 192, 192, 129, 132, 136, 140, 144, 192, 192, 1, 1}
     
-    	num, ret := binary.ReadVarint(bytes.NewBuffer(sbuf))
-    	fmt.Println(num, ret) //0 EOF
+    	num, err := binary.ReadVarint(bytes.NewBuffer(sbuf))
+    	fmt.Println(num, err) //0 EOF
     
-    	num, ret = binary.ReadVarint(bytes.NewBuffer(buf))
-    	fmt.Println(num, ret) //580990878187261960 <nil>
+    	num, err = binary.ReadVarint(bytes.NewBuffer(buf))
+    	fmt.Println(num, err) //580990878187261960 <nil>
     
-    	num, ret = binary.ReadVarint(bytes.NewBuffer(bbuf))
-    	fmt.Println(num, ret) //2310373135097532424 binary: varint overflows a 64-bit integer
+    	num, err = binary.ReadVarint(bytes.NewBuffer(bbuf))
+    	fmt.Println(num, err) //2310373135097532424 binary: varint overflows a 64-bit integer
     }
