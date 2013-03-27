@@ -3,7 +3,7 @@
 函数列表
 
 - [func Copy(dst Writer, src Reader) (written int64, err error)](Copy.md)
-- [func CopyN(dst Writer, src Reader, n int64) (written int64, err error)]CopyN.md)
+- [func CopyN(dst Writer, src Reader, n int64) (written int64, err error)](CopyN.md)
 - [func LimitReader(r Reader, n int64) Reader](LimitReader.md)
 - [func (l *LimitedReader) Read(p []byte) (n int, err error)](LimitReader.Read.md)
 - [func MultiReader(readers ...Reader) Reader](MultiReader.md)
