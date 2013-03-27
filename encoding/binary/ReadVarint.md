@@ -2,16 +2,38 @@
 
 ###参数列表
 
-- buf 需写入的缓冲区 
-- x uint64类型数字
+- r 实现ReadByte()接口的对象
 
 ###返回值：
 
-- int 写入字节数。
-- panic buf过小。
+- int64 解析出的数据
+- error 返回的错误
 
 ###功能说明：
 
-PutUvarint主要是将uint64类型放入buf中，并返回写入的字节数。如果buf过小，putUvarint将抛出panic。
+ReadVarint从r中解析并返回一个int64类型的数据及出现的错误。
 
 ###代码实例：
+
+    package main
+    
+    import (
+      "bytes"
+    	"encoding/binary"
+    	"fmt"
+    )
+    
+    func main() {
+    	var sbuf []byte
+    	var buf []byte = []byte{144, 192, 192, 129, 132, 136, 140, 144, 16, 0, 1, 1}
+    	var bbuf []byte = []byte{144, 192, 192, 129, 132, 136, 140, 144, 192, 192, 1, 1}
+    
+    	num, ret := binary.ReadVarint(bytes.NewBuffer(sbuf))
+    	fmt.Println(num, ret) //0 EOF
+    
+    	num, ret = binary.ReadVarint(bytes.NewBuffer(buf))
+    	fmt.Println(num, ret) //580990878187261960 <nil>
+    
+    	num, ret = binary.ReadVarint(bytes.NewBuffer(bbuf))
+    	fmt.Println(num, ret) //2310373135097532424 binary: varint overflows a 64-bit integer
+    }
