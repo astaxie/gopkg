@@ -2,7 +2,7 @@
 ### (###表示该包未被领养)
 
     archive
-        - tar         : Unknown    		2013-03-08	finished
+        - tar         : Unknown  		2013-03-08	finished
         - zip         : Unknown			2013-03-10	finished
     bufio             : stevewang		-
     builtin           : achun			2013-03-26	finished
