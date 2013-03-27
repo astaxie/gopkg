@@ -10,6 +10,7 @@
 				SendDir                                 // chan<- 信道写入
 				BothDir = RecvDir | SendDir             // chan   信道读取与写入
 			)
+
 - [type Kind](Kind.md)&nbsp;&nbsp;&nbsp;&nbsp;// 一种数据类型
 	- func (k Kind) String() string&nbsp;&nbsp;&nbsp;&nbsp;// 以字符形式打印出来
 
@@ -42,39 +43,44 @@
 				Struct				// 结构
 				UnsafePointer		// 安全指针
 			)
+
 - [type Method](Method.md)&nbsp;&nbsp;&nbsp;&nbsp;// 方法
 
-			type Method struct {
-				Name	string	// 方法的名称
-				PkgPath string	// 方法的路径（包的路径）
-				Type  Type		// 方法类型（reflect.Type）
-				Func  Value		// 方法的值（reflect.Value）
-				Index int		// 指数列，“方法集”中的此方法排在第几。
-			}
+		type Method struct {
+			Name	string	// 方法的名称
+			PkgPath string	// 方法的路径（包的路径）
+			Type  	Type	// 方法类型（reflect.Type）
+			Func  	Value	// 方法的值（reflect.Value）
+			Index 	int		// 指数列，“方法集”中的此方法排在第几。
+		}
+
 - type SliceHeader&nbsp;&nbsp;&nbsp;&nbsp;// 是运行时表示切片。它不能被安全地使用，或者可移植。
 
 		type SliceHeader struct {
-			Data uintptr	// 指针
-			Len  int		// 长度
-			Cap  int		// 容量
+			Data	uintptr	// 指针
+			Len		int		// 长度
+			Cap		int		// 容量
 		}
+
 - type StringHeader&nbsp;&nbsp;&nbsp;&nbsp;// 是运行时表示切片。它不能被安全地使用，或者可移植。
 
 		type StringHeader struct {
-			Data uintptr	// 指针
-			Len  int		// 长度
+			Data	uintptr	// 指针
+			Len		int		// 长度
 		}
+
 - [type StructField](StructField.md)&nbsp;&nbsp;&nbsp;&nbsp;// 在一个Struct结构内StructField描述了一个单一的字段。
 
 		type StructField struct {
-			Name    string			// 字段名称
-			PkgPath string			// 结构路径名
-			Type      Type      	// 字段类型
-			Tag       StructTag 	// 字段标签字符
-			Offset    uintptr   	// 结构内的偏移量，以字节为单位
-			Index     []int     	// 指数序列，“字段集”中的此字段排在第几。Type.FieldByIndex
-			Anonymous bool      	// 判断是否是匿名的字段。（没有类型）
+			Name		string		// 字段名称
+			PkgPath 	string		// 结构路径名
+			Type		Type      	// 字段类型
+			Tag			StructTag 	// 字段标签字符
+			Offset		uintptr   	// 结构内的偏移量，以字节为单位
+			Index		[]int     	// 指数序列，“字段集”中的此字段排在第几。Type.FieldByIndex
+			Anonymous	bool      	// 判断是否是匿名的字段。（没有类型）
 		}
+
 - type StructTag&nbsp;&nbsp;&nbsp;&nbsp;// 字符串标记，在结构字段内。
 	- func (tag StructTag) Get(key string) string&nbsp;&nbsp;&nbsp;&nbsp;// 返回Key键标记字符串的值
 - [type Type](Type.md)&nbsp;&nbsp;&nbsp;&nbsp;// 类型
