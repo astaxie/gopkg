@@ -4,7 +4,7 @@
 
 该结构主要用于读取gzip包的数据，但Go并没有提供像zip或tar那样便利的方法直接返回文件的切片，因此强烈建议和tar包一起使用！
 
-代码实例（一般gzip与tar同时使用，具体方法请参考，[完整实例](hhttps://github.com/Unknwon/go-compresser/blob/master/go-tar.gz.go)）：
+代码实例（一般gzip与tar同时使用，具体方法请参考，[完整实例](https://github.com/Unknwon/go-compresser/blob/master/go-tar.gz.go)）：
 
 	package main
 	

@@ -5,7 +5,7 @@
 该结构主要用于将文件写入到gzip包中，并记录每个文件的数据头。
 另外要注意的是，NewWriter()与NewWriterLevel()的主要区别在于前者使用默认的压缩级别，而后者可以指定自定义的压缩级别。单独操作gzip很蛋疼，建议直接与tar结合将会十分方便。
 
-代码实例（一般gzip与tar同时使用，具体方法请参考，[完整实例](hhttps://github.com/Unknwon/go-compresser/blob/master/go-tar.gz.go)）：
+代码实例（一般gzip与tar同时使用，具体方法请参考，[完整实例](https://github.com/Unknwon/go-compresser/blob/master/go-tar.gz.go)）：
 
 	package main
 	
