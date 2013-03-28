@@ -1,4 +1,4 @@
-## func (c *B) Logf(format string, args ...interface{})
+## func (c *T) Logf(format string, args ...interface{})
 
 参数列表
 
@@ -21,10 +21,10 @@ Logf方法根据给定的格式来格式化给定的参数，类似于Printf()�
 		"testing"
 	)
 
-	func Benchmark(b *testing.B) {
-		b.Logf("Log: %s\n", "LF")
+	func Test(t *testing.T) {
+		t.Logf("Log: %s\n", "LF")
 	}
 
 运行方法：
 
-将上面的实例代码保存在文件“$GOPATH/src/testing_demo/b_logf_test.go”中。用命令行进入文件所在目录并运行命令“go test -bench="." -v”。
+将上面的实例代码保存在文件“$GOPATH/src/testing_demo/t_logf_test.go”中。用命令行进入文件所在目录并运行命令“go test -v”。

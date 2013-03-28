@@ -1,4 +1,4 @@
-## func (c *B) Fatalf(format string, args ...interface{})
+## func (c *T) Fatalf(format string, args ...interface{})
 
 参数列表
 
@@ -21,10 +21,10 @@
 		"testing"
 	)
 
-	func Benchmark(b *testing.B) {
-		b.Fatalf("Fatal: %s\n", "FF")
+	func Test(t *testing.T) {
+		t.Fatalf("Fatal: %s\n", "FF")
 	}
 
 运行方法：
 
-将上面的实例代码保存在文件“$GOPATH/src/testing_demo/b_fatalf_test.go”中。用命令行进入文件所在目录并运行命令“go test -bench="." -v”。
+将上面的实例代码保存在文件“$GOPATH/src/testing_demo/t_fatalf_test.go”中。用命令行进入文件所在目录并运行命令“go test -v”。
