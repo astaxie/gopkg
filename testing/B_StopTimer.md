@@ -32,7 +32,7 @@ StartTimer方法停止对一个测试的计时。当你有不想纳入的复杂�
 
 运行方法：
 
-将上面的实例代码保存在文件“$GOPATH/src/testing_demo/b_resettimer_test.go”中。用命令行进入文件所在目录并运行命令“go test -bench="." -v”。更改变量customTimerTag的值（true or false），再试试看。
+将上面的实例代码保存在文件“$GOPATH/src/testing_demo/b_stoptimer_test.go”中。用命令行进入文件所在目录并运行命令“go test -bench="." -v”。更改变量customTimerTag的值（true or false），再试试看。
 
 
 备注：

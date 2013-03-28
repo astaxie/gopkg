@@ -32,11 +32,11 @@
 		iTest := testing.InternalTest{Name: "DemoTest", F: func(t *testing.T) {}}
 		iTests := make([]testing.InternalTest, 1)
 		iTests[0] = iTest
-		iBenchMark := testing.InternalBenchmark{Name: "DemoBenchMark", F: func(b *testing.B) {}}
-		iBenchMarks := make([]testing.InternalBenchmark, 1)
-		iBenchMarks[0] = iBenchMark
+		iBenchmark := testing.InternalBenchmark{Name: "DemoBenchMark", F: func(b *testing.B) {}}
+		iBenchmarks := make([]testing.InternalBenchmark, 1)
+		iBenchmarks[0] = iBenchmark
 		iExample := testing.InternalExample{Name: "Example", F: func() {}, Output: ""}
 		iExamples := make([]testing.InternalExample, 1)
 		iExamples[0] = iExample
-		testing.Main(matchString, iTests, iBenchMarks, iExamples)
+		testing.Main(matchString, iTests, iBenchmarks, iExamples)
 	}

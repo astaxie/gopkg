@@ -4,7 +4,7 @@
 
 	type B struct {
 	    N int
-	    // contains filtered or unexported fields
+	    // 包括被过滤或未被导出的字段
 	}
 
 类型说明：
@@ -25,4 +25,4 @@ B是一个类型，它会被传递给Benchmark函数，用于管理基准测试�
 
 运行方法：
 
-将上面的实例代码保存在文件“$GOPATH/src/testing_demo/b_failed_test.go”中。用命令行进入文件所在目录并运行命令“go test -bench="." -v”，观察输出，相信你会懂的。
+将上面的实例代码保存在文件“$GOPATH/src/testing_demo/b_test.go”中。用命令行进入文件所在目录并运行命令“go test -bench="." -v”，观察输出，相信你会懂的。

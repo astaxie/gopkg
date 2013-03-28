@@ -28,7 +28,7 @@ SetBytes方法记录在一个单一操作中处理的字节数。如果此方法
 
 运行方法：
 
-将上面的实例代码保存在文件“$GOPATH/src/testing_demo/b_resettimer_test.go”中。用命令行进入文件所在目录并运行命令“go test -bench="." -v”。注释掉“b.SetBytes(1000)”这句代码，再试试看。
+将上面的实例代码保存在文件“$GOPATH/src/testing_demo/b_setbytes_test.go”中。用命令行进入文件所在目录并运行命令“go test -bench="." -v”。注释掉“b.SetBytes(1000)”这句代码，再试试看。
 
 备注：
 
