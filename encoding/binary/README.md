@@ -16,3 +16,6 @@ uvarint和varint的编解码
 - [func Varint(buf []byte) (int64, int)](Varint.md)
 - [func ReadUvarint(r io.ByteReader) (uint64, error)](ReadUvarint.md)
 - [func ReadVarint(r io.ByteReader) (int64, error)](ReadVarint.md)
+
+##结构体
+type ByteOrder，可以定义自己的字节序结构，用于序列化和反序列化数据。
