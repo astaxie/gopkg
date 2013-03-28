@@ -4,9 +4,12 @@
 
 ##函数列表
 
+数据的byte序列化转换
 - [func Read(r io.Reader, order ByteOrder, data interface{}) error](Read.md)
 - [func Write(w io.Writer, order ByteOrder, data interface{}) error](Write.md)
 - [func Size(v interface{}) int](Size.md)
+
+uvarint和varint的编解码
 - [func PutUvarint(buf []byte, x uint64) int](PutUvarint.md)
 - [func PutVarint(buf []byte, x int64) int](PutVarint.md)
 - [func Uvarint(buf []byte) (uint64, int)](Uvarint.md)
