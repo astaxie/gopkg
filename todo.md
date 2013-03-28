@@ -32,7 +32,7 @@
         - sha1        : zhanming		2013-03-26	finished
         - sha256      : zhanming		2013-03-12  finished
         - sha512      : zhanming		2013-03-12  finished
-        - subtle      : ###				-
+        - subtle      : zhanming		2013-03-28	finished
         - tls         : ###				-
         - x509        : ###				-
     database          : astaxie			2013-03-11
