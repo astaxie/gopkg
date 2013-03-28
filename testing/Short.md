@@ -15,7 +15,7 @@
 
 代码实例：
 
-	package main
+	package testing_demo
 
 	import (
 		"testing"
@@ -27,4 +27,4 @@
 
 运行方法：
 
-将上面的实例代码保存在文件“$GOPATH/src/short_test.go”中。用命令行进入文件所在目录并运行命令“go test  -test.short -v”。删除命令中的字符串“-test.short”再看看效果。
+将上面的实例代码保存在文件“$GOPATH/src/testing_demo/short_test.go”中。用命令行进入文件所在目录并运行命令“go test -test.short -v”。删除命令中的字符串“-test.short”再看看效果。
