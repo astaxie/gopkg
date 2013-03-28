@@ -18,4 +18,4 @@ uvarint和varint的编解码
 - [func ReadVarint(r io.ByteReader) (int64, error)](ReadVarint.md)
 
 ##结构体
-type ByteOrder，可以定义自己的字节序结构，用于序列化和反序列化数据。
+- type ByteOrder：可以定义自己的字节序结构，用于序列化和反序列化数据。
