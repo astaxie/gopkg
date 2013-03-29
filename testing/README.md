@@ -1,40 +1,40 @@
 # testing包函数列表
 
-- func Main(matchString func(pat, str string) (bool, error), tests []InternalTest, benchmarks []InternalBenchmark, examples []InternalExample)
-- func RunBenchmarks(matchString func(pat, str string) (bool, error), benchmarks []InternalBenchmark)
-- func RunExamples(matchString func(pat, str string) (bool, error), examples []InternalExample) (ok bool)
-- func RunTests(matchString func(pat, str string) (bool, error), tests []InternalTest) (ok bool)
-- func Short() bool
-- type B
-  - func (c *B) Error(args ...interface{})
-  - func (c *B) Errorf(format string, args ...interface{})
-  - func (c *B) Fail()
-  - func (c *B) FailNow()
-  - func (c *B) Failed() bool
-  - func (c *B) Fatal(args ...interface{})
-  - func (c *B) Fatalf(format string, args ...interface{})
-  - func (c *B) Log(args ...interface{})
-  - func (c *B) Logf(format string, args ...interface{})
-  - func (b *B) ResetTimer()
-  - func (b *B) SetBytes(n int64)
-  - func (b *B) StartTimer()
-  - func (b *B) StopTimer()
-- type BenchmarkResult
-  - func Benchmark(f func(b *B)) BenchmarkResult
-  - func (r BenchmarkResult) NsPerOp() int64
-  - func (r BenchmarkResult) String() string
-- type InternalBenchmark
-- type InternalExample
-- type InternalTest
-- type T
-  - func (c *T) Error(args ...interface{})
-  - func (c *T) Errorf(format string, args ...interface{})
-  - func (c *T) Fail()
-  - func (c *T) FailNow()
-  - func (c *T) Failed() bool
-  - func (c *T) Fatal(args ...interface{})
-  - func (c *T) Fatalf(format string, args ...interface{})
-  - func (c *T) Log(args ...interface{})
-  - func (c *T) Logf(format string, args ...interface{})
-  - func (t *T) Parallel()
+- [func Main(matchString func(pat, str string) (bool, error), tests []InternalTest, benchmarks []InternalBenchmark, examples []InternalExample)](Main.md)
+- [func RunBenchmarks(matchString func(pat, str string) (bool, error), benchmarks []InternalBenchmark)](RunBenchmarks.md)
+- [func RunExamples(matchString func(pat, str string) (bool, error), examples []InternalExample) (ok bool)](RunExamples.md)
+- [func RunTests(matchString func(pat, str string) (bool, error), tests []InternalTest) (ok bool)](RunTests.md)
+- [func Short() bool](Short.md)
+- [type B](B.md)
+  - [func (c *B) Error(args ...interface{})](B_Error.md)
+  - [func (c *B) Errorf(format string, args ...interface{})](B_Errorf.md)
+  - [func (c *B) Fail()](B_Fail.md)
+  - [func (c *B) FailNow()](B_FailNow.md)
+  - [func (c *B) Failed() bool](B_Failed.md)
+  - [func (c *B) Fatal(args ...interface{})](B_Fatal.md)
+  - [func (c *B) Fatalf(format string, args ...interface{})](B_Fatalf.md)
+  - [func (c *B) Log(args ...interface{})](B_Log.md)
+  - [func (c *B) Logf(format string, args ...interface{})](B_Logf.md)
+  - [func (b *B) ResetTimer()](B_ResetTimer.md)
+  - [func (b *B) SetBytes(n int64)](B_SetBytes.md)
+  - [func (b *B) StartTimer()](B_StartTimer.md)
+  - [func (b *B) StopTimer()](B_StopTimer.md)
+- [func Benchmark(f func(b *B)) BenchmarkResult](Benchmark.md)
+- [type BenchmarkResult](BenchmarkResult.md)
+  - [func (r BenchmarkResult) NsPerOp() int64](BenchmarkResult_NsPerOp.md)
+  - [func (r BenchmarkResult) String() string](BenchmarkResult_String.md)
+- [type InternalBenchmark](InternalBenchmark.md)
+- [type InternalExample](InternalExample.md)
+- [type InternalTest](InternalTest.md)
+- [type T](T.md)
+  - [func (c *T) Error(args ...interface{})](T_Error.md)
+  - [func (c *T) Errorf(format string, args ...interface{})](T_Errorf.md)
+  - [func (c *T) Fail()](T_Fail.md)
+  - [func (c *T) FailNow()](T_FailNow.md)
+  - [func (c *T) Failed() bool](T_Failed.md)
+  - [func (c *T) Fatal(args ...interface{})](T_Fatal.md)
+  - [func (c *T) Fatalf(format string, args ...interface{})](T_Fatalf.md)
+  - [func (c *T) Log(args ...interface{})](T_Log.md)
+  - [func (c *T) Logf(format string, args ...interface{})](T_Logf.md)
+  - [func (t *T) Parallel()](T_Parallel.md)
 
