@@ -6,7 +6,7 @@
 
 功能说明：
 
-		Sort 对 data 进行排序。 它调用一次 data.Len 来决定排序的长度 n，调用 data.Less 和 data.Swap 的开销为 O(n*log(n))。此排序为不稳定排序。
+Sort 对 data 进行排序。 它调用一次 data.Len 来决定排序的长度 n，调用 data.Less 和 data.Swap 的开销为 O(n*log(n))。此排序为不稳定排序。
 
 ====
 	 type Interface interface {	
@@ -22,7 +22,7 @@
   	  Swap(i, j int)
  	}
 		
-		任何实现了 sort.Interface 的类型（一般为集合），均可使用该包中的方法进行排序。这些方法要求集合内列出元素的索引为整数。
+任何实现了 sort.Interface 的类型（一般为集合），均可使用该包中的方法进行排序。这些方法要求集合内列出元素的索引为整数。
 
 代码案例（一）：
 

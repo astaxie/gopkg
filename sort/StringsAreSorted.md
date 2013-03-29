@@ -6,7 +6,7 @@
 
 功能说明：
 
-		StringsAreSorted 判断 string 切片是否已经按升序排列
+StringsAreSorted 判断 string 切片是否已经按升序排列
 
 代码案例：
 	

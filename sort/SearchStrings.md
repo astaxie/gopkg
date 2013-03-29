@@ -9,7 +9,7 @@
 
 功能说明：
 
-		SearchStrings 在 strings 切片中搜索x并返回索引,如 Search 函数所述. 返回可以插入 x 值的索引位置，如果 x 不存在，返回数组 a 的长度。切片必须以升序排列。
+SearchStrings 在 strings 切片中搜索x并返回索引,如 Search 函数所述. 返回可以插入 x 值的索引位置，如果 x 不存在，返回数组 a 的长度。切片必须以升序排列。
 		
 代码案例：
 	

@@ -6,7 +6,7 @@
 
 功能说明：
 
-		Strings 以升序排列 string 切片
+Strings 以升序排列 string 切片
 
 代码实例：
 

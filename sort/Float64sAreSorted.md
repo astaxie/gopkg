@@ -10,7 +10,7 @@
 
 功能说明：
 
-		Float64sAreSorted 判断 float64 切片是否已经按升序排列。
+Float64sAreSorted 判断 float64 切片是否已经按升序排列。
 
 代码实例：
 

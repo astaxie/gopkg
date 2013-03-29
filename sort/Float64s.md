@@ -6,7 +6,7 @@
 
 功能说明：
 
-		Float64s 以升序排列 float64 切片
+Float64s 以升序排列 float64 切片
 
 代码实例：
 

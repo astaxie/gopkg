@@ -10,7 +10,7 @@
 
 功能说明：
 
-		IntsAreSorted 判断 int 切片是否已经按升序排列。
+IntsAreSorted 判断 int 切片是否已经按升序排列。
 
 代码实例：
 
