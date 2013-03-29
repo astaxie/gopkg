@@ -21,7 +21,7 @@ StringSlice 有以下方法：
 ====
 - func (p StringSlice) Search(x String) int
 
-	返回小于 x 的最小元素的下标
+	返回小于 x 的最小元素的索引
 
 ====
 - func (p StringSlice) Swap(i, j int)
@@ -43,20 +43,20 @@ StringSlice 有以下方法：
 	)
 	
 	func main() {
-		s := sort.StringSlice{"PHP", "golang", "java", "python", "C", "Objective-C"}
+		p := sort.StringSlice{"PHP", "golang", "java", "python", "C", "Objective-C"}
 	
-		fmt.Println(s.Len()) // 6
+		fmt.Println(p.Len()) // 6
 	
-		fmt.Println(s.Less(0, 1)) // true
+		fmt.Println(p.Less(0, 1)) // true
 	
-		fmt.Println(s.Search("go")) // 1
+		fmt.Println(p.Search("go")) // 1
 	
-		s.Swap(0, 1)
-		fmt.Println(s)
+		p.Swap(0, 1)
+		fmt.Println(p)
 		// Output: [golang PHP java python C Objective-C]
 	
-		s.Sort()
-		fmt.Println(s)
+		p.Sort()
+		fmt.Println(p)
 		// Output: [C Objective-C PHP golang java python]
 	}
 	

@@ -6,7 +6,7 @@
 
 功能说明：
 
-StringsAreSorted 判断 string 切片是否已经按升序排列
+		StringsAreSorted 判断 string 切片是否已经按升序排列
 
 代码案例：
 	
@@ -18,9 +18,9 @@ StringsAreSorted 判断 string 切片是否已经按升序排列
 	)
 	
 	func main() {
-		s := []string{"PHP", "golang", "java", "python", "C", "Objective-C"}
-		fmt.Println(sort.StringsAreSorted(s)) // false
-		sort.Strings(s)
-		fmt.Println(sort.StringsAreSorted(s)) //true
+		a := []string{"PHP", "golang", "java", "python", "C", "Objective-C"}
+		fmt.Println(sort.StringsAreSorted(a)) // false
+		sort.Strings(a)
+		fmt.Println(sort.StringsAreSorted(a)) //true
 	}
 	

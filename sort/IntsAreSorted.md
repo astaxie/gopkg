@@ -10,7 +10,7 @@
 
 功能说明：
 
-IntsAreSorted 判断 int 切片是否已经按升序排列。
+		IntsAreSorted 判断 int 切片是否已经按升序排列。
 
 代码实例：
 
@@ -22,10 +22,10 @@ IntsAreSorted 判断 int 切片是否已经按升序排列。
 	)
 	
 	func main() {
-		s := []int{5, 2, 6, 3, 1, 4}       // unsorted
-		fmt.Println(sort.IntsAreSorted(s)) // false
-		sort.Ints(s)
-		fmt.Println(s)                     // [1 2 3 4 5 6]
-		fmt.Println(sort.IntsAreSorted(s)) // true
+		a := []int{5, 2, 6, 3, 1, 4}       // unsorted
+		fmt.Println(sort.IntsAreSorted(a)) // false
+		sort.Ints(a)
+		fmt.Println(a)                     // [1 2 3 4 5 6]
+		fmt.Println(sort.IntsAreSorted(a)) // true
 	}
 	

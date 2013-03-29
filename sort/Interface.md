@@ -1,7 +1,6 @@
 ## 接口 Interface
 
 ====
-	
 		type Interface interface {
 			
 			// Len 为集合内元素的总数

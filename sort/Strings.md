@@ -6,7 +6,7 @@
 
 功能说明：
 
-Strings 以升序排列 string 切片
+		Strings 以升序排列 string 切片
 
 代码实例：
 
@@ -18,8 +18,8 @@ Strings 以升序排列 string 切片
 	)
 	
 	func main() {
-		s := []string{"PHP", "golang", "java", "python", "C", "Objective-C"}
-		sort.Strings(s)
-		fmt.Println(s) // [C Objective-C PHP golang java python]
+		a := []string{"PHP", "golang", "java", "python", "C", "Objective-C"}
+		sort.Strings(a)
+		fmt.Println(a) // [C Objective-C PHP golang java python]
 	}
 	
