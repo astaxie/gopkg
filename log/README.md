@@ -1,8 +1,10 @@
 # log包
 
-函数列表
+常量
 
-Constants
+- [Constants](Constants.md)
+
+函数列表
 
 - [func Fatal(v ...interface{})](Fatal.md)
 - [func Fatalf(format string, v ...interface{})](Fatalf.md)
