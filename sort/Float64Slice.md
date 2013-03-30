@@ -1,7 +1,6 @@
 ## 结构 Float64Slice
 
 ====
-
 		type Float64Slice []float64
 		
 		Float64Slice 针对 []Float64Slice 实现接口的方法，以升序排列
@@ -21,7 +20,7 @@ Float64Slice 有以下方法：
 ====
 - func (p Float64Slice) Search(x float64) int
 
-	返回小于 x 的最小元素的下标
+	返回小于 x 的最小元素的索引
 
 ====
 - func (p Float64Slice) Swap(i, j int)

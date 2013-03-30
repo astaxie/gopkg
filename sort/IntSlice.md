@@ -21,7 +21,7 @@ IntSlice 有以下方法：
 ====
 - func (p IntSlice) Search(x int) int
 
-	返回小于 x 的最小元素的下标
+	返回小于 x 的最小元素的索引
 
 ====
 - func (p IntSlice) Swap(i, j int)

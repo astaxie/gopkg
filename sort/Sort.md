@@ -8,6 +8,7 @@
 
 Sort 对 data 进行排序。 它调用一次 data.Len 来决定排序的长度 n，调用 data.Less 和 data.Swap 的开销为 O(n*log(n))。此排序为不稳定排序。
 
+====
 	 type Interface interface {	
  	   // Len is the number of elements in the collection.
   	  // Len 为集合内元素的总数
