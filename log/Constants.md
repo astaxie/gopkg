@@ -2,12 +2,14 @@
 
 常量列表：
 
+~~~
 - Ldate         日期 年/月/日
 - Ltime         时间 时:分:秒
 - Lmicroseconds 时间 .毫秒于Ltime之后
 - Llongfile     完整文件名:行号
 - Lshortfile    文件名，此标志位优先于 Llongfile
 - LstdFlags     = Ldate 并且 Ltime
+~~~
 
 功能说明：
 
