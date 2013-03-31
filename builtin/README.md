@@ -1,6 +1,44 @@
-# 包名
+# builtin
 
-函数列表
+## 概述
+builtin 包为Go的预声明标识符提供了文档. 此处列出的条目其实并不在 buildin 包中，对它们的描述只是为了让 godoc 给该语言的特殊标识符提供文档。
 
-- xxx1
-- xxx2
+##包函数列表
+- [func append(slice []Type, elems ...Type) []Type](append.md)
+- [func close(c chan<- Type)](close.md)
+- [func delete(m map[Type]Type1, key Type)](delete.md)
+- [func panic(v interface{})](panic.md)
+- [func recover() interface{}](recover.md)
+- [type ComplexType](ComplexType.md)
+	- [func complex(r, i FloatType) ComplexType](complex.md)
+- [type FloatType](FloatType.md)
+	- [func imag(c ComplexType) FloatType](imag.md)
+	- [func real(c ComplexType) FloatType](real.md)
+- [type IntegerType](IntegerType.md)
+- [type Type](Type.md)
+	- [func make(Type, size IntegerType) Type](make.md)
+	- [func new(Type) *Type](new.md)
+- [type Type1](Type1.md)
+- [type bool](bool.md)
+- [type byte](byte.md)
+- [type complex128](complex128.md)
+- [type complex64](complex64.md)
+- [type error](error.md)
+- [type float32](float32.md)
+- [type float64](float64.md)
+- [type int](int.md)
+	- [func cap(v Type) int](cap.md)
+	- [func copy(dst, src []Type) int](copy.md)
+	- [func len(v Type) int](len.md)
+- [type int16](int16.md)
+- [type int32](int32.md)
+- [type int64](int64.md)
+- [type int8](int8.md)
+- [type rune](rune.md)
+- [type string](string.md)
+- [type uint](uint.md)
+- [type uint16](uint16.md)
+- [type uint32](uint32.md)
+- [type uint64](uint64.md)
+- [type uint8](uint8.md)
+- [type uintptr](uintptr.md)

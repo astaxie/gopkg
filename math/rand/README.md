@@ -1,6 +1,37 @@
-# 包名
+# rand包函数列表
 
 函数列表
 
-- xxx1
-- xxx2
+- [func ExpFloat64() float64](ExpFloat64.md)
+- [func Float32() float32](Float32.md)
+- [func Float64() float64](Float64.md)
+- [func Int() int](Int.md)
+- [func Int31() int32](Int31.md)
+- [func Int31n(n int32) int32](Int31n.md)
+- [func Int63() int64](Int63.md)
+- [func Int63n(n int64) int64](Int63n.md)
+- [func Intn(n int) int](Intn.md)
+- [func NormFloat64() float64](NormFloat64.md)
+- [func Perm(n int) []int](Perm.md)
+- [func Seed(seed int64)](Seed.md)
+- [func Uint32() uint32](Uint32.md)
+- [type Rand](Rand.md)
+	- [func New(src Source) *Rand](New.md)
+	- [func (r *Rand) ExpFloat64() float64](Rand-ExpFloat64.md)
+	- [func (r *Rand) Float32() float32](Rand-Float32.md)
+	- [func (r *Rand) Float64() float64](Rand-Float64.md)
+	- [func (r *Rand) Int() int](Rand-Int.md)
+	- [func (r *Rand) Int31() int32](Rand-Int31.md)
+	- [func (r *Rand) Int31n(n int32) int32](Rand-Int31n.md)
+	- [func (r *Rand) Int63() int64](Rand-Int63.md)
+	- [func (r *Rand) Int63n(n int64) int64](Rand-Int63n.md)
+	- [func (r *Rand) Intn(n int) int](Rand-Intn.md)
+	- [func (r *Rand) NormFloat64() float64](Rand-NormFloat64.md)
+	- [func (r *Rand) Perm(n int) []int](Rand-Perm.md)
+	- [func (r *Rand) Seed(seed int64)](Rand-Seed.md)
+	- [func (r *Rand) Uint32() uint32](Rand-Uint32.md)
+- [type Source](Source.md)
+	- [func NewSource(seed int64) Source](NewSource.md)
+- [type Zipf](Zipf.md)
+	- [func NewZipf(r *Rand, s float64, v float64, imax uint64) *Zipf](NewZipf.md)
+	- [func (z *Zipf) Uint64() uint64](Zipf-Uint64.md)

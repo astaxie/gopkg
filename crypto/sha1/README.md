@@ -1,6 +1,4 @@
-# 包名
+# crypto/sha1包函数列表
 
-函数列表
-
-- xxx1
-- xxx2
+- [Constants](Constants.md) 
+- [func New() hash.Hash](New.md) 

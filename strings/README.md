@@ -5,38 +5,38 @@
 - [func ContainsRune(s string, r rune) bool](ContainsRune.md) 
 - [func Count(s, sep string) int](Count.md) 
 - [func EqualFold(s, t string) bool](EqualFold.md) 
-- [func Fields(s string) []string](strings/Fields.md) 
-- func FieldsFunc(s string, f func(rune) bool) []string 
-- func HasPrefix(s, prefix string) bool 
-- func HasSuffix(s, suffix string) bool 
-- func Index(s, sep string) int 
-- func IndexAny(s, chars string) int 
-- func IndexFunc(s string, f func(rune) bool) int 
-- func IndexRune(s string, r rune) int 
-- func Join(a []string, sep string) string 
-- func LastIndex(s, sep string) int 
-- func LastIndexAny(s, chars string) int 
-- func LastIndexFunc(s string, f func(rune) bool) int 
-- func Map(mapping func(rune) rune, s string) string 
-- func Repeat(s string, count int) string 
-- func Replace(s, old, new string, n int) string 
-- func Split(s, sep string) []string 
-- func SplitAfter(s, sep string) []string 
-- func SplitAfterN(s, sep string, n int) []string 
-- func SplitN(s, sep string, n int) []string 
-- func Title(s string) string 
-- func ToLower(s string) string 
+- [func Fields(s string) []string](Fields.md) 
+- [func FieldsFunc(s string, f func(rune) bool) []string ](FieldsFunc.md)
+- [func HasPrefix(s, prefix string) bool](HasPrefix.md) 
+- [func HasSuffix(s, suffix string) bool](HasSuffix.md) 
+- [func Index(s, sep string) int](Index.md) 
+- [func IndexAny(s, chars string) int](IndexAny.md) 
+- [func IndexFunc(s string, f func(rune) bool) int](IndexFunc.md) 
+- [func IndexRune(s string, r rune) int](IndexRune.md) 
+- [func Join(a []string, sep string) string](Join.md) 
+- [func LastIndex(s, sep string) int](LastIndex.md) 
+- [func LastIndexAny(s, chars string) int](LastIndexAny.md) 
+- [func LastIndexFunc(s string, f func(rune) bool) int](LastIndexFunc.md) 
+- [func Map(mapping func(rune) rune, s string) string](Map.md) 
+- [func Repeat(s string, count int) string](Repeat.md) 
+- [func Replace(s, old, new string, n int) string](Replace.md) 
+- [func Split(s, sep string) []string](Split.md) 
+- [func SplitAfter(s, sep string) []string](SplitAfter.md) 
+- [func SplitAfterN(s, sep string, n int) []string](SplitAfterN.md) 
+- [func SplitN(s, sep string, n int) []string](SplitN.md) 
+- [func Title(s string) string](Title.md) 
+- [func ToLower(s string) string](ToLower.md) 
 - func ToLowerSpecial(_case unicode.SpecialCase, s string) string 
 - func ToTitle(s string) string 
-- func ToTitleSpecial(_case unicode.SpecialCase, s string) string 
-- func ToUpper(s string) string 
-- func ToUpperSpecial(_case unicode.SpecialCase, s string) string 
-- func Trim(s string, cutset string) string 
-- func TrimFunc(s string, f func(rune) bool) string 
-- func TrimLeft(s string, cutset string) string 
-- func TrimLeftFunc(s string, f func(rune) bool) string 
-- func TrimRight(s string, cutset string) string 
-- func TrimRightFunc(s string, f func(rune) bool) string 
-- func TrimSpace(s string) string
-- func NewReader(s string) *Reader 
-- func NewReplacer(oldnew ...string) *Replacer 
+- [func ToTitleSpecial(_case unicode.SpecialCase, s string) string](ToTitleSpecial.md) 
+- [func ToUpper(s string) string](ToUpper.md) 
+- [func ToUpperSpecial(_case unicode.SpecialCase, s string) string](ToUpperSpecial.md) 
+- [func Trim(s string, cutset string) string](Trim.md) 
+- [func TrimFunc(s string, f func(rune) bool) string](TrimFunc.md) 
+- [func TrimLeft(s string, cutset string) string](TrimLeft.md) 
+- [func TrimLeftFunc(s string, f func(rune) bool) string](TrimLeftFunc.md) 
+- [func TrimRight(s string, cutset string) string](TrimRight.md) 
+- [func TrimRightFunc(s string, f func(rune) bool) string](TrimRightFunc.md) 
+- [func TrimSpace(s string) string](TrimSpace.md)
+- [func NewReader(s string) *Reader](NewReader.md) 
+- [func NewReplacer(oldnew ...string) *Replacer](NewReplacer.md) 

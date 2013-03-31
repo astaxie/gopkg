@@ -1,6 +1,7 @@
-# 包名
+# xml
 
 函数列表
 
-- xxx1
-- xxx2
+- [func Escape(w io.Writer, s []byte)](Escape.md)
+- [func Marshal(v interface{}) ([]byte, error)](Marshal.md)
+- [func MarshalIndent(v interface{}, prefix, indent string) ([]byte, error)](MarshalIndent.md)
