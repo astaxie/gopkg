@@ -2,16 +2,35 @@
 
 ###参数列表
 
-- buf 需写入的缓冲区 
-- x uint64类型数字
+- w 可写入字节流的数据 
+- order 特殊字节序，包中提供大端字节序和小段字节序
+- data 需要解码成的数据
 
 ###返回值：
 
-- int 写入字节数。
-- panic buf过小。
+- error 返回错误
 
 ###功能说明：
 
-PutUvarint主要是将uint64类型放入buf中，并返回写入的字节数。如果buf过小，putUvarint将抛出panic。
+Write将data序列化成字节流写入w中。data必须是固定长的数据值或固定长数据的slice，或指向此类数据的指针。写入w的字节流可用特殊的字节序来编码。另外，结构体中的(_)名的字段将忽视。
 
 ###代码实例：
+    package main
+    
+    import (
+      "bytes"
+    	"encoding/binary"
+    	"fmt"
+    	"math"
+    )
+    
+    func main() {
+    	buf := new(bytes.Buffer)
+    	var pi float64 = math.Pi
+    
+    	err := binary.Write(buf, binary.LittleEndian, pi)
+    	if err != nil {
+    		fmt.Println("binary.Write failed:", err)
+    	}
+    	fmt.Println(buf.Bytes()) //[24 45 68 84 251 33 9 64]
+    }
