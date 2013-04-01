@@ -49,7 +49,7 @@
         - asn1        : ###				-
         - base32      : boilingbit		2013-03-10
         - base64      : boilingbit		2013-03-08
-        - binary      : wjvlangz		2013-03-25
+        - binary      : wjvlangz		2013-03-25  finished
         - csv         : metadao			-
         - gob         : ###				-
         - hex         : ###				-
