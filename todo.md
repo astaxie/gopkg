@@ -115,7 +115,7 @@
     sort              : Hubery			2013-03-09
     strconv           : chenzhekl		-
     strings           : astaxie			2013-03-08
-    sync              : ###				-
+    sync              : ###				sfs
         - atomic      : ###				-
     syscall           : ###				-
     testing           : ###				-
