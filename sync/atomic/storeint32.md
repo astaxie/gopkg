@@ -25,46 +25,43 @@
 
 代码示例：
 
-<pre><code>
-package main
+	package main
 
 
-import "fmt"
-import "time"
-import "sync/atomic"
-import "runtime"
+	import "fmt"
+	import "time"
+	import "sync/atomic"
+	import "runtime"
 
-func read(num *int32) {
-    for {
-        if *num==32 {
-            fmt.Println("ops:", 32)
-        }
-        if *num==42 {
-            fmt.Println("ops:", 42)
-        }
-        time.Sleep(time.Nanosecond)
-    }
-}
+	func read(num *int32) {
+    	for {
+        	if *num==32 {
+            	fmt.Println("ops:", 32)
+        	}
+        	if *num==42 {
+            	fmt.Println("ops:", 42)
+        	}
+        	time.Sleep(time.Nanosecond)
+    	}
+	}
 
-func main() {
+	func main() {
 
-    runtime.GOMAXPROCS(4)
+    	runtime.GOMAXPROCS(4)
 
-    var ops int32 = 0
+    	var ops int32 = 0
 
-    for i := 0; i < 4; i++ {
-        go read(&ops)
-    }
+    	for i := 0; i < 4; i++ {
+        	go read(&ops)
+    	}
 
-    atomic.StoreInt32(&ops, 32)
+    	atomic.StoreInt32(&ops, 32)
 
-    time.Sleep(time.Nanosecond*5)
+    	time.Sleep(time.Nanosecond*5)
 
-    ops = 42					//42的输出会不稳定。
-    fmt.Println("changed")
+    	ops = 42					//42的输出会不稳定。
+    	fmt.Println("changed")
 
-    time.Sleep(time.Nanosecond*20)
-}
+    	time.Sleep(time.Nanosecond*20)
+	}
 
-
-</code></pre>

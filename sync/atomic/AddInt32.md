@@ -27,53 +27,51 @@
 
 
 代码示例：
-<pre><code>
 
-package main
-
-
-import (
-    "fmt"
-    "runtime"
-    "sync/atomic"
-)
-
-func click(total *int,ch chan int) {
-    for i := 0; i < 1000; i++ {
-        *total += 1
-    }
-    ch <- 1
-}
-
-func clickat(total *int32, ch chan int) {
-    for i := 0; i < 1000; i++ {
-        atomic.AddInt32(total, 1)
-    }
-    ch <- 1
-}
+	package main
 
 
-func main() {
+	import (
+    	"fmt"
+    	"runtime"
+    	"sync/atomic"
+	)
 
-    runtime.GOMAXPROCS(2)		//使用多个处理器，不然都是顺序执行。
+	func click(total *int,ch chan int) {
+    	for i := 0; i < 1000; i++ {
+        	*total += 1
+    	}
+    	ch <- 1
+	}
 
-    count1 := 0;
-    count2 := int32(0)
+	func clickat(total *int32, ch chan int) {
+    	for i := 0; i < 1000; i++ {
+        	atomic.AddInt32(total, 1)
+    	}
+    	ch <- 1
+	}
 
-    ch := make(chan int, 200)		//保证输出时count完了
 
-    for i := 0; i < 100; i++ {
-        go click(&count1, ch)
-    }
-    for i := 0; i < 100; i++ {
-        go clickat(&count2, ch)
-    }
+	func main() {
 
-    for i := 0; i < 200; i++ {
-        <-ch
-    }
+    	runtime.GOMAXPROCS(2)		//使用多个处理器，不然都是顺序执行。
 
-    fmt.Printf("count1:%d\ncount2:%d\n", count1,count2)
-}
+    	count1 := 0;
+    	count2 := int32(0)
 
-</code></pre>
+    	ch := make(chan int, 200)		//保证输出时count完了
+
+    	for i := 0; i < 100; i++ {
+        	go click(&count1, ch)
+    	}
+    	for i := 0; i < 100; i++ {
+        	go clickat(&count2, ch)
+    	}
+
+    	for i := 0; i < 200; i++ {
+        	<-ch
+    	}
+
+    	fmt.Printf("count1:%d\ncount2:%d\n", count1,count2)
+	}
+

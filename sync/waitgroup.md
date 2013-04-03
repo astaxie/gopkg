@@ -54,29 +54,26 @@ WaitGroup的结构如下：
 
 代码示例：
 
-<pre><code>
-package main
+	package main
 
-import (
-    "fmt"
-    "sync"
-)
+	import (
+    	"fmt"
+    	"sync"
+	)
 
-func wgProcess(wg *sync.WaitGroup,id int){
-    fmt.Printf("process:%d is going!\n",id)
-    wg.Done()
-}
+	func wgProcess(wg *sync.WaitGroup,id int){
+    	fmt.Printf("process:%d is going!\n",id)
+    	wg.Done()
+	}
 
-func main() {
-    wg := new(sync.WaitGroup)
-    for i := 0; i < 3; i++ {
-        wg.Add(1)
-        go wgProcess(wg, i)
-    }
-    wg.Wait()
-}
+	func main() {
+    	wg := new(sync.WaitGroup)
+    	for i := 0; i < 3; i++ {
+        	wg.Add(1)
+        	go wgProcess(wg, i)
+    	}
+    	wg.Wait()
+	}
 
-
-</code></pre>
 
 
