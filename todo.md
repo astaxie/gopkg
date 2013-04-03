@@ -5,7 +5,7 @@
         - tar         : Unknown			2013-03-08	finished
         - zip         : Unknown			2013-03-10	finished
     bufio             : stevewang		-
-    builtin           : nalan			2013-03-12
+    builtin           : achun			2013-03-26	finished
     bytes             : stevewang		-
     compress          : ###				-
         - bzip2       : ###				-
@@ -24,15 +24,15 @@
         - dsa         : ###				-
         - ecdsa       : ###				-
         - elliptic    : ###				-
-        - hmac        : zhanming		2013-03-20 finished
-        - md5         : wendal			2013-03-10
+        - hmac        : zhanming		2013-03-20 	finished
+        - md5         : zhanming		2013-03-26	finished
         - rand        : ###				-
-        - rc4         : ###				-
+        - rc4         : zhanming		2013-03-25 	finished
         - rsa         : ###				-
-        - sha1        : wendal			2013-03-10
+        - sha1        : zhanming		2013-03-26	finished
         - sha256      : zhanming		2013-03-12  finished
         - sha512      : zhanming		2013-03-12  finished
-        - subtle      : ###				-
+        - subtle      : zhanming		2013-03-28	finished
         - tls         : ###				-
         - x509        : ###				-
     database          : astaxie			2013-03-11
@@ -49,7 +49,7 @@
         - asn1        : ###				-
         - base32      : boilingbit		2013-03-10
         - base64      : boilingbit		2013-03-08
-        - binary      : ###				-
+        - binary      : wjvlangz		2013-03-25  finished
         - csv         : metadao			-
         - gob         : ###				-
         - hex         : ###				-
@@ -83,7 +83,7 @@
         - png         : ###				-
     index             : starchou		-
         - suffixarray : starchou		-
-    io                : ###				-
+    io                : lodevil			-
         - ioutil      : ###				-
     log               : cdxahz          2012-03-10	finished
         - syslog      : ###				-
@@ -113,13 +113,13 @@
         - cgo         : ###				-
         - debug       : wendal			2013-03-10
         - pprof       : ###				-
-    sort              : Hubery			2013-03-09
+    sort              : Hubery			2013-03-09	finished
     strconv           : chenzhekl		-
     strings           : astaxie			2013-03-08	finished
-    sync              : SnowWee     	2013-03-23  finished	
-        - atomic      : SnowWee     	2013-03-23
+    sync              : SnowWee			2013-03-23  finished
+        - atomic      : SnowWee			2013-03-23  finished
     syscall           : ###				-
-    testing           : ###				-
+    testing           : hyper-carrot	2013-03-26
         - iotest      : ###				-
         - quick       : ###				-
     text              : ###				-
@@ -130,5 +130,4 @@
     unicode           : ###				-
         - uft16       : ###				-
         - uft8        : ###				-
-    unsafe            : ###				-
-
+    unsafe            : SnowWee			2013-04-03
