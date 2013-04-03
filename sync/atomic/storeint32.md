@@ -25,6 +25,7 @@
 
 代码示例：
 
+<<<<<<< HEAD
 <pre><code>
 package main
 
@@ -68,3 +69,45 @@ func main() {
 
 
 </code></pre>
+=======
+	package main
+
+
+	import "fmt"
+	import "time"
+	import "sync/atomic"
+	import "runtime"
+
+	func read(num *int32) {
+    	for {
+        	if *num==32 {
+            	fmt.Println("ops:", 32)
+        	}
+        	if *num==42 {
+            	fmt.Println("ops:", 42)
+        	}
+        	time.Sleep(time.Nanosecond)
+    	}
+	}
+
+	func main() {
+
+    	runtime.GOMAXPROCS(4)
+
+    	var ops int32 = 0
+
+    	for i := 0; i < 4; i++ {
+        	go read(&ops)
+    	}
+
+    	atomic.StoreInt32(&ops, 32)
+
+    	time.Sleep(time.Nanosecond*5)
+
+    	ops = 42					//42的输出会不稳定。
+    	fmt.Println("changed")
+
+    	time.Sleep(time.Nanosecond*20)
+	}
+
+>>>>>>> 4e6bb8a255a918bf287959e4f39c14c076f7cd1b

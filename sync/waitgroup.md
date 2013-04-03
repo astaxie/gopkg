@@ -54,6 +54,7 @@ WaitGroup的结构如下：
 
 代码示例：
 
+<<<<<<< HEAD
 <pre><code>
 package main
 
@@ -78,5 +79,28 @@ func main() {
 
 
 </code></pre>
+=======
+	package main
+
+	import (
+    	"fmt"
+    	"sync"
+	)
+
+	func wgProcess(wg *sync.WaitGroup,id int){
+    	fmt.Printf("process:%d is going!\n",id)
+    	wg.Done()
+	}
+
+	func main() {
+    	wg := new(sync.WaitGroup)
+    	for i := 0; i < 3; i++ {
+        	wg.Add(1)
+        	go wgProcess(wg, i)
+    	}
+    	wg.Wait()
+	}
+
+>>>>>>> 4e6bb8a255a918bf287959e4f39c14c076f7cd1b
 
 

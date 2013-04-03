@@ -23,6 +23,7 @@
 在使用上只要类型的区别。
 
 代码示例
+<<<<<<< HEAD
 <pre><code>
 
 package main
@@ -60,3 +61,35 @@ func main() {
 
 
 </code></pre>
+=======
+
+
+	package main
+
+
+	import "fmt"
+	import "time"
+	import "sync/atomic"
+	import "runtime"
+
+	func main() {
+
+    	runtime.GOMAXPROCS(2)
+
+    	var ops int32 = 0
+
+    	for i := 0; i < 2; i++ {
+        	go func() {
+            	for i:=0; i<100; i++{
+                	time.Sleep(time.Nanosecond)
+                	atomic.AddInt32(&ops, 1)
+                	if i==50 {
+                   		fmt.Println("ops:", atomic.LoadInt32(&ops),ops)
+                	}
+            	}
+        	}()
+    	}
+
+    	time.Sleep(time.Second)
+	}
+>>>>>>> 4e6bb8a255a918bf287959e4f39c14c076f7cd1b

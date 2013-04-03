@@ -29,6 +29,7 @@ Mutex是对Locker的一个实现。结构如下：
 
 代码示例：
 
+<<<<<<< HEAD
 <pre><code>
 
 package main
@@ -80,6 +81,58 @@ func main() {
 
     fmt.Printf("count1:%d\ncount2:%d\n", count1,count2)
 }
+=======
+
+	package main
+
+
+	import (
+    	"fmt"
+    	"runtime"
+    	"sync"
+	)
+
+	func click(total *int,ch chan int) {
+    	for i := 0; i < 1000; i++ {
+        	*total += 1
+    	}
+    	ch <- 1
+	}
+
+	func clickWithMutex(total *int,m *sync.Mutex, ch chan int) {
+    	for i := 0; i < 1000; i++ {
+        	m.Lock()
+        	*total += 1
+        	m.Unlock()
+    	}
+    	ch <- 1
+	}
+
+
+	func main() {
+
+    	runtime.GOMAXPROCS(2)		//使用多个处理器，不然都是顺序执行。
+
+    	m := new(sync.Mutex)
+    	count1 := 0;
+    	count2 := 0;
+
+    	ch := make(chan int, 200)		//保证输出时count完了
+
+    	for i := 0; i < 100; i++ {
+        	go click(&count1, ch)
+    	}
+    	for i := 0; i < 100; i++ {
+        	go clickWithMutex(&count2, m, ch)
+    	}
+
+    	for i := 0; i < 200; i++ {
+        	<-ch
+    	}
+
+    	fmt.Printf("count1:%d\ncount2:%d\n", count1,count2)
+	}
+>>>>>>> 4e6bb8a255a918bf287959e4f39c14c076f7cd1b
 
 </code></pre>
 
