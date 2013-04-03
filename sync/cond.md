@@ -69,49 +69,46 @@ ps：分代管理是为了在使用`Signal()`唤醒一个waiter时，优先唤�
 
 代码示例：
 
-<pre><code>
-package main
 
-import (
-    "fmt"
-    "time"
-    "sync"
-)
+	package main
 
-func waiter(cond *sync.Cond,id int) {
-    cond.L.Lock()
-    cond.Wait()
-    cond.L.Unlock()
-    fmt.Printf("Waiter:%d wake up!\n",id)
-}
+	import (
+    	"fmt"
+    	"time"
+    	"sync"
+	)
 
-func main() {
-    locker := new(sync.Mutex)
-    cond := sync.NewCond(locker)  //使用Mutex作为Locker
+	func waiter(cond *sync.Cond,id int) {
+    	cond.L.Lock()
+    	cond.Wait()
+    	cond.L.Unlock()
+    	fmt.Printf("Waiter:%d wake up!\n",id)
+	}
+
+	func main() {
+    	locker := new(sync.Mutex)
+    	cond := sync.NewCond(locker)  //使用Mutex作为Locker
     
-    for i := 0; i < 3; i++ {		//生成waiter
-        go waiter(cond,i)
-    }
-    time.Sleep(time.Second * 1)		//等待waiter到位
+    	for i := 0; i < 3; i++ {		//生成waiter
+        	go waiter(cond,i)
+    	}
+    	time.Sleep(time.Second * 1)		//等待waiter到位
 
-    cond.L.Lock()
-    cond.Signal()					//唤醒一个waiter
-    cond.L.Unlock()
+    	cond.L.Lock()
+    	cond.Signal()					//唤醒一个waiter
+    	cond.L.Unlock()
 
-    for i := 3; i < 5; i++ {		//生成新一代waiter
-        go waiter(cond,i)
-    }
-    time.Sleep(time.Second * 1)
+    	for i := 3; i < 5; i++ {		//生成新一代waiter
+        	go waiter(cond,i)
+    	}
+    	time.Sleep(time.Second * 1)
 
-    cond.L.Lock()
-    cond.Signal()					//唤醒的将是上一代（id<3）的waiter之一
-    cond.L.Unlock()
+    	cond.L.Lock()
+    	cond.Signal()					//唤醒的将是上一代（id<3）的waiter之一
+    	cond.L.Unlock()
 
-    cond.L.Lock()
-    cond.Broadcast()				//唤醒所以waiter
-    cond.L.Unlock()
-    time.Sleep(time.Second * 1)
-}
-
-
-</code></pre>
+    	cond.L.Lock()
+    	cond.Broadcast()				//唤醒所以waiter
+    	cond.L.Unlock()
+    	time.Sleep(time.Second * 1)
+	}
