@@ -115,20 +115,9 @@
         - pprof       : ###				-
     sort              : Hubery			2013-03-09	finished
     strconv           : chenzhekl		-
-<<<<<<< HEAD
     strings           : astaxie			2013-03-08	finished
-<<<<<<< HEAD
     sync              : SnowWee			2013-03-23  finished
         - atomic      : SnowWee			2013-03-23  finished
-=======
-    sync              : SnowWee			2013-03-23
-        - atomic      : SnowWee			2013-03-23
->>>>>>> c4fb28d9df47d2c1bde0231df3b256f336c35a86
-=======
-    strings           : astaxie			2013-03-08
-    sync              : ###				sfs
-        - atomic      : ###				-
->>>>>>> a3520c6da140369a8e0f386f37db90c3e70865d3
     syscall           : ###				-
     testing           : hyper-carrot	2013-03-26
         - iotest      : ###				-
@@ -141,8 +130,4 @@
     unicode           : ###				-
         - uft16       : ###				-
         - uft8        : ###				-
-<<<<<<< HEAD
     unsafe            : SnowWee			2013-04-03
-=======
-    unsafe            : ###				-
->>>>>>> c4fb28d9df47d2c1bde0231df3b256f336c35a86
