@@ -116,8 +116,8 @@
     sort              : Hubery			2013-03-09	finished
     strconv           : chenzhekl		-
     strings           : astaxie			2013-03-08	finished
-    sync              : SnowWee			2013-03-23
-        - atomic      : SnowWee			2013-03-23
+    sync              : SnowWee			2013-03-23  finished
+        - atomic      : SnowWee			2013-03-23  finished
     syscall           : ###				-
     testing           : hyper-carrot	2013-03-26
         - iotest      : ###				-
@@ -130,4 +130,4 @@
     unicode           : ###				-
         - uft16       : ###				-
         - uft8        : ###				-
-    unsafe            : ###				-
+    unsafe            : SnowWee			2013-04-03
