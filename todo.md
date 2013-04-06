@@ -69,10 +69,10 @@
         - scanner     : ###				-
         - token       : ###				-
     hash              : lincolnlee		2013-04-06
-        - adler32     : ###				-
-        - crc32       : ###				-
-        - crc64       : ###				-
-        - fnv         : ###				-
+        - adler32     : lincolnlee		2013-04-06
+        - crc32       : lincolnlee		2013-04-06
+        - crc64       : lincolnlee		2013-04-06
+        - fnv         : lincolnlee		2013-04-06
     html              : RaymondChou		2013-03-08
         - template    : RaymondChou		2013-03-08
     image             : ###				-
