@@ -68,7 +68,7 @@
         - printer     : ###				-
         - scanner     : ###				-
         - token       : ###				-
-    hash              : ###				-
+    hash              : lincolnlee		2013-04-06
         - adler32     : ###				-
         - crc32       : ###				-
         - crc64       : ###				-
