@@ -100,7 +100,7 @@
         - smtp        : andelf			2013-03-09 finished
         - textproto   : ###				-
         - url         : peeped			2013-03-11
-    os                : miraclesu		2013-03-17
+    os                : miraclesu		2013-03-17 finished
         - exec        : miraclesu		2013-03-12 finished
         - signal      : mikespook				-
         - user        : LostSkyDev		2013-03-10	finished
