@@ -37,23 +37,23 @@
 	- func (t Time) Date() (year int, month Month, day int) 参考[Time](Time.md)
 	- func (t Time) Day() int 参考[Time](Time.md)
 	- func (t Time) Equal(u Time) bool 参考[Time](Time.md)
-	- func (t Time) Format(layout string) string
+	- [func (t Time) Format(layout string) string](Format.md)
 	- func (t Time) GobDecode(buf []byte) error
 	- func (t Time) GobEncode() ([]byte, error)
 	- func (t Time) Hour() int	参考[Time](Time.md)
-	- func (t Time) ISOWeek() (year, week int)
-	- func (t Time) In(loc *Location) Time
-	- func (t Time) IsZero() bool
-	- func (t Time) Local() Time
-	- func (t Time) Location() *Location
+	- [func (t Time) ISOWeek() (year, week int)](ISOWeek.md)
+	- [func (t Time) In(loc *Location) Time](In.md)
+	- [func (t Time) IsZero() bool 参考[Time](Time.md)
+	- [func (t Time) Local() Time](Local.md)
+	- [func (t Time) Location() *Location](Location.md)
 	- func (t Time) MarshalJSON() ([]byte, error)
 	- func (t Time) Minute() int 参考[Time](Time.md)
 	- func (t Time) Month() Month 参考[Time](Time.md)
 	- func (t Time) Nanosecond() int 参考[Time](Time.md)
 	- func (t Time) Second() int 参考[Time](Time.md)
 	- func (t Time) String() string 参考[Time](Time.md)
-	- func (t Time) Sub(u Time) Duration
-	- func (t Time) UTC() Time
+	- [func (t Time) Sub(u Time) Duration](Sub.md)
+	- [func (t Time) UTC() Time](UTC.md)
 	- func (t Time) Unix() int64
 	- func (t Time) UnixNano() int64
 	- func (t Time) UnmarshalJSON(data []byte) (err error)
