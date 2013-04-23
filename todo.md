@@ -52,7 +52,7 @@
         - binary      : wjvlangz		2013-03-25  finished
         - csv         : metadao			-
         - gob         : ###				-
-        - hex         : ###				-
+        - hex         : caoqx			2013-04-23
         - json        : xiocode			2013-03-10
         - pem         : ###				-
         - xml         : 0x55aa			2013-03-15
