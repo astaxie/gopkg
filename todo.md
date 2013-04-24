@@ -49,10 +49,10 @@
         - asn1        : ###				-
         - base32      : boilingbit		2013-03-10
         - base64      : boilingbit		2013-03-08
-        - binary      : wjvlangz		2013-03-25
+        - binary      : wjvlangz		2013-03-25  finished
         - csv         : metadao			-
         - gob         : ###				-
-        - hex         : ###				-
+        - hex         : caoqx			2013-04-23
         - json        : xiocode			2013-03-10
         - pem         : ###				-
         - xml         : 0x55aa			2013-03-15
@@ -68,11 +68,11 @@
         - printer     : ###				-
         - scanner     : ###				-
         - token       : ###				-
-    hash              : ###				-
-        - adler32     : ###				-
-        - crc32       : ###				-
-        - crc64       : ###				-
-        - fnv         : ###				-
+    hash              : lincolnlee		2013-04-06
+        - adler32     : lincolnlee		2013-04-06
+        - crc32       : lincolnlee		2013-04-06
+        - crc64       : lincolnlee		2013-04-06
+        - fnv         : lincolnlee		2013-04-06
     html              : RaymondChou		2013-03-08
         - template    : RaymondChou		2013-03-08
     image             : ###				-
@@ -100,12 +100,12 @@
         - smtp        : andelf			2013-03-09 finished
         - textproto   : ###				-
         - url         : peeped			2013-03-11
-    os                : miraclesu		2013-03-17
+    os                : miraclesu		2013-03-17 finished
         - exec        : miraclesu		2013-03-12 finished
         - signal      : mikespook				-
         - user        : LostSkyDev		2013-03-10	finished
     path              : novakr			-
-        - filepath    : ###				-
+        - filepath    : xuchdong        2013-04-18 finished
     reflect           : 456Vv			-
     regexp            : andelf			2013-03-08
         - syntax      : andelf			2013-03-08
@@ -116,8 +116,8 @@
     sort              : Hubery			2013-03-09	finished
     strconv           : chenzhekl		-
     strings           : astaxie			2013-03-08	finished
-    sync              : SnowWee			2013-03-23
-        - atomic      : SnowWee			2013-03-23
+    sync              : SnowWee			2013-03-23  finished
+        - atomic      : SnowWee			2013-03-23  finished
     syscall           : ###				-
     testing           : hyper-carrot	2013-03-26
         - iotest      : ###				-
@@ -130,4 +130,4 @@
     unicode           : ###				-
         - uft16       : ###				-
         - uft8        : ###				-
-    unsafe            : ###				-
+    unsafe            : SnowWee			2013-04-03
