@@ -3,7 +3,7 @@
 ====
 		type Float64Slice []float64
 		
-		Float64Slice 针对 []Float64Slice 实现接口的方法，以升序排列
+Float64Slice 针对 []Float64Slice 实现接口的方法，以升序排列
 	
 Float64Slice 有以下方法：
 

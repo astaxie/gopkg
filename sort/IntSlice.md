@@ -4,7 +4,7 @@
 
 		type IntSlice []int
 		
-		IntSlice 针对 []int 实现接口的方法，以升序排列
+IntSlice 针对 []int 实现接口的方法，以升序排列
 	
 IntSlice 有以下方法：
 
