@@ -4,7 +4,7 @@
 
 		type StringSlice []String
 		
-		StringSlice 针对 []String 实现接口的方法，以升序排列
+StringSlice 针对 []String 实现接口的方法，以升序排列
 	
 StringSlice 有以下方法：
 
