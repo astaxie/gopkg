@@ -71,13 +71,13 @@ Sort 对 data 进行排序。 它调用一次 data.Len 来决定排序的长度 
 	}
 	
 	func (s ByLength) Less(i, j int) bool {
-		return len(s[i]) < len(s[j])
+		return s[i] < s[j]
 	}
 	
 	func main() {
 		fruits := []string{"peach", "banana", "kiwi"}
 		sort.Sort(ByLength(fruits))
 		fmt.Println(fruits)
-		// Output:[kiwi peach banana]
+		// Output:[banana kiwi peach]
 	}
 			
