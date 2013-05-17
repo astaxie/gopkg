@@ -22,7 +22,7 @@
     )
     
     func main(){
-  	var c = make( chan int, 1)
+		var c = make( chan int, 1)
 		go func(c chan int){
 			for i:=0;i<10;i++{
 				c<-i
@@ -41,23 +41,29 @@
 				}
 			}
 		}
-		//>>接收:  0
-		//>>接收:  1
-		//>>接收:  2
-		//>>接收:  3
-		//>>接收:  4
-		//>>接收:  5
-		//>>接收:  6
-		//>>接收:  7
-		//>>接收:  8
-		//>>接收:  9
-		//>>信道关闭了
+		//接收:  0
+		//接收:  1
+		//接收:  2
+		//接收:  3
+		//接收:  4
+		//接收:  5
+		//接收:  6
+		//接收:  7
+		//接收:  8
+		//接收:  9
+		//信道关闭了
     }
 
 代码实例2：
 
+    package main
+    import (
+        "fmt"
+        "reflect"
+    )
+    
+    func main(){
 		var chs = make(chan int)
-		
 		var worker = func(c chan int){
 			for i:=0;i<5;i++{
 				c<-i
@@ -83,9 +89,16 @@
 				numDone++
 			}
 		}
-
+	}
 代码实例3：
 
+    package main
+    import (
+        "fmt"
+        "reflect"
+    )
+    
+    func main(){
 		var n int = 1
 		var chs = make([]chan int, n)
 		
@@ -119,3 +132,4 @@
 				numDone++
 			}
 		}
+	}
