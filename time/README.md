@@ -13,10 +13,10 @@
 	- [func (d Duration) Nanoseconds() int64](Nanoseconds.md)
 	- [func (d Duration) Seconds() float64](Seconds.md)
 	- [func (d Duration) String() string](String.md)
-- Location
+- [Location](Location.md)
 	- func FixedZone(name string, offset int) *Location
-	- func LoadLocation(name string) (*Location, error)
-	- func (l *Location) String() string
+	- [func LoadLocation(name string) (*Location, error)](LoadLocation.md)
+	- [func (l *Location) String() string](String.md)
 - [Month](Month.md)
 	- [func (m Month) String() string](String.md)
 - [ParseError](ParseError.md)
@@ -24,42 +24,42 @@
 - [Ticker](Ticker.md)
 	- [func NewTicker(d Duration) *Ticker](NewTicker.md)
 	- [func (t *Ticker) Stop()](Stop.md)
-- Time
-	- func Date(year int, month Month, day, hour, min, sec, nsec int, loc *Location) Time
-	- func Now() Time
-	- func Parse(layout, value string) (Time, error)
-	- func Unix(sec int64, nsec int64) Time
-	- func (t Time) Add(d Duration) Time
-	- func (t TIme) AddDate(years int, months int, days int) Time
-	- func (t Time) After(u Time) bool
-	- func (t Time) Before(u Time) bool
-	- func (t Time) Clock() (hour, min, sec int)
-	- func (t TIme) Date() (year int, month Month, day int)
-	- func (t Time) Day() int
-	- func (t Time) Equal(u Time) bool
-	- func (t Time) Format(layout string) string
-	- func (t Time) GobDecode(buf []byte) error
-	- func (t Time) GobEncode() ([]byte, error)
-	- func (t Time) Hour() int	
-	- func (t Time) ISOWeek() (year, week int)
-	- func (t Time) In(loc *Location) Time
-	- func (t Time) IsZero() bool
-	- func (t Time) Local() Time
-	- func (t Time) Location() *Location
-	- func (t Time) MarshalJSON() ([]byte, error)
-	- func (t Time) Minute() int
-	- func (t Time) Month() Month
-	- func (t Time) Nanosecond() int
-	- func (t Time) Second() int
-	- func (t Time) String() string
-	- func (t Time) Sub(u Time) Duration
-	- func (t Time) UTC() Time
-	- func (t Time) Unix() int64
-	- func (t Time) UnixNano() int64
-	- func (t Time) UnmarshalJSON(data []byte) (err error)
-	- func (t Time) Weekday() Weekday
-	- func (t Time) Year() int
-	- func (t Time) Zone() (name string, offset int)
+- [Time](Time.md)
+	- func Date(year int, month Month, day, hour, min, sec, nsec int, loc *Location) Time  参考[Time](Time.md)
+	- [func Now() Time](Now.md)
+	- [func Parse(layout, value string) (Time, error)](Parse.md)
+	- [func Unix(sec int64, nsec int64) Time](Unix.md)
+	- [func (t Time) Add(d Duration) Time](Add.md)
+	- [func (t Time) AddDate(years int, months int, days int) Time](AddDate.md)
+	- func (t Time) After(u Time) bool 参考[Time](Time.md)
+	- func (t Time) Before(u Time) bool 参考[Time](Time.md)
+	- func (t Time) Clock() (hour, min, sec int) 参考[Time](Time.md)
+	- func (t Time) Date() (year int, month Month, day int) 参考[Time](Time.md)
+	- func (t Time) Day() int 参考[Time](Time.md)
+	- func (t Time) Equal(u Time) bool 参考[Time](Time.md)
+	- [func (t Time) Format(layout string) string](Format.md)
+	- [func (t Time) GobDecode(buf []byte) error](GobDecode.md)
+	- [func (t Time) GobEncode() ([]byte, error)](GobEncode.md)
+	- func (t Time) Hour() int	参考[Time](Time.md)
+	- [func (t Time) ISOWeek() (year, week int)](ISOWeek.md)
+	- [func (t Time) In(loc *Location) Time](In.md)
+	- [func (t Time) IsZero() bool 参考[Time](Time.md)
+	- [func (t Time) Local() Time](Local.md)
+	- [func (t Time) Location() *Location](Location.md)
+	- [func (t Time) MarshalJSON() ([]byte, error)](MarshalJSON.md)
+	- func (t Time) Minute() int 参考[Time](Time.md)
+	- func (t Time) Month() Month 参考[Time](Time.md)
+	- func (t Time) Nanosecond() int 参考[Time](Time.md)
+	- func (t Time) Second() int 参考[Time](Time.md)
+	- func (t Time) String() string 参考[Time](Time.md)
+	- [func (t Time) Sub(u Time) Duration](Sub.md)
+	- [func (t Time) UTC() Time](UTC.md)
+	- [func (t Time) Unix() int64](Unix.md)
+	- [func (t Time) UnixNano() int64](UnixNano.md)
+	- [func (t Time) UnmarshalJSON(data []byte) (err error)](UnmarshalJSON.md)
+	- func (t Time) Weekday() Weekday 参考[Time](Time.md)
+	- func (t Time) Year() int 参考[Time](Time.md)
+	- [func (t Time) Zone() (name string, offset int)](Zone.md)
 - [Timer](Timer.md)
 	- [func AfterFunc(d Duration, f func()) *Timer](AfterFunc.md)
 	- [func NewTimer(d Duration) *Timer](NewTimer.md)

@@ -17,7 +17,7 @@
 		
 代码案例（一）：
 	
-	package main
+		package main
 	
 	import (
 		"fmt"
@@ -35,27 +35,28 @@
 	
 	type Organs []*Organ
 	
-	func (s Organs) Len() int      { return len(s) }
+	func (s Organs) Len() int { return len(s) }
 	
 	func (s Organs) Swap(i, j int) { s[i], s[j] = s[j], s[i] }
 	
-	// ByName 通过提供 Less 方法并使用嵌入式 Organs 值的 Len 和 Swap 方法实现了 	sort.Interface。
+	// ByName 通过提供 Less 方法并使用嵌入式 Organs 值的 Len 和 Swap 方法实现了sort.Interface。
+	
 	type ByName struct{ Organs }
 	
-	func (s ByName) Less(i, j int) bool { return s.Organs[i].Name < 		s.Organs[j].Name }
+	func (s ByName) Less(i, j int) bool { return s.Organs[i].Name < s.Organs[j].Name }
 	
-	// ByWeight 通过提供 Less 方法并使用嵌入式 Organs 值的 Len 和 Swap 方法实现了 	sort.Interface。
+	// ByWeight 通过提供 Less 方法并使用嵌入式 Organs 值的 Len 和 Swap 方法实现了sort.Interface。
 	
 	type ByWeight struct{ Organs }
 	
-	func (s ByWeight) Less(i, j int) bool { return s.Organs[i].Weight < 	s.Organs[j].Weight }
-
+	func (s ByWeight) Less(i, j int) bool { return s.Organs[i].Weight < s.Organs[j].Weight }
+	
 	func printOrgans(s []*Organ) {
 		for _, o := range s {
-		fmt.Printf("%-8s (%v)\n", o.Name, o.Weight)
+			fmt.Printf("%-8s (%v)\n", o.Name, o.Weight)
 		}
 	}
-		
+	
 	func main() {
 		s := []*Organ{
 			{"brain", 1340},
@@ -73,7 +74,7 @@
 		// heart    (290g)
 		// brain    (1340g)
 		// liver    (1494g)
-	
+		
 		sort.Sort(ByName{s})
 		fmt.Println("Organs by name:")
 		printOrgans(s)
@@ -85,10 +86,11 @@
 		// pancreas (131g)	
 	}
 	
+	
 代码案例（二）：
 	
 	package main
-	
+		
 	import (
 		"fmt"
 		"sort"

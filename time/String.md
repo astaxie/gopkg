@@ -69,3 +69,8 @@
 			fmt.Println(time.Weekday(i))
 		}
 	}
+
+
+# func (l *Location) String() string
+
+返回根据LoadLocation参数的时区信息名字
