@@ -11,12 +11,11 @@
 
 - 表示切片运行时。它不能被安全地使用，或者可移植。
 
-  	type SliceHeader struct {
+		type SliceHeader struct {
 			Data	uintptr	// 指针
 			Len		int		// 长度
 			Cap		int		// 容量
 		}
-
 
 代码实例1：
 
@@ -58,3 +57,50 @@
 		//&{7 5 8}
 	}
 
+代码实例2：
+
+	package main
+	import (
+		"fmt"
+		"reflect"
+		"unsafe"
+	)
+	
+	func main(){
+		type T struct {
+			a int
+			b int
+			c int
+		}
+		
+		var t=&T{a:1,b:2,c:3}
+		p := unsafe.Sizeof(*t)
+		fmt.Println(int(p))
+	   //12
+		
+	    sl := reflect.SliceHeader{
+	        Data: uintptr(unsafe.Pointer(t)),
+	        Len:  int(p),
+	        Cap:  int(p),
+	    }
+		
+	    b := *(*[]byte)(unsafe.Pointer(&sl))
+	    fmt.Println(len(b))
+	    //12
+	    fmt.Println(t, b)
+		//&{1 2 3} [1 0 0 0 2 0 0 0 3 0 0 0]
+		
+		//------------第一切片
+		b[0] = 3
+		
+		//------------第二切片，下面的2就是表示二切片
+		b[4] = 5
+		b[5] = 1 //等介于 5 * 2 + 1
+		
+		//------------第三切片，下面的3就是表示三切片
+		b[8] = 255 //最大255
+		b[9] = 2 //等介于 255 * 3 + 2
+		
+		fmt.Println(t, b)
+		//&{3 261 767} [3 0 0 0 5 1 0 0 255 2 0 0]
+	}
