@@ -6,7 +6,6 @@
 
 返回值：
 
-- bool 返回true，如果一个类型的值可以转换为 u 类型。
 - Type 返回 reflect.Type 类型，更多方法可以查看reflect.Type 接口
 
 功能说明：
