@@ -11,12 +11,12 @@
 
 - SelectDir 描述信道方向的选择case
 
-  const (
-		_	SelectDir = iota		// 初始化
-	    SelectSend					// 发送方向 Chan <- Send
-	    SelectRecv					// 接受方向 <-Chan:
-	    SelectDefault				// 默认方向
-	)
+		const (
+			_	SelectDir = iota		// 初始化
+		    SelectSend					// 发送方向 Chan <- Send
+		    SelectRecv					// 接受方向 <-Chan:
+		    SelectDefault				// 默认方向
+		)
 
 
 代码实例1：
@@ -26,7 +26,7 @@
 		"fmt"
 		"reflect"
 	)
-    
+	  
 	func main(){
 		var selectCase = make([]reflect.SelectCase, 1)
 		selectCase[0].Dir = reflect.SelectRecv //2
@@ -39,7 +39,7 @@
 		//[{1 <invalid Value> <chan int Value>}]
 		
 		var selectCase2 = make([]reflect.SelectCase, 1)
-		selectCase2[0].Dir = reflect.SelectDefault //1
+		selectCase2[0].Dir = reflect.SelectDefault //3
 		fmt.Println(selectCase2)
 		//[{3 <invalid Value> <invalid Value>}]
 	}
