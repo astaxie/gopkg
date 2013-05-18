@@ -14,7 +14,7 @@
 		const (
 			_	SelectDir = iota		// 初始化
 		    SelectSend					// 发送方向 Chan <- Send
-		    SelectRecv					// 接受方向 <-Chan:
+		    SelectRecv					// 接受方向 <-Chan
 		    SelectDefault				// 默认方向
 		)
 
