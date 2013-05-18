@@ -13,7 +13,7 @@
 
 代码实例：
 
-  package main
+	package main
 	import (
 		"fmt"
 		"reflect"
@@ -27,3 +27,4 @@
 		fmt.Println(convert.Kind(), convert.String())
 		//string A
 	}
+
