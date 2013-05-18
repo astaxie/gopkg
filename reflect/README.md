@@ -63,7 +63,7 @@
 			    Send Value			// 发送的值（发送）
 			}
 
-- [type SelectDir int](SelectDir.md)&nbsp;&nbsp;&nbsp;&nbsp;// select方向值，值就是 SelectSend、SelectRecv、SelectDefault
+- [type SelectDir int](SelectDir.md)&nbsp;&nbsp;&nbsp;&nbsp;// select方向值
 
 			const (
 				_	SelectDir = iota		// 初始化
@@ -73,7 +73,7 @@
 			)
 
 
-- type SliceHeader struct&nbsp;&nbsp;&nbsp;&nbsp;// 是运行时表示切片。它不能被安全地使用，或者可移植。
+- [type SliceHeader struct](SliceHeader.md)&nbsp;&nbsp;&nbsp;&nbsp;// 是表示切片运行时。它不能被安全地使用，或者可移植。
 
 		type SliceHeader struct {
 			Data	uintptr	// 指针
@@ -81,7 +81,7 @@
 			Cap		int		// 容量
 		}
 
-- type StringHeader struct&nbsp;&nbsp;&nbsp;&nbsp;// 是运行时表示切片。它不能被安全地使用，或者可移植。
+- [type StringHeader struct](StringHeader.md)&nbsp;&nbsp;&nbsp;&nbsp;// 是表示切片运行时。它不能被安全地使用，或者可移植。
 
 		type StringHeader struct {
 			Data	uintptr	// 指针
