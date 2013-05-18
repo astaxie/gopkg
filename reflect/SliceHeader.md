@@ -17,7 +17,7 @@
 			Cap		int		// 容量
 		}
 
-代码实例2：
+代码实例1：
 
     a := "abc"    // 字符串 "abc"
     b := (*uintptr)(unsafe.Pointer(&a))  // b 存储 a 的地址
