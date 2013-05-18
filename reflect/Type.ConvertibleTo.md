@@ -12,7 +12,8 @@
 - ConvertibleTo 返回true，如果一个类型的值可以转换为 u 类型。
 
 代码实例：
-  package main
+
+	package main
 	import (
 		"fmt"
 		"reflect"
