@@ -2,7 +2,8 @@
 
 - [func Copy(dst, src Value) int](Copy.md)&nbsp;&nbsp;&nbsp;&nbsp;// 复制Slice或Array
 - [func DeepEqual(a1, a2 interface{}) bool](DeepEqual.md)&nbsp;&nbsp;&nbsp;&nbsp;// 平等比较
-- [type ChanDir](ChanDir.md)&nbsp;&nbsp;&nbsp;&nbsp;// 代表信道类型方向
+- [func Select(cases []SelectCase) (chosen int, recv Value, recvOK bool)](Select.md)&nbsp;&nbsp;&nbsp;&nbsp;// 等介于 select
+- [type ChanDir int](ChanDir.md)&nbsp;&nbsp;&nbsp;&nbsp;// 代表信道类型方向
 	- func (d ChanDir) String() string&nbsp;&nbsp;&nbsp;&nbsp;// 以字符形式打印出来
 
 			const (
@@ -11,7 +12,7 @@
 				BothDir = RecvDir | SendDir             // chan   信道读取与写入
 			)
 
-- [type Kind](Kind.md)&nbsp;&nbsp;&nbsp;&nbsp;// 一种数据类型
+- [type Kind uint](Kind.md)&nbsp;&nbsp;&nbsp;&nbsp;// 一种数据类型
 	- func (k Kind) String() string&nbsp;&nbsp;&nbsp;&nbsp;// 以字符形式打印出来
 
 			const (
@@ -44,7 +45,7 @@
 				UnsafePointer		// 安全指针
 			)
 
-- [type Method](Method.md)&nbsp;&nbsp;&nbsp;&nbsp;// 方法
+- [type Method struct](Method.md)&nbsp;&nbsp;&nbsp;&nbsp;// 方法
 
 		type Method struct {
 			Name	string	// 方法的名称
@@ -54,7 +55,25 @@
 			Index 	int		// 指数列，“方法集”中的此方法排在第几。
 		}
 
-- type SliceHeader&nbsp;&nbsp;&nbsp;&nbsp;// 是运行时表示切片。它不能被安全地使用，或者可移植。
+- [type SelectCase struct](SelectCase.md)&nbsp;&nbsp;&nbsp;&nbsp;// 设置select，若设置 Dir 值为SelectDefault，Chan与Send无需设置。Chan表示接收。Chan与Send不可同时设置。
+
+		type SelectCase struct {
+			    Dir  SelectDir		// select方向，SelectDir 的值就是 SelectSend、SelectRecv、SelectDefault
+			    Chan Value			// 通道使用（接收）
+			    Send Value			// 发送的值（发送）
+			}
+
+- [type SelectDir int](SelectDir.md)&nbsp;&nbsp;&nbsp;&nbsp;// select方向值
+
+			const (
+				_	SelectDir = iota		// 初始化
+			    SelectSend					// 发送方向 Chan <- Send
+			    SelectRecv					// 接受方向 <-Chan:
+			    SelectDefault				// 默认方向
+			)
+
+
+- [type SliceHeader struct](SliceHeader.md)&nbsp;&nbsp;&nbsp;&nbsp;// 是表示切片运行时。它不能被安全地使用，或者可移植。
 
 		type SliceHeader struct {
 			Data	uintptr	// 指针
@@ -62,14 +81,14 @@
 			Cap		int		// 容量
 		}
 
-- type StringHeader&nbsp;&nbsp;&nbsp;&nbsp;// 是运行时表示切片。它不能被安全地使用，或者可移植。
+- [type StringHeader struct](StringHeader.md)&nbsp;&nbsp;&nbsp;&nbsp;// 是表示切片运行时。它不能被安全地使用，或者可移植。
 
 		type StringHeader struct {
 			Data	uintptr	// 指针
 			Len		int		// 长度
 		}
 
-- [type StructField](StructField.md)&nbsp;&nbsp;&nbsp;&nbsp;// 在一个Struct结构内StructField描述了一个单一的字段。
+- [type StructField struct](StructField.md)&nbsp;&nbsp;&nbsp;&nbsp;// 在一个Struct结构内StructField描述了一个单一的字段。
 
 		type StructField struct {
 			Name		string		// 字段名称
@@ -81,9 +100,12 @@
 			Anonymous	bool      	// 判断是否是匿名的字段。（没有类型）
 		}
 
-- type StructTag&nbsp;&nbsp;&nbsp;&nbsp;// 字符串标记，在结构字段内。
+- type StructTag string&nbsp;&nbsp;&nbsp;&nbsp;// 字符串标记，在结构字段内。
 	- func (tag StructTag) Get(key string) string&nbsp;&nbsp;&nbsp;&nbsp;// 返回Key键标记字符串的值
-- [type Type](Type.md)&nbsp;&nbsp;&nbsp;&nbsp;// 类型
+- [type Type interface](Type.md)&nbsp;&nbsp;&nbsp;&nbsp;// 类型
+	- [func ChanOf(dir ChanDir, t Type) Type](ChanOf.md)&nbsp;&nbsp;&nbsp;&nbsp;// 创建反射的信道。其实就是类似这样 reflect.TypeOf(chan int)
+	- [func MapOf(key, elem Type) Type](MapOf.md)&nbsp;&nbsp;&nbsp;&nbsp;// 创建反射的Map。其实就是类似这样 reflect.TypeOf(map[int]string)
+	- [func SliceOf(t Type) Type](SliceOf.md)&nbsp;&nbsp;&nbsp;&nbsp;// 创建反射的Slice。其实就是类似这样 reflect.TypeOf([]int)
 	- [func PtrTo(t Type) Type](PtrTo.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回元素 t 的指针类型
 	- [func TypeOf(i interface{}) Type](TypeOf.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回反射interface{}接口的类型
 	- [NumMethod() int](Type.NumMethod.md)&nbsp;&nbsp;&nbsp;&nbsp;// 函数总数量，在struct结构中
@@ -107,17 +129,19 @@
 	- [Kind() Kind](Type.Kind.md)&nbsp;&nbsp;&nbsp;&nbsp;// 变量的类型
 	- [Implements(u Type) bool](Type.Implements.md)&nbsp;&nbsp;&nbsp;&nbsp;// 判断是否存在与 u 相同的接口
 	- [AssignableTo(u Type) bool](Type.AssignableTo.md)&nbsp;&nbsp;&nbsp;&nbsp;// 判断值是否可分配给 u
+	- [ConvertibleTo(u Type) bool](Type.ConvertibleTo.md)&nbsp;&nbsp;&nbsp;&nbsp;// 判断值是否可以转换为 u 类型
 	- [Bits() int](Type.Bits.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回类型比特的大小
 	- [ChanDir() ChanDir](Type.ChanDir.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回信道的方向
 	- [IsVariadic() bool](Type.IsVariadic.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回函数的类型最后一个输入参数是否是“...”参数。
 	- [Elem() Type](Type.Elem.md)&nbsp;&nbsp;&nbsp;&nbsp;// 指针指向内存地址
 	- [Key() Type](Type.Key.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回 Map 键Key的类型
 	- [Len() int](Type.Len.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回 Array 的长度
-- [type Value](Value.md)&nbsp;&nbsp;&nbsp;&nbsp;// 值
+- [type Value struct](Value.md)&nbsp;&nbsp;&nbsp;&nbsp;// 值
 	- [func Append(s Value, x ...Value) Value](Append.md)&nbsp;&nbsp;&nbsp;&nbsp;// 追加Slice
 	- [func AppendSlice(s, t Value) Value](AppendSlice.md)&nbsp;&nbsp;&nbsp;&nbsp;// 批量追加Slice
 	- [func Indirect(v Value) Value](Indirect.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回指针源内存地址
 	- [func MakeChan(typ Type, buffer int) Value](MakeChan.md)&nbsp;&nbsp;&nbsp;&nbsp;// 初始化信道
+	- [func MakeFunc(typ Type, fn func(args []Value) (results []Value)) Value](MakeFunc.md)&nbsp;&nbsp;&nbsp;&nbsp;// 初始化函数，并可以对函数的参数进得修改操作。
 	- [func MakeMap(typ Type) Value](MakeMap.md)&nbsp;&nbsp;&nbsp;&nbsp;// 初始化Map
 	- [func MakeSlice(typ Type, len, cap int) Value](MakeSlice.md)&nbsp;&nbsp;&nbsp;&nbsp;// 初始化Slice
 	- [func New(typ Type) Value](New.md)&nbsp;&nbsp;&nbsp;&nbsp;// 初始化并返回指针
@@ -126,6 +150,7 @@
 	- [func ValueOf(i interface{}) Value](ValueOf.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回反射interface{}接口的值
 	- [func (v Value) Elem() Value](Value.Elem.md)&nbsp;&nbsp;&nbsp;&nbsp;// 指针指向内存地址
 	- [func (v Value) Type() Type](Value.Type.md)&nbsp;&nbsp;&nbsp;&nbsp;// 返回类型 rflect.Type
+	- [func (v Value) Convert(t Type) Value](Value.Convert.md)&nbsp;&nbsp;&nbsp;&nbsp;// 转换v 为 t 同一种类型
 	- [func (v Value) NumField() int](Value.NumField.md)&nbsp;&nbsp;&nbsp;&nbsp;// 字段总数量，在struct结构中
 	- [func (v Value) Field(i int) Value](Value.Field.md)&nbsp;&nbsp;&nbsp;&nbsp;// 指定返回字段的 Value 类型，在struct结构中
 	- [func (v Value) FieldByIndex(index []int) Value](Value.FieldByIndex.md)&nbsp;&nbsp;&nbsp;&nbsp;// 指定返回“嵌套”字段的 Value 类型，在struct结构中
@@ -180,5 +205,11 @@
 	- [func (v Value) TryRecv() (x Value, ok bool)](Value.TryRecv.md)&nbsp;&nbsp;&nbsp;&nbsp;// 信道尝式接收
 	- [func (v Value) TrySend(x Value) bool](Value.TrySend.md)&nbsp;&nbsp;&nbsp;&nbsp;// 信道尝式发送
 	- [func (v Value) Close()](Value.Close.md)&nbsp;&nbsp;&nbsp;&nbsp;// 关闭信道
-- type ValueError&nbsp;&nbsp;&nbsp;&nbsp;//调用方法不支持
-	- func (e *ValueError) Error() string&nbsp;&nbsp;&nbsp;&nbsp;//返回错误内容
+- type ValueError struct&nbsp;&nbsp;&nbsp;&nbsp;// 调用方法不支持
+
+		type ValueError struct {
+			Method string		// 方法名称
+			Kind   Kind			// 方法类型
+		}
+
+	- func (e *ValueError) Error() string&nbsp;&nbsp;&nbsp;&nbsp;// 返回错误内容
