@@ -2,7 +2,7 @@
 参数列表
 
 - dir ChanDir 信道的方向，类型是 reflect.ChanDir
-- t Type 信道的类型，类型是 reflect.Value
+- t Type 信道的类型，类型是 reflect.Type
 
 返回值：
 
