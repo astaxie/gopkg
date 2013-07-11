@@ -26,7 +26,7 @@
         - elliptic    : ###				-
         - hmac        : zhanming		2013-03-20 	finished
         - md5         : zhanming		2013-03-26	finished
-        - rand        : ###				-
+        - rand        : Neeke			-
         - rc4         : zhanming		2013-03-25 	finished
         - rsa         : ###				-
         - sha1        : zhanming		2013-03-26	finished
@@ -120,7 +120,7 @@
         - atomic      : SnowWee			2013-03-23  finished
     syscall           : ###				-
     testing           : hyper-carrot	2013-03-26
-        - iotest      : ###				-
+        - iotest      : Neeke			-
         - quick       : ###				-
     text              : ###				-
         - scanner     : cdxahz			2013-03-08  finished
