@@ -4,16 +4,16 @@ expvar包提供了一组标准接口，将服务器内部的公共变量，通�
 
 默认提供两个变量：
 
-    cmdline os.Args
-    memstats  runtime.Memstats
+    cmdline [os.Args](http://golang.org/pkg/os/#pkg-variables)
+    memstats [runtime.Memstats](http://golang.org/pkg/runtime/#MemStats)
 
-“公共变量”即Var，是一个实现了String()函数的接口，定义如下：
+“公共变量”即__Var__，是一个实现了String()函数的接口，定义如下：
 
     type Var interface {
         String() string
     }
 
-实际类型的Var包括：Int，Float，String和Map，每个具体的类型都包括几个函数：
+实际类型的Var包括：__Int__，__Float__，__String__和__Map__，每个具体的类型都包括几个函数：
 
 - __New*()__      // 新建一个变量
 - __Set(*)__      // 设置这个变量
