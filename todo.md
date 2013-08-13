@@ -129,5 +129,5 @@
     time              : xuyuanp			-
     unicode           : ###				-
         - uft16       : ###				-
-        - uft8        : ###				-
+        - uft8        : wangtuanjie
     unsafe            : SnowWee			2013-04-03
