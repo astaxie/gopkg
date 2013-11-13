@@ -30,7 +30,7 @@
 		defer fr.Close()
 		
 		// 获取文件信息
-		fi, err = fr.Sata()
+		fi, err = fr.Stat()
 		handleError(err)
 		
 		// 创建gzip.Header
@@ -42,6 +42,6 @@
 		handleError(err)
 
 		// 写入数据到zip包
-		_, err = fw.Write(buf)
+		_, err = gw.Write(buf)
 		handleError(err)
 	}
