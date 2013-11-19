@@ -12,7 +12,7 @@
 
 ###功能说明：
 
-PutUvarint主要是将uint64类型放入buf中，并返回写入的字节数。如果buf过小，putUvarint将抛出panic。
+PutUvarint主要是将uint64类型放入buf中，并返回写入的字节数。如果buf过小，PutUvarint将抛出panic。
 
 ###代码实例：
     
