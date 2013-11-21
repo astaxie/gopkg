@@ -20,5 +20,6 @@
 	import 	"fmt"
 		
 	func main() {
-		fmt.Sprintf("Format:%s\n","格式打印出字符串!")
+		str := fmt.Sprintf("Format:%s\n","格式打印出字符串!")
+		fmt.Println(str)  // Format:格式打印出字符串!
 	}
