@@ -14,7 +14,7 @@ Tick 是对NewTicker更易用的包装，提供了对定时器channel的访问�
 
 代码实例：
 
-package main
+    package main
 
     import (
         "fmt"
