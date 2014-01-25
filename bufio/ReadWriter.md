@@ -26,7 +26,7 @@
 		rb := bytes.NewBuffer([]byte("a string to be read"))
 		wb := bytes.NewBuffer(nil)
 		r := bufio.NewReader(rb)
-		w := bytes.NewBuffer(wb)
+		w := bufio.NewWriter(wb)
 		rw := bufio.NewReadWriter(r, w)
 		// use rw to read
 		var rbuf [128]byte
