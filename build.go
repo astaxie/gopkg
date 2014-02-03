@@ -14,6 +14,7 @@ import (
 type Visitor struct{}
 
 func (self *Visitor) visit(path string, f os.FileInfo, err error) error {
+	//fmt.Println("path: "+path)
 	if f == nil {
 		return err
 	}
@@ -23,16 +24,18 @@ func (self *Visitor) visit(path string, f os.FileInfo, err error) error {
 		return nil
 	} else {
 		if strings.HasSuffix(f.Name(), ".md") {
-			fmt.Println(f)
-			file, err := os.Open(f.Name())
+			//fmt.Println("path:"+path)
+			//fmt.Printf("file info: %+v\n", f)
+			file, err := os.Open(path )
 			if err != nil {
+			  fmt.Println("open: "+path+" failure")
 				return err
 			}
 			input, _ := ioutil.ReadAll(file)
 			input = regexp.MustCompile("\\[(.*?)\\]\\(<?(.*?)\\.md>?\\)").ReplaceAll(input, []byte("[$1](<$2.html>)"))
 			output := blackfriday.MarkdownCommon(input)
 			var out *os.File
-			if out, err = os.Create(strings.Replace(f.Name(), ".md", ".html", -1)); err != nil {
+			if out, err = os.Create(strings.Replace(path, ".md", ".html", -1)); err != nil {
 				fmt.Fprintf(os.Stderr, "Error creating %s: %v", f.Name(), err)
 				os.Exit(-1)
 			}
