@@ -76,11 +76,11 @@
     html              : RaymondChou		2013-03-08
         - template    : RaymondChou		2013-03-08
     image             : ###				-
-        - color       : shendongming    -
-        - draw        : shendongming	-
-        - gif         : shendongming	-
-        - jpeg        : shendongming	-
-        - png         : shendongming	-
+        - color       : shendongming    2014-02-16
+        - draw        : ###	            -
+        - gif         : ###         	-
+        - jpeg        : ###         	-
+        - png         : ###         	-
     index             : starchou		-
         - suffixarray : starchou		-
     io                : lodevil			-
