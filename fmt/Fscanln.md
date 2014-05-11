@@ -31,7 +31,7 @@
 
         func main(){
                 var a,b,c int
-                fmt.Fcanln(os.Stdin,&a,&b,&c)
+                fmt.Fscanln(os.Stdin,&a,&b,&c)
                 fmt.Println(a,b,c)
         }
 
