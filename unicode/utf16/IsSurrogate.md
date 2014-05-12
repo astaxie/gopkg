@@ -19,7 +19,7 @@
 > 如果r是代理区字符，则返回true
 >
 > 如果r不是代理区字符，则返回false
->
+
 
 代码实例:
 
@@ -30,10 +30,10 @@
         "unicode/utf16"
         )
 
-        func main() {
-        fmt.Println(utf16.IsSurrogate(0xD800)) // true
+	func main() {
+        
+	fmt.Println(utf16.IsSurrogate(0xD800))// true
 	fmt.Println(utf16.IsSurrogate(0xDC00)) // true
 	fmt.Println(utf16.IsSurrogate(0xDFFF)) // true
-        }
-        
-
+	}
+       
