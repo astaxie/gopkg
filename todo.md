@@ -128,6 +128,6 @@
         - template    : bluesalt		-
     time              : xuyuanp			-
     unicode           : ###				-
-        - uft16       : ###				-
+        - uft16       : sndnvaps                2014-05-12 finished 				-
         - uft8        : wangtuanjie
     unsafe            : SnowWee			2013-04-03
