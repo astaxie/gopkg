@@ -26,8 +26,8 @@
 - [func SplitN(s, sep string, n int) []string](SplitN.md) 
 - [func Title(s string) string](Title.md) 
 - [func ToLower(s string) string](ToLower.md) 
-- func ToLowerSpecial(_case unicode.SpecialCase, s string) string 
-- func ToTitle(s string) string 
+- [func ToLowerSpecial(_case unicode.SpecialCase, s string) string](ToLowerSpecial.md)
+- [func ToTitle(s string) string](ToTitle.md)
 - [func ToTitleSpecial(_case unicode.SpecialCase, s string) string](ToTitleSpecial.md) 
 - [func ToUpper(s string) string](ToUpper.md) 
 - [func ToUpperSpecial(_case unicode.SpecialCase, s string) string](ToUpperSpecial.md) 
