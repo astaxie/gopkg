@@ -30,7 +30,7 @@
 		defer fr.Close()
 		
 		// 获取文件信息
-		fi, err = fr.Sata()
+		fi, err = fr.Stat()
 		handleError(err)
 		
 		// 创建tar.Header

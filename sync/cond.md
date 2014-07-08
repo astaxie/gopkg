@@ -112,4 +112,4 @@ ps：分代管理是为了在使用`Signal()`唤醒一个waiter时，优先唤�
     	cond.L.Unlock()
     	time.Sleep(time.Second * 1)
 	}
->>>>>>> 4e6bb8a255a918bf287959e4f39c14c076f7cd1b
+
