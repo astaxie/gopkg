@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # sync/atnomic
 
 函数列表
@@ -35,4 +34,3 @@
 
 - xxx1
 - xxx2
->>>>>>> c4fb28d9df47d2c1bde0231df3b256f336c35a86
