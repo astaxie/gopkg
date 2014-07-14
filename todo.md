@@ -51,12 +51,12 @@
         - base64      : boilingbit		2013-03-08
         - binary      : wjvlangz		2013-03-25  finished
         - csv         : metadao			-
-        - gob         : ###				-
+        - gob         : sndnvaps               2014-07-14 finished 				-
         - hex         : caoqx			2013-04-23
         - json        : xiocode			2013-03-10
         - pem         : ###				-
         - xml         : 0x55aa			2013-03-15
-    errors            : ###				-
+    errors            :                                         finished				-
     expvar            : fairlyblank		2013-07-16	finished
     flag              : wankai			-
     fmt               : liudch			2013-03-08	finished
