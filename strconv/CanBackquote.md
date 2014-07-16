@@ -22,16 +22,16 @@
 	)
 	
     func main() {
-        b := strconv.CanBackquote("C:\\Windows\n")
-        fmt.Println(b) // false
-        b = strconv.CanBackquote("C:\\Windows\r")
-        fmt.Println(b) // false
-        b = strconv.CanBackquote("C:\\Windows\f")
-        fmt.Println(b) // false
-        b = strconv.CanBackquote("C:\\Windows\t")
-        fmt.Println(b) // true
-        b = strconv.CanBackquote("C:\\`Windows`")
-        fmt.Println(b) // false
+        s := strconv.CanBackquote("C:\\Windows\n")
+        fmt.Println(s) // false
+        s = strconv.CanBackquote("C:\\Windows\r")
+        fmt.Println(s) // false
+        s = strconv.CanBackquote("C:\\Windows\f")
+        fmt.Println(s) // false
+        s = strconv.CanBackquote("C:\\Windows\t")
+        fmt.Println(s) // true
+        s = strconv.CanBackquote("C:\\`Windows`")
+        fmt.Println(s) // false
     }
 
 
