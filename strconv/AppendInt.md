@@ -12,7 +12,7 @@
 
 功能说明：
 
-类似AppendFloat，只能追加int类型，base表示int表示的进制数，返回追加后的 []byte
+- 类似AppendFloat，只能追加int类型，base表示int表示的进制数，返回追加后的 []byte
 
 代码实例：
 
