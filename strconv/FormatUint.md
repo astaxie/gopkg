@@ -1,4 +1,4 @@
-# func FormatInt(i int64, base int) string
+# func FormatUint(i uint64, base int) string
 
 参数列表
 
@@ -23,12 +23,12 @@
 	)
 	
     func main() {
-        fmt.Println(strconv.FormatInt(9223372036854775807, 2))
-        fmt.Println(strconv.FormatInt(9223372036854775807, 10))
+        fmt.Println(strconv.FormatUint(18446744073709551615, 2))
+        fmt.Println(strconv.FormatUint(18446744073709551615, 10))
     }
 
 
 代码输出：
 
-    111111111111111111111111111111111111111111111111111111111111111
-    9223372036854775807
+    1111111111111111111111111111111111111111111111111111111111111111
+    18446744073709551615
