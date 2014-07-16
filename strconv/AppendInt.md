@@ -24,6 +24,8 @@
     )
 
     func main() {
-        newlist := strconv.AppendInt(make([]byte, 0), 12345, 10)
-        fmt.Println(newlist) //[49 50 51 52 53]
+        newlist := strconv.AppendInt(make([]byte, 0), 123000, 10)
+        fmt.Println(newlist) //[49 50 51 48 48 48]
+        newlist = strconv.AppendInt(make([]byte, 0), 8, 2)
+        fmt.Println(newlist) //[49 48 48 48]
     }
