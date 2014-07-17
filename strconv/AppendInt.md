@@ -4,7 +4,7 @@
 
 - dst   表示原列表
 - i     表示需要添加的int64值
-- base  表示进制数
+- base  表示进制数 2 <= base <= 36
 
 返回值：
 
@@ -12,7 +12,7 @@
 
 功能说明：
 
-- 类似AppendFloat，只能追加int类型，base表示int表示的进制数，返回追加后的 []byte
+- 类似AppendFloat，只能追加int类型，base表示int表示的进制数，返回追加后的 []byte。当进制大于10时，大于10的值将使用小写a-z表示。
 
 代码实例：
 
