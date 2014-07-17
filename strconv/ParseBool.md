@@ -11,7 +11,7 @@
 
 功能说明：
 
-- 尝试将表示bool值的字符串转换为bool值。str可以是1, t, T, TRUE, true, True, 0, f, F, FALSE, false, False，其他的字符将返回错误
+- 尝试将表示bool值的字符串转换为bool值。str可以是1, t, T, TRUE, true, True, 0, f, F, FALSE, false, False，其他的字符将返回错误。
 
 代码实例：
 
