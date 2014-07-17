@@ -1,6 +1,30 @@
-# 包名
+# strconv
 
 函数列表
 
-- xxx1
-- xxx2
+- [func AppendBool(dst []byte, b bool) []byte](AppendBool.md) 
+- [func AppendFloat(dst []byte, f float64, fmt byte, prec int, bitSize int) []byte](AppendFloat.md) 
+- [func AppendInt(dst []byte, i int64, base int) []byte](AppendInt.md) 
+- [func AppendQuote(dst []byte, s string) []byte](AppendQuote.md) 
+- [func AppendQuoteRune(dst []byte, r rune) []byte](AppendQuoteRune.md) 
+- [func AppendQuoteRuneToASCII(dst []byte, r rune) []byte](AppendQuoteRuneToASCII.md) 
+- [func AppendQuoteToASCII(dst []byte, s string) []byte](AppendQuoteToASCII.md) 
+- [func AppendUint(dst []byte, i uint64, base int) []byte](AppendUint.md) 
+- [func Atoi(s string) (i int, err error)](Atoi.md) 
+- [func CanBackquote(s string) bool](CanBackquote.md) 
+- [func FormatBool(b bool) string](FormatBool.md) 
+- [func FormatFloat(f float64, fmt byte, prec, bitSize int) string](FormatFloat.md) 
+- [func FormatInt(i int64, base int) string](FormatInt.md) 
+- [func FormatUint(i uint64, base int) string](FormatUint.md) 
+- [func IsPrint(r rune) bool](IsPrint.md) 
+- [func Itoa(i int) string](Itoa.md) 
+- [func ParseBool(str string) (value bool, err error)](ParseBool.md) 
+- [func ParseFloat(s string, bitSize int) (f float64, err error)](ParseFloat.md) 
+- [func ParseInt(s string, base int, bitSize int) (i int64, err error)](ParseInt.md) 
+- [func ParseUint(s string, base int, bitSize int) (n uint64, err error)](ParseUint.md) 
+- [func Quote(s string) string](Quote.md) 
+- [func QuoteRune(r rune) string](QuoteRune.md) 
+- [func QuoteRuneToASCII(r rune) string](QuoteRuneToASCII.md) 
+- [func QuoteToASCII(s string) string](QuoteToASCII.md) 
+- [func Unquote(s string) (t string, err error)](Unquote.md) 
+- [func UnquoteChar(s string, quote byte) (value rune, multibyte bool, tail string, err error)](UnquoteChar.md) 

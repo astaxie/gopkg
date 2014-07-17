@@ -6,7 +6,7 @@
 - f       需要append到列表的浮点数
 - fmt     'f'为小数点格式，'e'为科学计数法
 - prec    表示小数点后位数
-- bitSize 表示
+- bitSize 表示64位或32位
 
 返回值:
 
