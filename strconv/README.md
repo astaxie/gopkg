@@ -28,3 +28,5 @@
 - [func QuoteToASCII(s string) string](QuoteToASCII.md) 
 - [func Unquote(s string) (t string, err error)](Unquote.md) 
 - [func UnquoteChar(s string, quote byte) (value rune, multibyte bool, tail string, err error)](UnquoteChar.md) 
+- type NumError
+    - [func (e *NumError) Error() string](NumError.Error.md)

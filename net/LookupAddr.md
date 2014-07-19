@@ -1,22 +1,31 @@
 ## func LookupAddr(addr string) (name []string, err error)
 
 参数列表
-- addr 地址字符串
+
+- addr  地址字符串
 
 返回列表
-- name 主机名列表
-- err 错误信息
 
+- name  主机名列表
+- err   错误信息
 
-返回系统网络设备信息列表
+功能说明
 
-实例:
+- 通过IP地址查询域名列表
+
+代码实例:
+
 	package main
 	
 	import "fmt"
 	import "net"
 	
 	func main() {
-		addr := net.JoinHostPort("gocn_server","8080")
-		fmt.Println(addr) // 打印结果应该为 gocn_server:8080
+		names := net.LookupAddr("173.194.127.81")
+		fmt.Println(addr)
 	}
+
+代码输出：
+
+    [hkg03s11-in-f17.1e100.net.]
+    <nil>

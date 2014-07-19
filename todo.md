@@ -114,7 +114,7 @@
         - debug       : wendal			2013-03-10
         - pprof       : ###				-
     sort              : Hubery			2013-03-09	finished
-    strconv           : vzever  		2014-07-15
+    strconv           : vzever  		2014-07-15  finished
     strings           : astaxie			2013-03-08	finished
     sync              : SnowWee			2013-03-23  finished
         - atomic      : SnowWee			2013-03-23  finished
