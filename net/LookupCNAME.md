@@ -6,7 +6,7 @@
 
 返回列表:
 
-- 别名字符串
+- cname 主机名
 - error 错误信息
 
 返回该域名的CNAME记录
@@ -20,10 +20,12 @@
 	import "fmt"
 	import "net"
 	
-	func main() {
-		cname,err := net. LookupCNAME("bbs.gocn.im")
-		if err != nil {
-			fmt.Println(err)
-		}
-		fmt.Println(cname) // 打印结果应该为 bbs.gocn.im.
-	}
+    func main() {
+        fmt.Println( net. LookupCNAME("any.weizhe.net"))
+        fmt.Println( net. LookupCNAME("blog.weizhe.net"))
+    }
+    
+代码输出：
+
+    blog.weizhe.net. <nil>
+    blog.weizhe.net. <nil>
