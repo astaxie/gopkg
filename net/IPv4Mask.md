@@ -2,16 +2,18 @@
 
 参数列表:
 
-- a a类网络地址
-- b b类网络地址
-- c c类网络地址
-- d d类网络地址
+- a IP掩码的第1个字节
+- b IP掩码的第2个字节
+- c IP掩码的第3个字节
+- d IP掩码的第4个字节
 
 返回列表:
 
 - IPMask 掩码
 
-查找特定网络的端口和服务
+函数功能
+
+- 生成IP掩码的字节列表
 
 代码实例:
 
@@ -21,6 +23,10 @@
 	import "net"
 	
 	func main() {
-		mask := net.IPv4Mask(byte(127),byte(127),byte(127),byte(127))
-		fmt.Printf("%#v",mask) //返回 []byte{0x7f, 0x7f, 0x7f, 0x7f}
+		mask := net.IPv4Mask(127, 127, 127, 127)
+		fmt.Printf("%#v",mask)
 	}
+
+代码输出：
+
+    net.IPMask{0x7f, 0x7f, 0x7f, 0x7f}
