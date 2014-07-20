@@ -2,7 +2,13 @@
 
 参数列表:
 
-- s MAC字符串
+- s 符合 IEEE 802 MAC-48, EUI-48 或 EUI-64 标准的MAC地址字符串。支持以下格式
+    - 01:23:45:67:89:ab
+    - 01:23:45:67:89:ab:cd:ef
+    - 01-23-45-67-89-ab
+    - 01-23-45-67-89-ab-cd-ef
+    - 0123.4567.89ab
+    - 0123.4567.89ab.cdef
 
 返回列表:
 
@@ -23,5 +29,9 @@
 		if err != nil {
 			fmt.Println(err)
 		}
-		fmt.Printf("%#v",hw) //返回 []byte{0x1, 0x23, 0x45, 0x67, 0x89, 0xab}
+		fmt.Printf("%#v",hw) 
 	}
+	
+函数输出：
+
+    net.HardwareAddr{0x1, 0x23, 0x45, 0x67, 0x89, 0xab}
