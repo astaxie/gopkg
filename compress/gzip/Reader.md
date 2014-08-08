@@ -17,7 +17,8 @@
 	func main() {
 		// 打开gzip文件
 		fr, err := os.Open("demo.gzip")		
-		handleError(err)	// handleError为错误处理函数，下同		defer fr.Close()
+		handleError(err)	// handleError为错误处理函数，下同
+		defer fr.Close()
 		
 		// 创建gzip.Reader
 		gr, err := gzip.NewReader(fr)
