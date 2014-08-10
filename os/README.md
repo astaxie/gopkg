@@ -44,7 +44,7 @@
 - [func OpenFile(name string, flag int, perm FileMode) (file *File, err error)](File_OpenFile.md)
 - [func Pipe() (r *File, w *File, err error)](File_Pipe.md)
 - [func (f *File) Chdir() error](File_Chdir.md)
-- [func (f *File) Chmod(mode FileMode) error](File_Chdir.md)
+- [func (f *File) Chmod(mode FileMode) error](File_Chmod.md)
 - [func (f *File) Chown(uid, gid int) error](File_Chown.md)
 - [func (f *File) Close() error](File_Close.md)
 - [func (f *File) Fd() uintptr](File_Fd.md)
