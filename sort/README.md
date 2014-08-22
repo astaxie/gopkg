@@ -20,6 +20,8 @@
 
 - [Sort(data Interface)](Sort.md)
 
+- [Stable(data Interface)](Stable.md)
+
 - [Strings(a []string)](Strings.md)
 
 - [StringsAreSorted(a []string) bool](StringsAreSorted.md)
@@ -27,6 +29,8 @@
 # 结构
 
 - [type Interface](Interface.md)
+
+ - [Reverse(data Interface) Interface](Reverse.md)
 	
 - [type Float64Slice](Float64Slice.md)	
  - Len() int
