@@ -2,7 +2,7 @@
 
 参数列表
 
-- data 表示要判断的 Interface 数据
+- data 表示要排序的 Interface 数据
 
 功能说明：
 
