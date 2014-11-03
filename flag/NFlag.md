@@ -34,6 +34,6 @@
 
 代码输出
         
-./testnflag -abc 123 -int 0
-before parse: 0
-after parse 2
+    ./testnflag -abc 123 -int 0
+    before parse: 0
+    after parse 2

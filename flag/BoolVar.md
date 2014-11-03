@@ -7,7 +7,6 @@
 - usage string 提示信息
 
 返回值
-- bool
 
 功能说明
 将命令行指定flag值绑定到一个bool变量
