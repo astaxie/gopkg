@@ -9,7 +9,7 @@
 返回值
 
 功能说明
-将命令行指定flag值绑定到一个bool变量
+－ 将指定flag值绑定到一个bool变量，底层实际调用了全局变量CommandLine的BoolVar函数
 
 代码示例
         

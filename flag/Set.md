@@ -1,14 +1,14 @@
 ## func Set(name, value string) error
 
 参数列表
-- name string
-- value string
+- name string flag 名称
+- value string flag 值
 
 返回值
 - error 设置成功返回nil
 
 功能说明
-- 将名称为name的flag的值设置为value, name必须存在
+- 将名称为name的flag的值设置为value, 成功返回nil
 
 示例
         

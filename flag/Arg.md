@@ -7,7 +7,7 @@
 - string 第i＋1个非flag命令行参数的值
 
 功能说明
-- 获取第i＋1个非flag命令行参数的值，使用前需要先调用`flag.Parse()`解析flag
+- 获取第i＋1个非flag命令行参数的值，使用前需要先调用`flag.Parse()`解析flag,底层实际调用了全局变量CommandLine的Arg函数
 
 代码示例1
     

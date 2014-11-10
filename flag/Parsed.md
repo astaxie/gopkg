@@ -3,10 +3,10 @@
 参数列表
 
 返回值
-- 若命令行flag已解析，返回true
+- 若命令行flag参数已解析(已调用flag.Parse()方法)，返回true
 
 功能说明
-- 判断命令行flag是否已经解析，若已解析返回true
+- 判断命令行flag参数是否已经解析(即调用flag.Parse()方法)，若已解析返回true
 
 示例
         

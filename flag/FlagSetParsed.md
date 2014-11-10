@@ -3,10 +3,10 @@
 参数列表
 
 返回值
-- bool 若flag已解析，返回true
+- bool 若flag设置参数已解析(已调用f.Parse()方法)，返回true
 
 功能说明
-- 判断flag是否已经解析，若已解析返回true
+- 判断flag设置参数是否已经解析(是否已调用f.Parse()方法)，若已解析返回true
 
 示例
         

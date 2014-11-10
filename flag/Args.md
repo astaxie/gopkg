@@ -6,7 +6,7 @@
 - []string 非flag命令行参数集合
 
 功能说明
-- 获取非flag命令行参数集合，使用前需要先调用`flag.Parse`解析flag
+- 获取非flag命令行参数集合，使用前需要先调用`flag.Parse`解析flag，底层实际调用了全局变量CommandLine的Args函数
 
 代码示例1
     

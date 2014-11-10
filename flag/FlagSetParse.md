@@ -6,7 +6,7 @@
 返回值
 
 功能说明
-- 从argumets中依次解析flag，在定义flag之后，必须调用用本函数才能成功获取arguments中设置的flag的值 
+- 从argumets中依次解析flag.在定义flag之后，必须调用用本函数才能成功获取arguments中设置的flag的值 
 
 示例
         

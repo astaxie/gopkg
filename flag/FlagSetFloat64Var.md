@@ -47,6 +47,6 @@
 
 代码输出
         
-./testflagsetfloat64 
-float64Flag 2.718e+31
-float64Var -12.78
+    //  ./testflagsetfloat64 
+    float64Flag 2.718e+31
+    float64Var -12.78
