@@ -12,7 +12,7 @@
         - flate       : ###				-
         - gzip        : Unknown			2013-03-11
         - lzw         : ###				-
-        - zlib        : ###				-
+        - zlib        : lingdecong		2014-11-27
     container         : weager			2013-03-10
         - heap        : weager			2013-03-10
         - list        : weager			2013-03-10
