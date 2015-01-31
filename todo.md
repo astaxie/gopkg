@@ -1,4 +1,4 @@
-# 用户贡献表
+﻿# 用户贡献表
 ### (###表示该包未被领养)
 
     archive
@@ -7,11 +7,11 @@
     bufio             : stevewang		-
     builtin           : achun			2013-03-26	finished
     bytes             : stevewang		-
-    compress          : ###				-
-        - bzip2       : ###				-
-        - flate       : ###				-
+    compress          : rujews		    2015-01-31
+        - bzip2       : rujews			2015-01-31
+        - flate       : rujews			2015-01-31
         - gzip        : Unknown			2013-03-11
-        - lzw         : ###				-
+        - lzw         : rujews			2015-01-31
         - zlib        : lingdecong		2014-11-27
     container         : weager			2013-03-10
         - heap        : weager			2013-03-10
