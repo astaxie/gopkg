@@ -3,7 +3,7 @@
 常量列表
 
     const (
-        NoCompression = 0//不雅所
+        NoCompression = 0//不压缩
         BestSpeed     = 1//最快速度压缩
     
         BestCompression    = 9//最佳压缩比压缩
@@ -12,7 +12,7 @@
 
 函数列表
 
-- [func NewReader(r io.Reader) io.ReadCloser](NewReader.mds)
+- [func NewReader(r io.Reader) io.ReadCloser](NewReader.md)
 - [func NewReaderDict(r io.Reader, dict []byte) io.ReadCloser](NewReaderDict.md)
 - [func (e CorruptInputError) Error() string](CorruptInputError.Error.md)
 - [func (e InternalError) Error() string](InternalError.Error.md)

@@ -3,7 +3,7 @@
 参数列表
 
 - r DEFLATE压缩的数据
-- dict 解压数据时预设的字典，和NewWriterDict函数里多的dict相同
+- dict 解压数据时预设的字典，和NewWriterDict函数里的dict相同
 
 返回值：解压后的ReadCloser数据 
 
