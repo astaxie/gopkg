@@ -7,11 +7,11 @@
     bufio             : stevewang		-
     builtin           : achun			2013-03-26	finished
     bytes             : stevewang		-
-    compress          : rujews		    2015-01-31
-        - bzip2       : rujews			2015-01-31
-        - flate       : rujews			2015-01-31
+    compress          : rujews		    2015-01-31   finished
+        - bzip2       : rujews			2015-01-31   finished
+        - flate       : rujews			2015-01-31   finished
         - gzip        : Unknown			2013-03-11
-        - lzw         : rujews			2015-01-31
+        - lzw         : rujews			2015-01-31   finished
         - zlib        : lingdecong		2014-11-27
     container         : weager			2013-03-10
         - heap        : weager			2013-03-10
