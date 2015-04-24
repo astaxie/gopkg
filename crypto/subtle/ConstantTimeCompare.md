@@ -26,7 +26,7 @@ ConstantTimeCompare returns 1 if the two equal length slices, x and y, have equa
 	
 	func main() {
 		fmt.Printf("%d\n", subtle.ConstantTimeCompare([]byte("lilei"), []byte("lilei"))) // 1
-		fmt.Printf("%d\n", subtle.ConstantTimeCompare([]byte("lilei"), []byte("lilei2"))) // 1
+		fmt.Printf("%d\n", subtle.ConstantTimeCompare([]byte("lilei"), []byte("lilei2"))) // 0
 		fmt.Printf("%d\n", subtle.ConstantTimeCompare([]byte("lilei"), []byte(" lilei"))) // 0
 		fmt.Printf("%d\n", subtle.ConstantTimeCompare([]byte("lilei "), []byte("liming"))) // 0
 	}
