@@ -87,7 +87,7 @@
         - ioutil      : qqcocobao				-
     log               : cdxahz          2012-03-10	finished
         - syslog      : ###				-
-    math              : ###				-
+    math              : freemanke       2017-10-30	-
         - big         : ###				-
         - cmplx       : ###				-
         - rand        : athom			2013-03-11	finished
