@@ -91,7 +91,7 @@
         - big         : ###				-
         - cmplx       : ###				-
         - rand        : athom			2013-03-11	finished
-    mime              : ###				-
+    mime              : xingliuhua				-
         - multipart   : ###				-
     net               : nalan			-
         - http        : qinglong1983	2013-03-08
