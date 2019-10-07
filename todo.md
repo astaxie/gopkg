@@ -86,7 +86,7 @@
     io                : lodevil			-
         - ioutil      : qqcocobao				-
     log               : cdxahz          2012-03-10	finished
-        - syslog      : ###				-
+        - syslog      : lancoLiu			-
     math              : freemanke       2017-10-30	-
         - big         : ###				-
         - cmplx       : ###				-
